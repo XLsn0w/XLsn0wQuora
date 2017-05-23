@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		353C81FF1ED3D03D0007188A /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C81FA1ED3D03D0007188A /* Toast.swift */; };
-		353C82001ED3D03D0007188A /* ToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C81FB1ED3D03D0007188A /* ToastCenter.swift */; };
-		353C82011ED3D03D0007188A /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C81FD1ED3D03D0007188A /* ToastView.swift */; };
-		353C82021ED3D03D0007188A /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C81FE1ED3D03D0007188A /* ToastWindow.swift */; };
-		353E528D1ED3C392008BA28E /* XLsn0wNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E528A1ED3C392008BA28E /* XLsn0wNetwork.swift */; };
-		353E528E1ED3C392008BA28E /* XLsn0wPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E528C1ED3C392008BA28E /* XLsn0wPrint.swift */; };
+		353C82141ED3D7FD0007188A /* XLsn0wNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C820B1ED3D7FD0007188A /* XLsn0wNetwork.swift */; };
+		353C82151ED3D7FD0007188A /* XLsn0wPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C820D1ED3D7FD0007188A /* XLsn0wPrint.swift */; };
+		353C82161ED3D7FD0007188A /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C820F1ED3D7FD0007188A /* Toast.swift */; };
+		353C82171ED3D7FD0007188A /* ToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C82101ED3D7FD0007188A /* ToastCenter.swift */; };
+		353C82181ED3D7FD0007188A /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C82121ED3D7FD0007188A /* ToastView.swift */; };
+		353C82191ED3D7FD0007188A /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C82131ED3D7FD0007188A /* ToastWindow.swift */; };
+		353C82221ED3D8110007188A /* LZBCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C821B1ED3D8110007188A /* LZBCollectionLayout.swift */; };
+		353C82231ED3D8110007188A /* LZBContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C821C1ED3D8110007188A /* LZBContentView.swift */; };
+		353C82241ED3D8110007188A /* LZBPageCollectionVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C821D1ED3D8110007188A /* LZBPageCollectionVeiw.swift */; };
+		353C82251ED3D8110007188A /* LZBPageStyleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C821E1ED3D8110007188A /* LZBPageStyleModel.swift */; };
+		353C82261ED3D8110007188A /* LZBPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C821F1ED3D8110007188A /* LZBPageView.swift */; };
+		353C82271ED3D8110007188A /* LZBTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C82201ED3D8110007188A /* LZBTitleView.swift */; };
+		353C82281ED3D8110007188A /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C82211ED3D8110007188A /* UIColor-Extension.swift */; };
 		3591B2721ED3BFED00179D6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591B2711ED3BFED00179D6F /* AppDelegate.swift */; };
 		3591B2741ED3BFED00179D6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591B2731ED3BFED00179D6F /* ViewController.swift */; };
 		3591B2771ED3BFED00179D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3591B2751ED3BFED00179D6F /* Main.storyboard */; };
@@ -22,14 +29,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		353C81FA1ED3D03D0007188A /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
-		353C81FB1ED3D03D0007188A /* ToastCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastCenter.swift; sourceTree = "<group>"; };
-		353C81FC1ED3D03D0007188A /* Toaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toaster.h; sourceTree = "<group>"; };
-		353C81FD1ED3D03D0007188A /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
-		353C81FE1ED3D03D0007188A /* ToastWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastWindow.swift; sourceTree = "<group>"; };
 		353C82081ED3D1980007188A /* XLsn0wQuora-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XLsn0wQuora-Bridging-Header.h"; sourceTree = "<group>"; };
-		353E528A1ED3C392008BA28E /* XLsn0wNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wNetwork.swift; sourceTree = "<group>"; };
-		353E528C1ED3C392008BA28E /* XLsn0wPrint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wPrint.swift; sourceTree = "<group>"; };
+		353C820B1ED3D7FD0007188A /* XLsn0wNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wNetwork.swift; sourceTree = "<group>"; };
+		353C820D1ED3D7FD0007188A /* XLsn0wPrint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wPrint.swift; sourceTree = "<group>"; };
+		353C820F1ED3D7FD0007188A /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		353C82101ED3D7FD0007188A /* ToastCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastCenter.swift; sourceTree = "<group>"; };
+		353C82111ED3D7FD0007188A /* Toaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toaster.h; sourceTree = "<group>"; };
+		353C82121ED3D7FD0007188A /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		353C82131ED3D7FD0007188A /* ToastWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastWindow.swift; sourceTree = "<group>"; };
+		353C821B1ED3D8110007188A /* LZBCollectionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LZBCollectionLayout.swift; sourceTree = "<group>"; };
+		353C821C1ED3D8110007188A /* LZBContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LZBContentView.swift; sourceTree = "<group>"; };
+		353C821D1ED3D8110007188A /* LZBPageCollectionVeiw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LZBPageCollectionVeiw.swift; sourceTree = "<group>"; };
+		353C821E1ED3D8110007188A /* LZBPageStyleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LZBPageStyleModel.swift; sourceTree = "<group>"; };
+		353C821F1ED3D8110007188A /* LZBPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LZBPageView.swift; sourceTree = "<group>"; };
+		353C82201ED3D8110007188A /* LZBTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LZBTitleView.swift; sourceTree = "<group>"; };
+		353C82211ED3D8110007188A /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		3591B26E1ED3BFED00179D6F /* XLsn0wQuora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0wQuora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3591B2711ED3BFED00179D6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3591B2731ED3BFED00179D6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,24 +68,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		353C81F91ED3D03D0007188A /* XLsn0wToast */ = {
-			isa = PBXGroup;
-			children = (
-				353C81FC1ED3D03D0007188A /* Toaster.h */,
-				353C81FA1ED3D03D0007188A /* Toast.swift */,
-				353C81FB1ED3D03D0007188A /* ToastCenter.swift */,
-				353C81FD1ED3D03D0007188A /* ToastView.swift */,
-				353C81FE1ED3D03D0007188A /* ToastWindow.swift */,
-			);
-			path = XLsn0wToast;
-			sourceTree = "<group>";
-		};
 		353C82071ED3D1880007188A /* Bridging-Header */ = {
 			isa = PBXGroup;
 			children = (
 				353C82081ED3D1980007188A /* XLsn0wQuora-Bridging-Header.h */,
 			);
 			path = "Bridging-Header";
+			sourceTree = "<group>";
+		};
+		353C82091ED3D7FD0007188A /* XLsn0wKit */ = {
+			isa = PBXGroup;
+			children = (
+				353C821A1ED3D8110007188A /* LZBPageCustomView */,
+				353C820A1ED3D7FD0007188A /* XLsn0wNetwork */,
+				353C820C1ED3D7FD0007188A /* XLsn0wPrint */,
+				353C820E1ED3D7FD0007188A /* XLsn0wToast */,
+			);
+			path = XLsn0wKit;
+			sourceTree = "<group>";
+		};
+		353C820A1ED3D7FD0007188A /* XLsn0wNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				353C820B1ED3D7FD0007188A /* XLsn0wNetwork.swift */,
+			);
+			path = XLsn0wNetwork;
+			sourceTree = "<group>";
+		};
+		353C820C1ED3D7FD0007188A /* XLsn0wPrint */ = {
+			isa = PBXGroup;
+			children = (
+				353C820D1ED3D7FD0007188A /* XLsn0wPrint.swift */,
+			);
+			path = XLsn0wPrint;
+			sourceTree = "<group>";
+		};
+		353C820E1ED3D7FD0007188A /* XLsn0wToast */ = {
+			isa = PBXGroup;
+			children = (
+				353C820F1ED3D7FD0007188A /* Toast.swift */,
+				353C82101ED3D7FD0007188A /* ToastCenter.swift */,
+				353C82111ED3D7FD0007188A /* Toaster.h */,
+				353C82121ED3D7FD0007188A /* ToastView.swift */,
+				353C82131ED3D7FD0007188A /* ToastWindow.swift */,
+			);
+			path = XLsn0wToast;
+			sourceTree = "<group>";
+		};
+		353C821A1ED3D8110007188A /* LZBPageCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				353C821B1ED3D8110007188A /* LZBCollectionLayout.swift */,
+				353C821C1ED3D8110007188A /* LZBContentView.swift */,
+				353C821D1ED3D8110007188A /* LZBPageCollectionVeiw.swift */,
+				353C821E1ED3D8110007188A /* LZBPageStyleModel.swift */,
+				353C821F1ED3D8110007188A /* LZBPageView.swift */,
+				353C82201ED3D8110007188A /* LZBTitleView.swift */,
+				353C82211ED3D8110007188A /* UIColor-Extension.swift */,
+			);
+			path = LZBPageCustomView;
 			sourceTree = "<group>";
 		};
 		353E52871ED3C36D008BA28E /* UIApplication */ = {
@@ -85,32 +140,6 @@
 				3591B27D1ED3BFEE00179D6F /* Info.plist */,
 			);
 			name = UIApplication;
-			sourceTree = "<group>";
-		};
-		353E52881ED3C392008BA28E /* XLsn0wKit */ = {
-			isa = PBXGroup;
-			children = (
-				353C81F91ED3D03D0007188A /* XLsn0wToast */,
-				353E52891ED3C392008BA28E /* XLsn0wNetwork */,
-				353E528B1ED3C392008BA28E /* XLsn0wPrint */,
-			);
-			path = XLsn0wKit;
-			sourceTree = "<group>";
-		};
-		353E52891ED3C392008BA28E /* XLsn0wNetwork */ = {
-			isa = PBXGroup;
-			children = (
-				353E528A1ED3C392008BA28E /* XLsn0wNetwork.swift */,
-			);
-			path = XLsn0wNetwork;
-			sourceTree = "<group>";
-		};
-		353E528B1ED3C392008BA28E /* XLsn0wPrint */ = {
-			isa = PBXGroup;
-			children = (
-				353E528C1ED3C392008BA28E /* XLsn0wPrint.swift */,
-			);
-			path = XLsn0wPrint;
 			sourceTree = "<group>";
 		};
 		353E528F1ED3C745008BA28E /* UI */ = {
@@ -163,6 +192,7 @@
 		3591B2651ED3BFED00179D6F = {
 			isa = PBXGroup;
 			children = (
+				353C82091ED3D7FD0007188A /* XLsn0wKit */,
 				3591B2701ED3BFED00179D6F /* XLsn0wQuora */,
 				3591B26F1ED3BFED00179D6F /* Products */,
 				E6EC82A07124EA55D5403880 /* Pods */,
@@ -181,9 +211,8 @@
 		3591B2701ED3BFED00179D6F /* XLsn0wQuora */ = {
 			isa = PBXGroup;
 			children = (
-				353E52871ED3C36D008BA28E /* UIApplication */,
 				353C82071ED3D1880007188A /* Bridging-Header */,
-				353E52881ED3C392008BA28E /* XLsn0wKit */,
+				353E52871ED3C36D008BA28E /* UIApplication */,
 				353E528F1ED3C745008BA28E /* UI */,
 			);
 			path = XLsn0wQuora;
@@ -332,13 +361,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3591B2741ED3BFED00179D6F /* ViewController.swift in Sources */,
-				353C82011ED3D03D0007188A /* ToastView.swift in Sources */,
-				353E528E1ED3C392008BA28E /* XLsn0wPrint.swift in Sources */,
-				353C81FF1ED3D03D0007188A /* Toast.swift in Sources */,
-				353E528D1ED3C392008BA28E /* XLsn0wNetwork.swift in Sources */,
-				353C82001ED3D03D0007188A /* ToastCenter.swift in Sources */,
+				353C82281ED3D8110007188A /* UIColor-Extension.swift in Sources */,
+				353C82231ED3D8110007188A /* LZBContentView.swift in Sources */,
+				353C82181ED3D7FD0007188A /* ToastView.swift in Sources */,
+				353C82151ED3D7FD0007188A /* XLsn0wPrint.swift in Sources */,
+				353C82261ED3D8110007188A /* LZBPageView.swift in Sources */,
+				353C82161ED3D7FD0007188A /* Toast.swift in Sources */,
+				353C82271ED3D8110007188A /* LZBTitleView.swift in Sources */,
+				353C82251ED3D8110007188A /* LZBPageStyleModel.swift in Sources */,
+				353C82241ED3D8110007188A /* LZBPageCollectionVeiw.swift in Sources */,
+				353C82141ED3D7FD0007188A /* XLsn0wNetwork.swift in Sources */,
+				353C82171ED3D7FD0007188A /* ToastCenter.swift in Sources */,
 				3591B2721ED3BFED00179D6F /* AppDelegate.swift in Sources */,
-				353C82021ED3D03D0007188A /* ToastWindow.swift in Sources */,
+				353C82191ED3D7FD0007188A /* ToastWindow.swift in Sources */,
+				353C82221ED3D8110007188A /* LZBCollectionLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
