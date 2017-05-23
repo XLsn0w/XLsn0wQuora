@@ -1,0 +1,6 @@
+framework module Pods_XLsn0wQuora {
+  umbrella header "Pods-XLsn0wQuora-umbrella.h"
+
+  export *
+  module * { export * }
+}
