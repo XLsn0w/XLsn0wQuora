@@ -29,8 +29,8 @@ open class ToastCenter {
     return queue
   }()
 
-  open var currentToast: Toast? {
-    return self.queue.operations.first as? Toast
+  open var currentToast: XLsn0wToast? {
+    return self.queue.operations.first as? XLsn0wToast
   }
 
   open static let `default` = ToastCenter()
@@ -50,7 +50,7 @@ open class ToastCenter {
 
   // MARK: Adding Toasts
 
-  open func add(_ toast: Toast) {
+  open func add(_ toast: XLsn0wToast) {
     self.queue.addOperation(toast)
   }
 
@@ -67,7 +67,7 @@ open class ToastCenter {
   // MARK: Notifications
 
   dynamic func deviceOrientationDidChange() {
-    if let lastToast = self.queue.operations.first as? Toast {
+    if let lastToast = self.queue.operations.first as? XLsn0wToast {
       lastToast.view.setNeedsLayout()
     }
   }

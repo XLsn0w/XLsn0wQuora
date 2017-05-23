@@ -17,12 +17,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 /**************************************************************************************************/
 //        self.addCollectionUI();
-//        self.addButtonUI();
-//        self.configureAppearance()
+        self.addButtonUI();
+        
 //        self.view.backgroundColor = UIColor.black;
         
+
         
-        
+        XLsn0wLog(printObject: "xxxx");
     }
     
     func addCollectionUI() {
@@ -83,6 +84,9 @@ class ViewController: UIViewController {
                 constant: 0
             )
             ])
+        
+        
+        self.configureAppearance()
     }
     
     func configureAppearance() {
@@ -96,9 +100,13 @@ class ViewController: UIViewController {
     }
     
     dynamic func showButtonTouchUpInside() {
-        Toast(text: "Basic Toast").show()
-        Toast(text: " seconds.\n" + "`Delay.long` means 3.5 seconds.", duration: Delay.long).show()
-        Toast(text: "With delay, Toaster will be shown after delay.", delay: 1, duration: 5).show()
+        XLsn0wToast(text: "Basic Toast").show()
+        XLsn0wToast(text: " seconds.\n" + "`Delay.long` means 3.5 seconds.", duration: Delay.long).show()
+        XLsn0wToast(text: "With delay, Toaster will be shown after delay.", delay: 1, duration: 5).show()
+        
+       
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -1,30 +1,12 @@
-/*
- * Toast.swift
- *
- *            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
- *                    Version 2, December 2004
- *
- * Copyright (C) 2013-2015 Su Yeol Jeon
- *
- * Everyone is permitted to copy and distribute verbatim or modified
- * copies of this license document, and changing it is allowed as long
- * as the name is changed.
- *
- *            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
- *   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
- *
- *  0. You just DO WHAT THE FUCK YOU WANT TO.
- *
- */
 
 import UIKit
 
 public struct Delay {
-  public static let short: TimeInterval = 2.0
-  public static let long: TimeInterval = 3.5
+  public static let short: TimeInterval = 1.5
+  public static let long: TimeInterval  = 3.0
 }
 
-open class Toast: Operation {
+open class XLsn0wToast: Operation {
 
   // MARK: Properties
 
@@ -79,18 +61,18 @@ open class Toast: Operation {
   // MARK: Factory (Deprecated)
 
   @available(*, deprecated, message: "Use 'init(text:)' instead.")
-  public class func makeText(_ text: String) -> Toast {
-    return Toast(text: text)
+  public class func makeText(_ text: String) -> XLsn0wToast {
+    return XLsn0wToast(text: text)
   }
 
   @available(*, deprecated, message: "Use 'init(text:duration:)' instead.")
-  public class func makeText(_ text: String, duration: TimeInterval) -> Toast {
-    return Toast(text: text, duration: duration)
+  public class func makeText(_ text: String, duration: TimeInterval) -> XLsn0wToast {
+    return XLsn0wToast(text: text, duration: duration)
   }
 
   @available(*, deprecated, message: "Use 'init(text:delay:duration:)' instead.")
-  public class func makeText(_ text: String?, delay: TimeInterval, duration: TimeInterval) -> Toast {
-    return Toast(text: text, delay: delay, duration: duration)
+  public class func makeText(_ text: String?, delay: TimeInterval, duration: TimeInterval) -> XLsn0wToast {
+    return XLsn0wToast(text: text, delay: delay, duration: duration)
   }
 
 
