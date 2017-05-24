@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 // 通过类别给对象拓展属性，使用Runtime绑定属性值
 extension ViewController {
@@ -257,6 +258,62 @@ class ViewController: UIViewController, JKEmployerDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+
+    let IBLayoutButton = UIButton()
+    let codeNativeLayoutButton = UIButton()
+    let snapKitLayoutButton = UIButton()
+    
+    
+    func AutoLayout() {
+        
+        title = "AutoLayout"
+
+        
+        
+        codeNativeLayoutButton.backgroundColor = UIColor.hexValue(0x40a0ff);
+        codeNativeLayoutButton.setTitle("原生代码布局", for: .normal)
+        codeNativeLayoutButton.setTitleColor(UIColor.hexValue(0xf8f8f8), for: .normal)
+        codeNativeLayoutButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 24)
+        codeNativeLayoutButton.layer.cornerRadius = 6
+        codeNativeLayoutButton.layer.masksToBounds = true
+        view.addSubview(codeNativeLayoutButton)
+        codeNativeLayoutButton.snp.makeConstraints { (make) in
+            make.trailing.equalTo(self.view.layoutMarginsGuide)
+            make.top.equalTo(IBLayoutButton)
+            make.leading.equalTo(IBLayoutButton.snp.trailing).offset(10)
+            make.height.width.equalTo(IBLayoutButton)
+        }
+        codeNativeLayoutButton.addTarget(self, action: #selector(didClickCodeNativeLayoutButton(button:)), for: .touchUpInside)
+        
+        snapKitLayoutButton.backgroundColor = UIColor.hexValue(0xfd84ea);
+        snapKitLayoutButton.setTitle("SnapKit代码布局", for: .normal)
+        snapKitLayoutButton.setTitleColor(UIColor.hexValue(0xf8f8f8), for: .normal)
+        snapKitLayoutButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 24)
+        snapKitLayoutButton.layer.cornerRadius = 6
+        snapKitLayoutButton.layer.masksToBounds = true
+        view.addSubview(snapKitLayoutButton)
+        snapKitLayoutButton.snp.makeConstraints { (make) in
+            make.leading.trailing.equalTo(self.view.layoutMarginsGuide)
+            make.top.equalTo(IBLayoutButton.snp.bottom).offset(10)
+            make.bottom.equalTo(-10)
+            make.height.equalTo(IBLayoutButton)
+        }
+        snapKitLayoutButton.addTarget(self, action: #selector(didSnapKitLayoutButton(button:)), for: .touchUpInside)
+        
+    }
+    
+    
+
+    
+    
+    func didClickCodeNativeLayoutButton(button:UIButton) {
+        navigationController?.pushViewController(CodeNativeLayoutViewController(), animated: true)
+    }
+    
+    func didSnapKitLayoutButton(button:UIButton) {
+        navigationController?.pushViewController(SnapKitLayoutViewController(), animated: true)
+    }
+    
 
 }
 
