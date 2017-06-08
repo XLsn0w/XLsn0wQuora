@@ -1,29 +1,42 @@
 PODS:
   - Alamofire (4.4.0)
-  - HandyJSON (1.6.1)
-  - Kingfisher (3.6.1)
-  - Moya (8.0.3):
-    - Moya/Core (= 8.0.3)
-  - Moya/Core (8.0.3):
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - HandyJSON (1.7.1)
+  - Kingfisher (3.10.1)
+  - Moya (8.0.5):
+    - Moya/Core (= 8.0.5)
+  - Moya/Core (8.0.5):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
-  - Moya/RxSwift (8.0.3):
+  - Moya/RxSwift (8.0.5):
     - Moya/Core
     - RxSwift (~> 3.0)
-  - Result (3.2.1)
-  - RxCocoa (3.3.1):
-    - RxSwift (~> 3.3)
+  - Result (3.2.3)
+  - RxCocoa (3.5.0):
+    - RxSwift (~> 3.4)
   - RxDataSources (1.0.3):
     - RxCocoa (~> 3.0)
     - RxSwift (~> 3.0)
-  - RxSwift (3.3.1)
+  - RxSwift (3.5.0)
   - SnapKit (3.2.0)
-  - SwiftDate (4.0.14)
+  - SQLite.swift (0.11.3):
+    - SQLite.swift/standard (= 0.11.3)
+  - SQLite.swift/standard (0.11.3)
+  - SwiftDate (4.1.2)
   - SwiftyJSON (3.1.4)
   - Then (2.1.0)
+  - XLsn0wKit_swift (1.0.5):
+    - Alamofire
+    - Kingfisher
+    - SnapKit
+    - SwiftyJSON
+    - Then
 
 DEPENDENCIES:
   - Alamofire
+  - FMDB
   - HandyJSON
   - Kingfisher
   - Moya
@@ -32,24 +45,29 @@ DEPENDENCIES:
   - RxDataSources
   - RxSwift
   - SnapKit
+  - SQLite.swift
   - SwiftDate
   - SwiftyJSON
   - Then
+  - XLsn0wKit_swift
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
-  HandyJSON: dcc98115467462a4749db81bc8a9052607600bdf
-  Kingfisher: 2f31cb75f3e98d3d4c406cbdcd9b263e956cfa67
-  Moya: d3721622e3cc0cc2f038d69a258686f0b66e7252
-  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
-  RxCocoa: 7dcb7a1860fc9cd0e23dae67ab105fc2916670b6
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  HandyJSON: 54b6ce942795f7b2e61b82fe73cf25d9f139d125
+  Kingfisher: 33a1b82140fcb14a9fc13f78dfde2a03ff8de8cb
+  Moya: c37eec09a098ba9991b5a963b291fc5704bdb9ef
+  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
   RxDataSources: a021a0e944ba5f7991259829d973afdbfa719c0b
-  RxSwift: 8fc9f2de6275a9101d518444e00bf32f1a42caac
+  RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
-  SwiftDate: 4ef029fd3117cc287fe642658b9aca2217628976
+  SQLite.swift: 99b36c22084427f0abbeb957556ce1528cf10bb3
+  SwiftDate: 2dfdebd4f67ae71c9c3e2413ee3c56947f302858
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   Then: 8496793c8fcac95482b943909b440724c7d8d82c
+  XLsn0wKit_swift: 6cd38d45c72c389f1a081975307ea7e4d93dba1d
 
-PODFILE CHECKSUM: e6592297b68fc0ab2e1e39a99df672e6c64e1ac2
+PODFILE CHECKSUM: 5f4195ca41bc3310d5dd71f2e6d257bfd7e63f98
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

@@ -5,6 +5,8 @@ use_frameworks! #由于是Swift(objc不需要), 我们这里还需要换行输�
 
 target "XLsn0wQuora" do
     
+    pod 'XLsn0wKit_swift'
+    
     pod 'SnapKit'    #纯代码布局库
     pod 'Kingfisher' #图片缓存库
     pod 'Alamofire'  #网络解析库
@@ -23,5 +25,8 @@ target "XLsn0wQuora" do
     
     pod 'SwiftDate'
     pod 'Then'
+    
+    #objc Kit
+    pod 'FMDB'
     
 end

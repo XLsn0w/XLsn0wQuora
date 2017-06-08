@@ -33,7 +33,7 @@ extension Reactive where Base: UICollectionView {
          ])
 
          items
-         .bindTo(collectionView.rx.items) { (collectionView, row, element) in
+         .bind(to: collectionView.rx.items) { (collectionView, row, element) in
             let indexPath = IndexPath(row: row, section: 0)
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! NumberCell
              cell.value?.text = "\(element) @ \(row)"
@@ -70,7 +70,7 @@ extension Reactive where Base: UICollectionView {
          ])
 
          items
-             .bindTo(collectionView.rx.items(cellIdentifier: "Cell", cellType: NumberCell.self)) { (row, element, cell) in
+             .bind(to: collectionView.rx.items(cellIdentifier: "Cell", cellType: NumberCell.self)) { (row, element, cell) in
                 cell.value?.text = "\(element) @ \(row)"
              }
              .disposed(by: disposeBag)
@@ -131,7 +131,7 @@ extension Reactive where Base: UICollectionView {
          }
 
          items
-            .bindTo(collectionView.rx.items(dataSource: dataSource))
+            .bind(to: collectionView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
     */
     public func items<
@@ -261,7 +261,7 @@ extension Reactive where Base: UICollectionView {
         return ControlEvent(events: source)
     }
     
-    /// Syncronous helper method for retrieving a model at indexPath through a reactive data source
+    /// Synchronous helper method for retrieving a model at indexPath through a reactive data source
     public func model<T>(at indexPath: IndexPath) throws -> T {
         let dataSource: SectionedViewDataSourceType = castOrFatalError(self.dataSource.forwardToDelegate(), message: "This method only works in case one of the `rx.itemsWith*` methods was used.")
         

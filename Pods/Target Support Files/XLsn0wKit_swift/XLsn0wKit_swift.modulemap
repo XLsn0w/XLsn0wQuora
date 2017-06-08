@@ -1,0 +1,6 @@
+framework module XLsn0wKit_swift {
+  umbrella header "XLsn0wKit_swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
