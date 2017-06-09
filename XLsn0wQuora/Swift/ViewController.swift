@@ -65,11 +65,8 @@ class ViewController: UIViewController {
             XLsn0wLog("delay")
         }
         
+
         
-        DispatchQueue.AutoreleaseFrequency.inherit
-        
-        simpleMax(17, 42) // T 被推断为 Int 类型
-        simpleMax(3.14159, 2.71828) // T 被推断为 Double 类型
     }
     
 /*

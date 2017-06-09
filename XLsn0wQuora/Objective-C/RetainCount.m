@@ -7,7 +7,6 @@
 //
 
 #import "RetainCount.h"
-#import "Person.h"
 #import <objc/runtime.h>
 
 @implementation RetainCount
@@ -28,14 +27,7 @@
 //    NSLog(@"NSObject's meta class is %p", object_getClass([NSObject class]));
     
     
-    
-    NSString *myName = @"halfrost";
-    NSLog(@"myName 地址 = %p , 大小 = %lu  ",&myName ,sizeof(myName));
-    id cls = [Person class];
-    NSLog(@"Student class = %@ 地址 = %p , 大小 = %lu", cls, &cls,sizeof(cls));
-    void *obj = &cls;
-    NSLog(@"Void *obj = %@ 地址 = %p , 大小 = %lu", obj,&obj, sizeof(obj));
-    NSLog(@"%@  %p",((__bridge Person *)obj).name,((__bridge Person *)obj).name);
+
     
 }
 

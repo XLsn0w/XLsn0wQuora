@@ -66,12 +66,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         UIApplication.shared.statusBarStyle = .lightContent
 //        addWindow()
-
 //        XLsn0wQuoraRequest.requestSplashImage(reqName: requestSplashImage, delegate: self)
-//
-//        
 //        addAdvertisement()
 //        removeAdvertisement()
+        
+        
+        
+
         
         
         //: 配置打印
@@ -94,19 +95,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 //MARK: 程序更新
 extension AppDelegate {
-    //: 使用打印工具
+
     fileprivate func setupPrintLog() {
-        //: 使用调试打印工具
         QorumLogs.enabled = true
         QorumLogs.minimumLogLevelShown = 1
     }
     //: 配置主界面流程
     fileprivate func setupRootViewController() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        
-        window?.rootViewController = defaultRootViewController()
-        
         window?.makeKeyAndVisible()
+        
+        window?.rootViewController = MainViewController()
+        
     }
     
     //: 设置主题样式
