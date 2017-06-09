@@ -24,12 +24,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Moya.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-XLsn0wQuora.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>QorumLogs.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -54,7 +64,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SQLite.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -87,7 +107,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>248E735D5163335618E24A5C73CC8A07</key>
+		<key>037B499F31002CC43EE35F6EF7E5C55C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>090C8AADCA2097A4202FC9CB5DA06DDC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>10A26FC4759AD96B92B606FAF8C54D1E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,17 +142,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3A6D37DA62FFEB2C5B2A7A0505950144</key>
+		<key>388F01FFF6ABF299AEDAA05314819BEF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>84EE1CBF64D0E45222555AF2D42D7A19</key>
+		<key>3B25B2F2CED876C8036CCD764F980694</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88A260EA1F8CC3FF3EE360B452A5C75E</key>
+		<key>3C21B374C3FA0574075B8FFDBB185521</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>41B3B7793296A66ECC71608B6CF5045B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>774E87DA18FCAE2D280B51C2BB9DF87F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,7 +172,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A61BA36680E0AB52BA0DCD0F8AC64928</key>
+		<key>92EE6276919C6B08C8AE751B5372DC5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A6B369F8A524AA48C8A139044AF19E4C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B82920B196507EAD7AF7E0545731521B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -142,22 +192,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CFE33039A209D4583FC08B752D704496</key>
+		<key>C654AC2D3CB4F4BAB452316E3BDB8D70</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D58003D493A0EE92EB02D011CA4FEA85</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DFBB9B1A440AC3196A582A926A2908E2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>ECF2196AFF11A91BF6C51A1539F44B71</key>
+		<key>E14A62900910444707A5504D25EC98DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

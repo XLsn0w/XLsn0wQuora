@@ -5,6 +5,7 @@ PODS:
   - FMDB/standard (2.6.2)
   - HandyJSON (1.7.1)
   - Kingfisher (3.10.1)
+  - MJRefresh (3.1.12)
   - Moya (8.0.5):
     - Moya/Core (= 8.0.5)
   - Moya/Core (8.0.5):
@@ -13,6 +14,7 @@ PODS:
   - Moya/RxSwift (8.0.5):
     - Moya/Core
     - RxSwift (~> 3.0)
+  - QorumLogs (0.9)
   - Result (3.2.3)
   - RxCocoa (3.5.0):
     - RxSwift (~> 3.4)
@@ -20,10 +22,14 @@ PODS:
     - RxCocoa (~> 3.0)
     - RxSwift (~> 3.0)
   - RxSwift (3.5.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
   - SnapKit (3.2.0)
   - SQLite.swift (0.11.3):
     - SQLite.swift/standard (= 0.11.3)
   - SQLite.swift/standard (0.11.3)
+  - SVProgressHUD (2.1.2)
   - SwiftDate (4.1.2)
   - SwiftyJSON (3.1.4)
   - Then (2.1.0)
@@ -39,13 +45,17 @@ DEPENDENCIES:
   - FMDB
   - HandyJSON
   - Kingfisher
+  - MJRefresh
   - Moya
   - Moya/RxSwift
+  - QorumLogs
   - RxCocoa
   - RxDataSources
   - RxSwift
+  - SDWebImage
   - SnapKit
   - SQLite.swift
+  - SVProgressHUD
   - SwiftDate
   - SwiftyJSON
   - Then
@@ -56,18 +66,22 @@ SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   HandyJSON: 54b6ce942795f7b2e61b82fe73cf25d9f139d125
   Kingfisher: 33a1b82140fcb14a9fc13f78dfde2a03ff8de8cb
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   Moya: c37eec09a098ba9991b5a963b291fc5704bdb9ef
+  QorumLogs: 9a484df6973a3697ac79fe2273140fde6b36dccc
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
   RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
   RxDataSources: a021a0e944ba5f7991259829d973afdbfa719c0b
   RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SQLite.swift: 99b36c22084427f0abbeb957556ce1528cf10bb3
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   SwiftDate: 2dfdebd4f67ae71c9c3e2413ee3c56947f302858
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   Then: 8496793c8fcac95482b943909b440724c7d8d82c
   XLsn0wKit_swift: 89661128ddbd059cd7bab3f6069e5fafe57bac5b
 
-PODFILE CHECKSUM: 5f4195ca41bc3310d5dd71f2e6d257bfd7e63f98
+PODFILE CHECKSUM: bc4567667b237eda65fd0d19ed84ccd1aebcb9c5
 
 COCOAPODS: 1.2.1

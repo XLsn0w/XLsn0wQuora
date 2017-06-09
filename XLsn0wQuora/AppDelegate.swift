@@ -47,6 +47,8 @@ import SwiftyJSON
 import Kingfisher
 import SnapKit
 import XLsn0wKit_swift
+import QorumLogs
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -63,53 +65,121 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         UIApplication.shared.statusBarStyle = .lightContent
-        addWindow()
+//        addWindow()
 
-        XLsn0wQuoraRequest.requestSplashImage(reqName: requestSplashImage, delegate: self)
-
+//        XLsn0wQuoraRequest.requestSplashImage(reqName: requestSplashImage, delegate: self)
+//
+//        
+//        addAdvertisement()
+//        removeAdvertisement()
         
-        addAdvertisement()
-        removeAdvertisement()
+        
+        //: 配置打印
+        setupPrintLog()
+        //: 配置控制器
+        setupRootViewController()
+        //: 配置主题样式
+        setupGlobalStyle()
+        //: 配置系统通知
+        setupGlobalNotice()
+        
+        
+        
+        
         return true
     }
     
-    func addWindow() -> Void {
-        window = UIWindow(frame: UIScreen.main.bounds)//init
-        window?.backgroundColor = UIColor.white
-        window?.makeKeyAndVisible()
-        window?.rootViewController = drawerController
-    }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-
+   
 }
-
-
-//////////////////////////////////////////////////////////////////////////////////////////
-// MARK: - 启动闪屏广告相关
-extension AppDelegate
-{
+    
+//MARK: 程序更新
+extension AppDelegate {
+    //: 使用打印工具
+    fileprivate func setupPrintLog() {
+        //: 使用调试打印工具
+        QorumLogs.enabled = true
+        QorumLogs.minimumLogLevelShown = 1
+    }
+    //: 配置主界面流程
+    fileprivate func setupRootViewController() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        window?.rootViewController = defaultRootViewController()
+        
+        window?.makeKeyAndVisible()
+    }
+    
+    //: 设置主题样式
+    fileprivate func setupGlobalStyle() {
+        UITabBar.appearance().tintColor = SystemTabBarTintColor
+        UINavigationBar.appearance().tintColor = UIColor.white
+        
+        ProgressHUD.setupProgressHUD()
+        
+    }
+    //: 注册系统通知
+    fileprivate func setupGlobalNotice() {
+        //: 注册系统通知
+        NotificationCenter.default.addObserver(self, selector: #selector(changeDefaultRootViewController(notification:)), name: NSNotification.Name(rawValue: SystemChangeRootViewControllerNotification), object: nil)
+        
+    }
+    
+    
+    //MARK: 登陆业务逻辑
+    //: 新特性
+    func isNewFeatureVersion() -> Bool {
+        
+        let newVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"]
+            as! String
+        
+        
+        //: 旧版本到新版本为升序
+        guard let sanboxVersion = UserDefaults.standard.object(forKey: "APPVersion") as? String , sanboxVersion.compare(newVersion) != .orderedAscending else {
+            //: 跟新版本
+            UserDefaults.standard.set(newVersion, forKey: "APPVersion")
+            return true
+        }
+        
+        
+        return false
+    }
+    
+    func defaultRootViewController() -> UIViewController {
+        
+        return MainViewController()
+        //: 没有登陆跳转到系统主界面
+        //        guard LSXUserAccountModel.isLogin() else {
+        //            return MainViewController()
+        //        }
+        //
+        //        //: 判断是否新版本
+        //        if isNewFeatureVersion() {
+        //            return LSXNewFeatureViewController()
+        //        }
+        //
+        //        //: 跳转到欢迎主界面
+        //        return LSXWelcomeViewController()
+    }
+    
+    func changeDefaultRootViewController(notification:Notification) {
+        
+        QL2(notification.userInfo?[ToControllerKey])
+        
+        
+        guard let controllerName = notification.userInfo?[ToControllerKey] as? String else {
+            QL4("跳转根控制器失败，传入的控制器名称为空")
+            return
+        }
+        
+        guard let controller = UIViewController.controller(withName: controllerName) else {
+            QL4("创建控制器失败")
+            return
+        }
+        
+        window?.rootViewController = controller
+    }
+    
+    
     /// 添加广告
     fileprivate func addAdvertisement()
     {
@@ -143,14 +213,14 @@ extension AppDelegate
         }
         jumpBtn.layer.cornerRadius = 6
         jumpBtn.layer.masksToBounds = true
-//        jumpBtn.setTapActionWithBlock { [weak self] in
-//            if let weakSelf = self
-//            {
-//                weakSelf.bgImageView?.removeFromSuperview()
-//                weakSelf.bgImageView = nil
-//                weakSelf.drawerController.checkAppVersion()
-//            }
-//        }
+        //        jumpBtn.setTapActionWithBlock { [weak self] in
+        //            if let weakSelf = self
+        //            {
+        //                weakSelf.bgImageView?.removeFromSuperview()
+        //                weakSelf.bgImageView = nil
+        //                weakSelf.drawerController.checkAppVersion()
+        //            }
+        //        }
         jumpBtn.isHidden = true
     }
     
@@ -172,11 +242,42 @@ extension AppDelegate
                 })
         })
     }
+    
+
+    
+    
+    func addWindow() -> Void {
+        window = UIWindow(frame: UIScreen.main.bounds)//init
+        window?.backgroundColor = UIColor.white
+        window?.makeKeyAndVisible()
+        window?.rootViewController = drawerController
+    }
+
+    func applicationWillResignActive(_ application: UIApplication) {
+        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    }
+
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    }
+
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    }
+
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    }
+
+    func applicationWillTerminate(_ application: UIApplication) {
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+
 }
 
-
-//////////////////////////////////////////////////////////////////////////////////////////
-// MARK: - WRNetWrapperDelegate
 extension AppDelegate: XLsn0wNetworkingDelegate {
     func netWortDidSuccess(result: AnyObject, requestName: String, parameters: NSDictionary?)
     {
