@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import XLsn0wKit_swift
 
 class DrawerController: MMDrawerController
 {
@@ -35,12 +36,12 @@ class DrawerController: MMDrawerController
     
     func checkAppVersion()
     {
-        WRApiContainer.requestAppVersion(reqName: requestAppVersion, delegate: self)
+        XLsn0wQuoraRequest.requestAppVersion(reqName: requestAppVersion, delegate: self)
     }
 }
 
 
-extension DrawerController: WRNetWrapperDelegate
+extension DrawerController: XLsn0wNetworkingDelegate
 {
     func netWortDidSuccess(result:AnyObject,requestName:String,parameters:NSDictionary?)
     {

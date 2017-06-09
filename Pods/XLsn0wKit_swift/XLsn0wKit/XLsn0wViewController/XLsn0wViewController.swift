@@ -10,9 +10,9 @@
  *********************************************************************************************/
 import UIKit
 
-class XLsn0wViewController: UIViewController {
+open class XLsn0wViewController: UIViewController {
 
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.white
@@ -31,7 +31,7 @@ class XLsn0wViewController: UIViewController {
         _ = self.navigationController?.popViewController(animated: animated)
     }
 
-    override func didReceiveMemoryWarning() {
+    override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

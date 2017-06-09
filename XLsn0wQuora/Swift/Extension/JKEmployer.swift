@@ -18,7 +18,8 @@ class JKEmployer: NSObject {
         self.dataSource?.jkOptionalDelegateFunc?(str: str)
         
         let value = self.dataSource?.jkOptionalDelegateFun?(str: str)
-        XLsn0wLog(printObject: value)
+      
+        
     }
     
     

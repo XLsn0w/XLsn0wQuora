@@ -10,7 +10,7 @@
  *********************************************************************************************/
 import Foundation
 /**************************************************************************************************/
-extension Array {
+public extension Array {
     
     mutating func addObject(fromArray array:[Element]?) -> Void {
         if array != nil {

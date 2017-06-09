@@ -27,7 +27,7 @@ enum RequestMethod {
  
  @return JSON 服务器返回的JSON
 */
-class XLsn0wNetwork {
+open class XLsn0wNetwork {
     class func request(_ requestMethod : RequestMethod, URLString : String, parameters : [String : Any]? = nil, responseCallback :  @escaping (_ JSON : Any) -> ()) {
         let method = requestMethod == .get ? HTTPMethod.get : HTTPMethod.post
         Alamofire.request(URLString, method: method, parameters: parameters).responseJSON { (response) in

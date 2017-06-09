@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import XLsn0wKit_swift
 
 private let NAVBAR_COLORCHANGE_POINT:CGFloat = -80
 private let IMAGE_HEIGHT:CGFloat = 210
@@ -37,7 +38,7 @@ class MainController: BaseViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        WRApiContainer.requestLatestNews(reqName: requestLatestNews, delegate: self)
+        XLsn0wQuoraRequest.requestLatestNews(reqName: requestLatestNews, delegate: self)
         self.title = "知乎日报"
         tableView.addSubview(cycleScrollView)
         view.addSubview(tableView)
@@ -47,7 +48,7 @@ class MainController: BaseViewController
 }
 
 
-extension MainController: WRNetWrapperDelegate
+extension MainController: XLsn0wNetworkingDelegate
 {
     func netWortDidSuccess(result:AnyObject,requestName:String,parameters:NSDictionary?)
     {

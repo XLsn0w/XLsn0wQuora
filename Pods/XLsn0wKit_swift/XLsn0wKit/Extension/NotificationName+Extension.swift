@@ -9,7 +9,8 @@
  *                                                                                           *
  *********************************************************************************************/
 import Foundation
-extension Notification.Name {
+
+public extension Notification.Name {
     
     // 自定义全局静态通知名
     public struct JKLocation{

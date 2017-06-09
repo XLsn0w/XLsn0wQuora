@@ -7,10 +7,9 @@
 //
 
 import UIKit
-//import SwiftyJSON
+import XLsn0wKit_swift
 
-struct News
-{
+struct News {
     var date:String
     var stories:[Story]
     var top_stories:[Story]?    // 可能没有 top_stories
@@ -23,6 +22,8 @@ struct News
         let day   = date.substring(from: dayIndex)
         return "\(month)月\(day)日 \(date.currentWeekDay())"
     }
+    
+    
     var topStoryImgs:[String]? {
         guard let topStories = top_stories else {
             return nil
@@ -32,6 +33,7 @@ struct News
         }
         return imgs
     }
+    
     var topStoryTitles:[String]? {
         guard let topStories = top_stories else {
             return nil
@@ -41,16 +43,16 @@ struct News
         }
         return titles
     }
+    
 }
 
-extension News
-{
+extension News {
     static func parseJson(json:[String : AnyObject]) -> News
     {
         guard let date = json["date"] as? String else {
             fatalError("error parse date")
         }
-
+        
         var stories:[Story]?
         if let storiesDicts = json["stories"] as? [[String:AnyObject]]
         {

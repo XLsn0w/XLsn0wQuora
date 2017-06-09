@@ -11,7 +11,7 @@
 
 import UIKit
 
-extension Date {
+public extension Date {
     
     
     static func intervalToChinaCalander(_ interval:TimeInterval) ->String{

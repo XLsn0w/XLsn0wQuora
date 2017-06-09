@@ -11,7 +11,7 @@
 
 import Foundation
 
-extension NSObject{
+public extension NSObject{
     var keyValues:[String:AnyObject]?{                   //获取一个模型对应的字典
         get{
             var result = [String: AnyObject]()           //保存结果
@@ -50,7 +50,7 @@ extension NSObject{
     }
 }
 
-class HEFoundation {
+public class HEFoundation {
     
     static let set = NSSet(array: [
         type(of: URL.self),

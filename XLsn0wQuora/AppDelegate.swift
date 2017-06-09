@@ -65,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.statusBarStyle = .lightContent
         addWindow()
 
-        WRApiContainer.requestSplashImage(reqName: requestSplashImage, delegate: self)
+        XLsn0wQuoraRequest.requestSplashImage(reqName: requestSplashImage, delegate: self)
 
         
         addAdvertisement()
@@ -143,14 +143,14 @@ extension AppDelegate
         }
         jumpBtn.layer.cornerRadius = 6
         jumpBtn.layer.masksToBounds = true
-        jumpBtn.setTapActionWithBlock { [weak self] in
-            if let weakSelf = self
-            {
-                weakSelf.bgImageView?.removeFromSuperview()
-                weakSelf.bgImageView = nil
-                weakSelf.drawerController.checkAppVersion()
-            }
-        }
+//        jumpBtn.setTapActionWithBlock { [weak self] in
+//            if let weakSelf = self
+//            {
+//                weakSelf.bgImageView?.removeFromSuperview()
+//                weakSelf.bgImageView = nil
+//                weakSelf.drawerController.checkAppVersion()
+//            }
+//        }
         jumpBtn.isHidden = true
     }
     
@@ -177,8 +177,7 @@ extension AppDelegate
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // MARK: - WRNetWrapperDelegate
-extension AppDelegate: WRNetWrapperDelegate
-{
+extension AppDelegate: XLsn0wNetworkingDelegate {
     func netWortDidSuccess(result: AnyObject, requestName: String, parameters: NSDictionary?)
     {
         if (requestName == requestSplashImage)

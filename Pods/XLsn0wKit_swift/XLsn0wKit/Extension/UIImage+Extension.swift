@@ -188,8 +188,8 @@ extension UIImage {
         beziePath.addArc(withCenter: CGPoint.init(x: targetSize.width - targetRadius,
                                                   y: targetRadius),
                          radius: targetRadius,
-                         startAngle: JK_PI() * 1.5,
-                         endAngle: JK_PI() * 2.0,
+                         startAngle: get_PI() * 1.5,
+                         endAngle:get_PI() * 2.0,
                          clockwise: true)
         
         beziePath.addLine(to: CGPoint.init(x: targetSize.width,
@@ -198,22 +198,22 @@ extension UIImage {
                                                   y: targetSize.height - targetRadius),
                          radius: targetRadius,
                          startAngle: 0,
-                         endAngle: JK_PI() * 0.5,
+                         endAngle: get_PI() * 0.5,
                          clockwise: true)
         
         beziePath.addLine(to: CGPoint.init(x: targetRadius, y: targetSize.height))
         beziePath.addArc(withCenter: CGPoint.init(x: targetRadius,
                                                   y: targetSize.height - targetRadius),
                          radius: targetRadius,
-                         startAngle: JK_PI() * 0.5,
-                         endAngle: JK_PI(),
+                         startAngle: get_PI() * 0.5,
+                         endAngle: get_PI(),
                          clockwise: true)
         
         beziePath.addLine(to: CGPoint.init(x: 0, y: targetRadius))
         beziePath.addArc(withCenter: CGPoint.init(x: targetRadius, y: targetRadius),
                          radius: targetRadius,
-                         startAngle: JK_PI(),
-                         endAngle: JK_PI() * 1.5,
+                         startAngle: get_PI(),
+                         endAngle: get_PI() * 1.5,
                          clockwise: true)
         color.setFill()
         beziePath.fill()
@@ -250,26 +250,26 @@ extension UIImage {
         beziePath.addLine(to: pointB)
         beziePath.addArc(withCenter: centerA,
                          radius: targetRadius - targetBorderWith,
-                         startAngle: JK_PI_2() * 3,
-                         endAngle: JK_PI_2() * 4,
+                         startAngle: get_PI()/2 * 3,
+                         endAngle: get_PI()/2 * 4,
                          clockwise: true)
         beziePath.addLine(to: pointC)
         beziePath.addArc(withCenter: centerB,
                          radius: targetRadius - targetBorderWith,
                          startAngle: 0,
-                         endAngle: JK_PI_2(),
+                         endAngle: get_PI()/2,
                          clockwise: true)
         beziePath.addLine(to: pointD)
         beziePath.addArc(withCenter: centerC,
                          radius: targetRadius - targetBorderWith,
-                         startAngle: JK_PI_2(),
-                         endAngle: JK_PI(),
+                         startAngle: get_PI()/2,
+                         endAngle: get_PI(),
                          clockwise: true)
         beziePath.addLine(to: pointE)
         beziePath.addArc(withCenter: centerD,
                          radius: targetRadius - targetBorderWith,
-                         startAngle: JK_PI(),
-                         endAngle: JK_PI_2() * 3,
+                         startAngle: get_PI(),
+                         endAngle: get_PI()/2 * 3,
                          clockwise: true)
         color.setFill()
         beziePath.fill()

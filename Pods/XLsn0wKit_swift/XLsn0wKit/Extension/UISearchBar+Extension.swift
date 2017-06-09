@@ -14,7 +14,7 @@ import UIKit
 /**************************************************************************************************/
 /**************************************************************************************************/
 public extension UISearchBar {
-    public func jk_customSearchBar(withPlaceholder placeholder: String) -> () {
+    public func customSearchBar(withPlaceholder placeholder: String) -> () {
         var searchBarFrame = self.frame
         searchBarFrame.size.height = 44
         self.frame = searchBarFrame
@@ -24,7 +24,7 @@ public extension UISearchBar {
         self.returnKeyType = .done
         self.setImage(UIImage.init(named: "im_search_image"), for: .search, state: .normal)
         
-        let image = UIImage.image(withColor: UIColor.RGB_Float(r: 0.937255,g: 0.937255,b: 0.956863)!, size: CGSize.init(width: JKScreenWidth(), height: 66))
+        let image = UIImage.image(withColor: UIColor.RGB_Float(r: 0.937255,g: 0.937255,b: 0.956863)!, size: CGSize.init(width: getScreenWidth(), height: 66))
         self.setBackgroundImage(image, for: .any, barMetrics: .default)
         
         if let searchTextField: UITextField = self.value(forKey: "searchField") as? UITextField {

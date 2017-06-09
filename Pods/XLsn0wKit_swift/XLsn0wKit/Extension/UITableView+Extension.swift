@@ -11,7 +11,7 @@
 
 import UIKit
 
-extension UITableView{
+public extension UITableView {
     public func tableViewDisplayWithMsg(_ msg:String, ifNecessaryForRowCount rowCount:Int){
         if rowCount == 0 {
             let msgLabel = UILabel()

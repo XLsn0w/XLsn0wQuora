@@ -13,12 +13,12 @@ import Alamofire
 
 let timeoutIntervalForRequest:Double = 10//默认10s 网络请求超时时间
 
-@objc protocol XLsn0wNetworkingDelegate:NSObjectProtocol {
+@objc public protocol XLsn0wNetworkingDelegate:NSObjectProtocol {
     @objc optional func netWortDidSuccess(result:AnyObject, requestName:String, parameters:NSDictionary?);
     @objc optional func netWortDidFailed (result:AnyObject, error:Error?, requestName:String, parameters:NSDictionary?);
 }
 
-class XLsn0wNetworking: NSObject {
+open class XLsn0wNetworking: NSObject {
     var delegate:XLsn0wNetworkingDelegate?
     static var sessionManager:SessionManager?
     /**********************************************************************************************/
@@ -31,7 +31,7 @@ class XLsn0wNetworking: NSObject {
     ///   - url: 可以是字符串，也可以是URL
     ///   - parameters: 参数字典
     ///   - finishedCallback: 完成请求的回调
-    class func request(method:HTTPMethod, url:String, parameters:NSDictionary?, finishedCallback:  @escaping (_ result : AnyObject, _ error: Error?) -> ()) {
+    open class func request(method:HTTPMethod, url:String, parameters:NSDictionary?, finishedCallback:  @escaping (_ result : AnyObject, _ error: Error?) -> ()) {
         let config:URLSessionConfiguration = URLSessionConfiguration.default
         config.timeoutIntervalForRequest = timeoutIntervalForRequest
         sessionManager = SessionManager(configuration: config)
@@ -56,7 +56,7 @@ class XLsn0wNetworking: NSObject {
     ///   - requestName: 请求名字，一个成功的代理方法可以处理多个请求，所以用requestName来区分具体请求
     ///   - parameters: 参数字典
     ///   - delegate: 代理对象
-    class func requestDelegate(method:HTTPMethod, url:String, requestName:String, parameters:NSDictionary?, delegate:AnyObject) {
+    open class func requestDelegate(method:HTTPMethod, url:String, requestName:String, parameters:NSDictionary?, delegate:AnyObject) {
         let config:URLSessionConfiguration = URLSessionConfiguration.default
         config.timeoutIntervalForRequest = timeoutIntervalForRequest
         sessionManager = SessionManager(configuration: config)

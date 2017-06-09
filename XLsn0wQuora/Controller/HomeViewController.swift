@@ -87,7 +87,7 @@ class HomeViewController: UIViewController {
                     self.title = "今日要闻"
                 } else {
                     let date = try! DateInRegion.init(string: self.dataSource[num].model, format: DateFormat.custom("yyyyMMdd"))
-                    self.title = "\(date.month)月\(date.day)日 \(date.weekday.toWeekday())"
+                    self.title = "\(date?.month)月\(date?.day)日 \(date?.weekday.toWeekday())"
                 }
             })
             .addDisposableTo(dispose)
@@ -131,7 +131,8 @@ extension HomeViewController {
                 self.bannerView.imgUrlArr.value = arr
                 self.pageControl.numberOfPages = model.top_stories!.count
                 
-                XLsn0wLog(printObject: "\(arr)")
+               
+                
   
                 
                 self.refreshView?.endRefresh()
@@ -197,7 +198,7 @@ extension HomeViewController: UITableViewDelegate {
                 $0.font = UIFont.systemFont(ofSize: 15)
                 $0.textAlignment = .center
                 let date = try! DateInRegion.init(string: dataSource[section].model, format: DateFormat.custom("yyyyMMdd"))
-                $0.text = "\(date.month)月\(date.day)日 \(date.weekday.toWeekday())"
+                $0.text = "\(date?.month)月\(date?.day)日 \(date?.weekday.toWeekday())"
             }
         }
         return UIView()

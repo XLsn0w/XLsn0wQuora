@@ -12,8 +12,7 @@ import UIKit
 let kBackgroundViewKey = UnsafeRawPointer(bitPattern: "kBackgroundViewKey".hash)
 let kNavBarBottom = 64
 
-extension UINavigationBar
-{
+extension UINavigationBar {
     /// 设置导航栏背景颜色
     func wr_setBackgroundColor(color:UIColor)
     {

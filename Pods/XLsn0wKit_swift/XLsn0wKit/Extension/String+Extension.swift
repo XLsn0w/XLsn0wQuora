@@ -12,7 +12,7 @@
 import Foundation
 import UIKit
 
-extension String {
+public extension String {
     
     var length:Int{
         get {
@@ -41,7 +41,7 @@ extension String {
         return directoryName
     }
     
-    func currentWeekDay() -> String {
+    public func currentWeekDay() -> String {
         let weekDays = [ "星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"]
         var calendar = Calendar(identifier: .gregorian)
         let timeZone = TimeZone(identifier: "Asia/Shanghai")

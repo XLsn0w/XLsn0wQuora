@@ -11,7 +11,7 @@
 
 import Foundation
 /**************************************************************************************************/
-extension FileManager {
+public extension FileManager {
     
     func isDirectory(path: String) -> Bool {
         var isDirectory: ObjCBool = ObjCBool(false)
