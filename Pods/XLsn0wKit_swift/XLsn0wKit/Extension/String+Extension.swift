@@ -41,7 +41,7 @@ public extension String {
         return directoryName
     }
     
-    public func currentWeekDay() -> String {
+   public func currentWeekDay() -> String {
         let weekDays = [ "星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"]
         var calendar = Calendar(identifier: .gregorian)
         let timeZone = TimeZone(identifier: "Asia/Shanghai")
@@ -55,7 +55,7 @@ public extension String {
     }
     
     
-    func hexValue() -> Int {
+    public func hexValue() -> Int {
         let str = self.uppercased()
         var sum = 0
         for i in str.utf8 {

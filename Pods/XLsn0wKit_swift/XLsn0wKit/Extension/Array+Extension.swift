@@ -12,7 +12,7 @@ import Foundation
 /**************************************************************************************************/
 public extension Array {
     
-    mutating func addObject(fromArray array:[Element]?) -> Void {
+   public mutating func addObject(fromArray array:[Element]?) -> Void {
         if array != nil {
             for item in array! {
                 self.append(item)

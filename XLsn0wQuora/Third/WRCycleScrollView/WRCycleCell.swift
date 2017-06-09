@@ -10,8 +10,7 @@
 import UIKit
 import Kingfisher
  
-class WRCycleCell: UICollectionViewCell
-{
+class WRCycleCell: UICollectionViewCell {
     ///////////////////////////////////////////////////////
     // 对外提供的属性
     var localImgPath:String? {

@@ -33,7 +33,7 @@ PODS:
   - SwiftDate (4.1.2)
   - SwiftyJSON (3.1.4)
   - Then (2.1.0)
-  - XLsn0wKit_swift (1.0.7):
+  - XLsn0wKit_swift (1.0.8):
     - Alamofire
     - Kingfisher
     - SnapKit
@@ -80,7 +80,7 @@ SPEC CHECKSUMS:
   SwiftDate: 2dfdebd4f67ae71c9c3e2413ee3c56947f302858
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   Then: 8496793c8fcac95482b943909b440724c7d8d82c
-  XLsn0wKit_swift: 89661128ddbd059cd7bab3f6069e5fafe57bac5b
+  XLsn0wKit_swift: 455735ea918e4a907eab82c0689b52c854ac5f4c
 
 PODFILE CHECKSUM: bc4567667b237eda65fd0d19ed84ccd1aebcb9c5
 

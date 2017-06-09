@@ -23,28 +23,28 @@ public extension Date {
         return currentDate
     }
     
-    static func intervalToDateComponent(_ interval:TimeInterval) -> DateComponents {
+   public static func intervalToDateComponent(_ interval:TimeInterval) -> DateComponents {
         let date = Date(timeIntervalSince1970: interval)
         return dateToDateComponent(date)
     }
     
-    static func dateToDateComponent(_ date:Date) -> DateComponents{
+   public static func dateToDateComponent(_ date:Date) -> DateComponents{
         let cal = Calendar.current
         let calCom = (cal as NSCalendar).components([.year, .month, .day], from: date)
         return calCom
     }
     
-    static func numberOfDaysInMonthWithDate(_ date:Date)->Int{
+   public static func numberOfDaysInMonthWithDate(_ date:Date)->Int{
         let comp = (Calendar.current as NSCalendar).range(of: .day, in: .month, for: date)
         return comp.length
     }
     
-    static func numberOfDaysInMonthWithInterval(_ interval:TimeInterval)->Int{
+   public static func numberOfDaysInMonthWithInterval(_ interval:TimeInterval)->Int{
         let date = Date(timeIntervalSince1970: interval)
         return numberOfDaysInMonthWithDate(date)
     }
     
-    static func getFirstDayOfMonthWithDate(_ date:Date)->Date?{
+   public static func getFirstDayOfMonthWithDate(_ date:Date)->Date?{
         let cal = Calendar.current
         var comp = (cal as NSCalendar).components([.year, .month, .day], from: date)
         comp.day = 1

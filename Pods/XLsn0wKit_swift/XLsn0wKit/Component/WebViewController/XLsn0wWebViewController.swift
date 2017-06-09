@@ -3,15 +3,14 @@
 import UIKit
 import WebKit
 
-
-class XLsn0wWebViewController: UIViewController {
+open class XLsn0wWebViewController: UIViewController {
     
     var webView: WKWebView?
     var progressView: UIProgressView?
     
     
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         //        self.automaticallyAdjustsScrollViewInsets = false
@@ -68,15 +67,15 @@ class XLsn0wWebViewController: UIViewController {
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        let Url = Bundle.main.url(forResource: "test", withExtension: "html")
-           let Url = URL.init(string: "https://www.baidu.com")
+        let Url = Bundle.main.url(forResource: "WebViewTest", withExtension: "html")
+//           let Url = URL.init(string: "https://www.baidu.com")
         let request = URLRequest.init(url: Url!)
         _ = self.webView?.load(request)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         // Swift调用JS
@@ -90,7 +89,7 @@ class XLsn0wWebViewController: UIViewController {
     }
     
     
-    override func viewDidDisappear(_ animated: Bool) {
+    override open func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
         // 一定要调用，不然self会一直被强引用，就算释放webView也不能将self释放
@@ -121,7 +120,7 @@ class XLsn0wWebViewController: UIViewController {
     }
     
     // MARK - KVO
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "title" {
             self.navigationItem.title = self.webView?.title
         }else if keyPath == "estimatedProgress" {
@@ -135,7 +134,7 @@ class XLsn0wWebViewController: UIViewController {
     }
     
     
-    override func didReceiveMemoryWarning() {
+    override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 }
@@ -148,7 +147,7 @@ extension XLsn0wWebViewController: WKNavigationDelegate{
     // MARK - WKNavigationDelegate
     
     /// 发送请求前决定是否跳转的代理
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+   open func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         //        let hostName = navigationAction.request.url?.host?.lowercased()
         
         //        if (navigationAction.navigationType == WKNavigationType.linkActivated  && hostName?.contains(".baidu.com") == false) {
@@ -164,7 +163,7 @@ extension XLsn0wWebViewController: WKNavigationDelegate{
     }
     
     /// 收到响应后，决定是否跳转的代理
-    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+   open func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
         
         decisionHandler(WKNavigationResponsePolicy.allow)
         
@@ -173,7 +172,7 @@ extension XLsn0wWebViewController: WKNavigationDelegate{
     
     
     /// 接收到服务器跳转请求的代理
-    func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
+   open func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
         
         
         
@@ -187,7 +186,7 @@ extension XLsn0wWebViewController: WKNavigationDelegate{
     
     
     /// 准备加载页面
-    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+    open func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         
         self.progressView?.isHidden = false
         self.progressView?.alpha = 1.0
@@ -196,7 +195,7 @@ extension XLsn0wWebViewController: WKNavigationDelegate{
     }
     
     /// 准备加载失败
-    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+   open func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         
         weak var weakSelf = self
         UIView.animate(withDuration: 0.25, delay: 0.15, options: .curveEaseOut, animations: {
@@ -213,14 +212,14 @@ extension XLsn0wWebViewController: WKNavigationDelegate{
     
     
     /// 内容开始加载
-    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+    open func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         
         
         
     }
     
     /// 加载完成
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+    open func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         
         webView.evaluateJavaScript("showAlert('这是一个弹窗')") { (item, error) in
             if (error != nil) {
@@ -245,7 +244,7 @@ extension XLsn0wWebViewController: WKNavigationDelegate{
     }
     
     /// 加载失败
-    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+    open func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         
         weak var weakSelf = self
         UIView.animate(withDuration: 0.25, delay: 0.15, options: .curveEaseOut, animations: {
@@ -261,14 +260,14 @@ extension XLsn0wWebViewController: WKNavigationDelegate{
     }
     
     
-    func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+    open func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
         
         completionHandler(URLSession.AuthChallengeDisposition.performDefaultHandling, nil)
         
         
     }
     
-    func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
+    open func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
         
        
         
@@ -283,7 +282,7 @@ extension XLsn0wWebViewController: WKScriptMessageHandler {
     
     
     // JS调用swift注册的函数时回调，message包括JS传的数据
-    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+   open func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         if message.name.isEqual("AppModel") {
             
             // NSNumber, NSString, NSDate, NSArray,NSDictionary, and NSNull
@@ -297,7 +296,7 @@ extension XLsn0wWebViewController: WKUIDelegate {
     // MARK - WKUIDelegate
     
     // web已关闭
-    func webViewDidClose(_ webView: WKWebView) {
+   open func webViewDidClose(_ webView: WKWebView) {
         
         
         
@@ -307,7 +306,7 @@ extension XLsn0wWebViewController: WKUIDelegate {
     
     // 在JS端调用alert函数时(警告弹窗)，会触发此代理方法。message :JS端传的数据
     // 通过completionHandler()回调JS
-    func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
+   open func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
         
         let alertVC = UIAlertController.init(title: "提示", message: message, preferredStyle: .alert)
         alertVC.addAction(UIAlertAction.init(title: "确定", style: .default, handler: { (action) in
@@ -322,7 +321,7 @@ extension XLsn0wWebViewController: WKUIDelegate {
     
     // JS端调用confirm函数时(确认、取消弹窗)，会触发此方法
     // completionHandler(true)返回结果,message :JS端传的数据
-    func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
+    open func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
         
         let alertVC = UIAlertController.init(title: "提示", message: message, preferredStyle: .alert)
         alertVC.addAction(UIAlertAction.init(title: "确定", style: .default, handler: { (action) in
@@ -338,7 +337,7 @@ extension XLsn0wWebViewController: WKUIDelegate {
     
     
     // JS调用prompt函数(输入框)时回调，completionHandler回调结果
-    func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
+   open func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
         
         let alertVC = UIAlertController.init(title: "TextInput", message: prompt, preferredStyle: .alert)
         alertVC.addTextField { (textField) in

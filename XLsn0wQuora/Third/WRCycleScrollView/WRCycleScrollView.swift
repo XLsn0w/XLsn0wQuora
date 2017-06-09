@@ -1,11 +1,3 @@
-//
-//  WRCycleScrollView.swift
-//  WRCycleScrollViewDemo
-//
-//  Created by wangrui on 2017/5/12.
-//  Copyright © 2017年 wangrui. All rights reserved.
-//
-//  Github地址：https://github.com/wangrui460/WRCycleScrollView
 
 import UIKit
 
@@ -14,16 +6,14 @@ enum ImagesType:Int {
     case LOCAL = 1
 }
 
-@objc protocol WRCycleScrollViewDelegate
-{
+@objc protocol WRCycleScrollViewDelegate {
     /// 点击图片回调
     @objc optional func cycleScrollViewDidSelect(at index:Int, cycleScrollView:WRCycleScrollView)
     /// 图片滚动回调
     @objc optional func cycleScrollViewDidScroll(to index:Int, cycleScrollView:WRCycleScrollView)
 }
 
-class WRCycleScrollView: UIView
-{
+class WRCycleScrollView: UIView {
     ///////////////////////////////////////////////////////
     // 对外提供的属性
     weak var delegate:WRCycleScrollViewDelegate?

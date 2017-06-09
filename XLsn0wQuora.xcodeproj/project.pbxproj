@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		350507701EEA52D800BED934 /* WRProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3505076F1EEA52D800BED934 /* WRProxy.swift */; };
 		350C86421EEA377400FED4AB /* banner-01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 350C85FC1EEA377400FED4AB /* banner-01.jpg */; };
 		350C86431EEA377400FED4AB /* banner-02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 350C85FD1EEA377400FED4AB /* banner-02.jpg */; };
 		350C86441EEA377400FED4AB /* banner-03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 350C85FE1EEA377400FED4AB /* banner-03.jpg */; };
@@ -237,7 +238,6 @@
 		357AA9421ED54FAE005077BA /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357AA9381ED54FAE005077BA /* UIViewController+MMDrawerController.m */; };
 		357AA9431ED54FAE005077BA /* WRCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357AA93A1ED54FAE005077BA /* WRCycleCell.swift */; };
 		357AA9441ED54FAE005077BA /* WRCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357AA93B1ED54FAE005077BA /* WRCycleScrollView.swift */; };
-		357AA9451ED54FAE005077BA /* WRProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357AA93C1ED54FAE005077BA /* WRProxy.swift */; };
 		357AA9461ED54FAE005077BA /* UINavigationBar+WRAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357AA93E1ED54FAE005077BA /* UINavigationBar+WRAddition.swift */; };
 		3591B2721ED3BFED00179D6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591B2711ED3BFED00179D6F /* AppDelegate.swift */; };
 		3591B2791ED3BFED00179D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3591B2781ED3BFED00179D6F /* Assets.xcassets */; };
@@ -280,6 +280,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3505076F1EEA52D800BED934 /* WRProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRProxy.swift; sourceTree = "<group>"; };
 		350C85FC1EEA377400FED4AB /* banner-01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "banner-01.jpg"; sourceTree = "<group>"; };
 		350C85FD1EEA377400FED4AB /* banner-02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "banner-02.jpg"; sourceTree = "<group>"; };
 		350C85FE1EEA377400FED4AB /* banner-03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "banner-03.jpg"; sourceTree = "<group>"; };
@@ -516,7 +517,6 @@
 		357AA9381ED54FAE005077BA /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		357AA93A1ED54FAE005077BA /* WRCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleCell.swift; sourceTree = "<group>"; };
 		357AA93B1ED54FAE005077BA /* WRCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleScrollView.swift; sourceTree = "<group>"; };
-		357AA93C1ED54FAE005077BA /* WRProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRProxy.swift; sourceTree = "<group>"; };
 		357AA93E1ED54FAE005077BA /* UINavigationBar+WRAddition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+WRAddition.swift"; sourceTree = "<group>"; };
 		3591B26E1ED3BFED00179D6F /* XLsn0wQuora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0wQuora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3591B2711ED3BFED00179D6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -1288,9 +1288,9 @@
 		357AA9391ED54FAE005077BA /* WRCycleScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				357AA93A1ED54FAE005077BA /* WRCycleCell.swift */,
 				357AA93B1ED54FAE005077BA /* WRCycleScrollView.swift */,
-				357AA93C1ED54FAE005077BA /* WRProxy.swift */,
+				357AA93A1ED54FAE005077BA /* WRCycleCell.swift */,
+				3505076F1EEA52D800BED934 /* WRProxy.swift */,
 			);
 			path = WRCycleScrollView;
 			sourceTree = "<group>";
@@ -1324,16 +1324,16 @@
 		3591B2701ED3BFED00179D6F /* XLsn0wQuora */ = {
 			isa = PBXGroup;
 			children = (
-				350C86881EEA427F00FED4AB /* Classes */,
-				350C86831EEA3C6400FED4AB /* PublicMacro */,
-				350C85FA1EEA377400FED4AB /* Resources */,
-				35BB81DA1EE91E9100804A2B /* Objective-C */,
 				353C82071ED3D1880007188A /* Bridging-Header */,
 				353E52871ED3C36D008BA28E /* UIApplication */,
 				35BB81E71EE91EAF00804A2B /* Swift */,
 				357AA92E1ED54FAE005077BA /* Third */,
 				35D181DD1ED4361900C9DC24 /* APIManager */,
 				35D181E51ED4361900C9DC24 /* Extension */,
+				350C86881EEA427F00FED4AB /* Classes */,
+				350C86831EEA3C6400FED4AB /* PublicMacro */,
+				350C85FA1EEA377400FED4AB /* Resources */,
+				35BB81DA1EE91E9100804A2B /* Objective-C */,
 			);
 			path = XLsn0wQuora;
 			sourceTree = "<group>";
@@ -1669,7 +1669,6 @@
 				350C873D1EEA427F00FED4AB /* UIButton+Extension.swift in Sources */,
 				350C873A1EEA427F00FED4AB /* DispatchQueue+Extension.swift in Sources */,
 				350C874A1EEA427F00FED4AB /* NavigationBar.swift in Sources */,
-				357AA9451ED54FAE005077BA /* WRProxy.swift in Sources */,
 				350C87DD1EEA452D00FED4AB /* DetailViewController.swift in Sources */,
 				350C87AA1EEA427F00FED4AB /* MeViewController.swift in Sources */,
 				350C87DE1EEA452D00FED4AB /* HomeViewController.swift in Sources */,
@@ -1758,6 +1757,7 @@
 				35BB82081EE91EF600804A2B /* ChooseItemModel.swift in Sources */,
 				35BB81E61EE91EA100804A2B /* ReferenceViewController.m in Sources */,
 				350C87B61EEA428000FED4AB /* RegisterView.swift in Sources */,
+				350507701EEA52D800BED934 /* WRProxy.swift in Sources */,
 				350C87EF1EEA452D00FED4AB /* RefreshView.swift in Sources */,
 				350C876A1EEA427F00FED4AB /* ClassifySingleListCellViewModel.swift in Sources */,
 				350C87B41EEA428000FED4AB /* MeHeaderViewModel.swift in Sources */,
