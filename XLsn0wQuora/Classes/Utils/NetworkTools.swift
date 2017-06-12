@@ -11,7 +11,6 @@ import Alamofire
 import SwiftyJSON
 import QorumLogs
 
-
 typealias FinishedOperation = (_ success:Bool,_ result:JSON?,_ error:Error?) ->()
 
 class NetworkTools: NSObject {

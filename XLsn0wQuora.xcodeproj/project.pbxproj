@@ -15,8 +15,8 @@
 		350507851EEA6E0900BED934 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3505077F1EEA6E0900BED934 /* MMDrawerController.m */; };
 		350507861EEA6E0900BED934 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 350507811EEA6E0900BED934 /* MMDrawerVisualState.m */; };
 		350507871EEA6E0900BED934 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 350507831EEA6E0900BED934 /* UIViewController+MMDrawerController.m */; };
+		350507B11EEA946C00BED934 /* QuoraTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350507B01EEA946C00BED934 /* QuoraTabBarController.swift */; };
 		350C86851EEA3C9200FED4AB /* PublicMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C86841EEA3C9200FED4AB /* PublicMacro.swift */; };
-		350C86871EEA426800FED4AB /* SeverAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C86861EEA426800FED4AB /* SeverAPI.swift */; };
 		350C87391EEA427F00FED4AB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C868A1EEA427F00FED4AB /* Date+Extension.swift */; };
 		350C873A1EEA427F00FED4AB /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C868B1EEA427F00FED4AB /* DispatchQueue+Extension.swift */; };
 		350C873B1EEA427F00FED4AB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C868C1EEA427F00FED4AB /* String+Extension.swift */; };
@@ -147,11 +147,6 @@
 		350C87B81EEA428000FED4AB /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C872D1EEA427F00FED4AB /* AudioPlayer.swift */; };
 		350C87B91EEA428000FED4AB /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C872E1EEA427F00FED4AB /* AudioRecorder.swift */; };
 		350C87BA1EEA428000FED4AB /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C872F1EEA427F00FED4AB /* NetworkTools.swift */; };
-		350C87BB1EEA428000FED4AB /* ExchangeToModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C87321EEA427F00FED4AB /* ExchangeToModel.swift */; };
-		350C87BC1EEA428000FED4AB /* NSObject+KeyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C87331EEA427F00FED4AB /* NSObject+KeyValue.swift */; };
-		350C87BD1EEA428000FED4AB /* NSObject+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C87351EEA427F00FED4AB /* NSObject+Property.swift */; };
-		350C87BE1EEA428000FED4AB /* PropertyCodeMake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C87361EEA427F00FED4AB /* PropertyCodeMake.swift */; };
-		350C87BF1EEA428000FED4AB /* PropertyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C87381EEA427F00FED4AB /* PropertyModel.swift */; };
 		350C87DB1EEA452D00FED4AB /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C87C21EEA452D00FED4AB /* BaseNavigationController.swift */; };
 		350C87DC1EEA452D00FED4AB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C87C31EEA452D00FED4AB /* BaseViewController.swift */; };
 		350C87DD1EEA452D00FED4AB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C87C41EEA452D00FED4AB /* DetailViewController.swift */; };
@@ -225,8 +220,8 @@
 		350507811EEA6E0900BED934 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
 		350507821EEA6E0900BED934 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
 		350507831EEA6E0900BED934 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		350507B01EEA946C00BED934 /* QuoraTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoraTabBarController.swift; sourceTree = "<group>"; };
 		350C86841EEA3C9200FED4AB /* PublicMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicMacro.swift; sourceTree = "<group>"; };
-		350C86861EEA426800FED4AB /* SeverAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeverAPI.swift; sourceTree = "<group>"; };
 		350C868A1EEA427F00FED4AB /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		350C868B1EEA427F00FED4AB /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
 		350C868C1EEA427F00FED4AB /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -357,11 +352,6 @@
 		350C872D1EEA427F00FED4AB /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		350C872E1EEA427F00FED4AB /* AudioRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		350C872F1EEA427F00FED4AB /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
-		350C87321EEA427F00FED4AB /* ExchangeToModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeToModel.swift; sourceTree = "<group>"; };
-		350C87331EEA427F00FED4AB /* NSObject+KeyValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+KeyValue.swift"; sourceTree = "<group>"; };
-		350C87351EEA427F00FED4AB /* NSObject+Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Property.swift"; sourceTree = "<group>"; };
-		350C87361EEA427F00FED4AB /* PropertyCodeMake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyCodeMake.swift; sourceTree = "<group>"; };
-		350C87381EEA427F00FED4AB /* PropertyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyModel.swift; sourceTree = "<group>"; };
 		350C87C21EEA452D00FED4AB /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		350C87C31EEA452D00FED4AB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		350C87C41EEA452D00FED4AB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -477,13 +467,12 @@
 		350C86881EEA427F00FED4AB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				350C86911EEA427F00FED4AB /* Module */,
 				350C87C01EEA452D00FED4AB /* Controller */,
 				350C87CD1EEA452D00FED4AB /* Model */,
 				350C87D41EEA452D00FED4AB /* View */,
 				350C86891EEA427F00FED4AB /* Categories */,
-				350C86911EEA427F00FED4AB /* Module */,
 				350C872C1EEA427F00FED4AB /* Utils */,
-				350C87301EEA427F00FED4AB /* XLsn0wConvertModel */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -491,8 +480,8 @@
 		350C86891EEA427F00FED4AB /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				350C868A1EEA427F00FED4AB /* Date+Extension.swift */,
 				350C868B1EEA427F00FED4AB /* DispatchQueue+Extension.swift */,
+				350C868A1EEA427F00FED4AB /* Date+Extension.swift */,
 				350C868C1EEA427F00FED4AB /* String+Extension.swift */,
 				350C868D1EEA427F00FED4AB /* UIBarButtonItem+Extension.swift */,
 				350C868E1EEA427F00FED4AB /* UIButton+Extension.swift */,
@@ -911,42 +900,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		350C87301EEA427F00FED4AB /* XLsn0wConvertModel */ = {
-			isa = PBXGroup;
-			children = (
-				350C87311EEA427F00FED4AB /* ExChangeToModel */,
-				350C87341EEA427F00FED4AB /* PropertyCodeMake */,
-				350C87371EEA427F00FED4AB /* PropertyModel */,
-			);
-			path = XLsn0wConvertModel;
-			sourceTree = "<group>";
-		};
-		350C87311EEA427F00FED4AB /* ExChangeToModel */ = {
-			isa = PBXGroup;
-			children = (
-				350C87321EEA427F00FED4AB /* ExchangeToModel.swift */,
-				350C87331EEA427F00FED4AB /* NSObject+KeyValue.swift */,
-			);
-			path = ExChangeToModel;
-			sourceTree = "<group>";
-		};
-		350C87341EEA427F00FED4AB /* PropertyCodeMake */ = {
-			isa = PBXGroup;
-			children = (
-				350C87351EEA427F00FED4AB /* NSObject+Property.swift */,
-				350C87361EEA427F00FED4AB /* PropertyCodeMake.swift */,
-			);
-			path = PropertyCodeMake;
-			sourceTree = "<group>";
-		};
-		350C87371EEA427F00FED4AB /* PropertyModel */ = {
-			isa = PBXGroup;
-			children = (
-				350C87381EEA427F00FED4AB /* PropertyModel.swift */,
-			);
-			path = PropertyModel;
-			sourceTree = "<group>";
-		};
 		350C87C01EEA452D00FED4AB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -1018,6 +971,7 @@
 			isa = PBXGroup;
 			children = (
 				3591B2711ED3BFED00179D6F /* AppDelegate.swift */,
+				350507B01EEA946C00BED934 /* QuoraTabBarController.swift */,
 				35D181B51ED4206C00C9DC24 /* Main.storyboard */,
 				3591B2781ED3BFED00179D6F /* Assets.xcassets */,
 				3591B27A1ED3BFEE00179D6F /* LaunchScreen.storyboard */,
@@ -1123,7 +1077,6 @@
 		35D181DD1ED4361900C9DC24 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
-				350C86861EEA426800FED4AB /* SeverAPI.swift */,
 				35D181DE1ED4361900C9DC24 /* APIManager.swift */,
 				35D3F64B1EE93AE1007C5AFF /* XLsn0wQuoraRequest.swift */,
 			);
@@ -1318,7 +1271,6 @@
 				350507851EEA6E0900BED934 /* MMDrawerController.m in Sources */,
 				35D3F64C1EE93AE1007C5AFF /* XLsn0wQuoraRequest.swift in Sources */,
 				350C87421EEA427F00FED4AB /* BannerCarouseViewModel.swift in Sources */,
-				350C87BB1EEA428000FED4AB /* ExchangeToModel.swift in Sources */,
 				350C87861EEA427F00FED4AB /* RecordButton.swift in Sources */,
 				350C873D1EEA427F00FED4AB /* UIButton+Extension.swift in Sources */,
 				350C873A1EEA427F00FED4AB /* DispatchQueue+Extension.swift in Sources */,
@@ -1342,7 +1294,6 @@
 				350C876E1EEA427F00FED4AB /* SingleGiftCell.swift in Sources */,
 				350C87A31EEA427F00FED4AB /* ImageChatCellViewModel.swift in Sources */,
 				350C87A91EEA427F00FED4AB /* loginViewController.swift in Sources */,
-				350C87BE1EEA428000FED4AB /* PropertyCodeMake.swift in Sources */,
 				350C874F1EEA427F00FED4AB /* PopoverSortCellViewModel.swift in Sources */,
 				35D3F64A1EE92D81007C5AFF /* RJHTTPDownloader.m in Sources */,
 				35BB82161EE91EF600804A2B /* UITableView+Extension.swift in Sources */,
@@ -1357,7 +1308,6 @@
 				350C87701EEA427F00FED4AB /* SingleGiftColumnCell.swift in Sources */,
 				350C87961EEA427F00FED4AB /* NSObject_Extension.swift in Sources */,
 				350C87991EEA427F00FED4AB /* ExpressionMessage.swift in Sources */,
-				350C87BF1EEA428000FED4AB /* PropertyModel.swift in Sources */,
 				35D181FA1ED4361900C9DC24 /* ToModelExtension.swift in Sources */,
 				350C87681EEA427F00FED4AB /* StrategyViewController.swift in Sources */,
 				350C87A81EEA427F00FED4AB /* VoiceChatCellViewModel.swift in Sources */,
@@ -1368,7 +1318,6 @@
 				350C87951EEA427F00FED4AB /* NSAttributedString+Extension.swift in Sources */,
 				350C87AC1EEA427F00FED4AB /* SettingViewController.swift in Sources */,
 				350C87541EEA427F00FED4AB /* LSXQRCodeView.swift in Sources */,
-				350C86871EEA426800FED4AB /* SeverAPI.swift in Sources */,
 				350C87431EEA427F00FED4AB /* BaseClassifyViewCell.swift in Sources */,
 				350C87E61EEA452D00FED4AB /* News.swift in Sources */,
 				350C87EE1EEA452D00FED4AB /* ListTableViewCell.swift in Sources */,
@@ -1427,7 +1376,6 @@
 				350C874C1EEA427F00FED4AB /* PopoverClassifyCommon.swift in Sources */,
 				350C87511EEA427F00FED4AB /* PopoverSortClassifyViewModel.swift in Sources */,
 				35BB82121EE91EF600804A2B /* NSDate+.swift in Sources */,
-				350C87BD1EEA428000FED4AB /* NSObject+Property.swift in Sources */,
 				35D3F6461EE9246A007C5AFF /* ZhihuAPI.swift in Sources */,
 				350C87B11EEA427F00FED4AB /* MeFooterView.swift in Sources */,
 				350C876D1EEA427F00FED4AB /* ClassifySingleListSectionView.swift in Sources */,
@@ -1442,7 +1390,6 @@
 				350C87621EEA427F00FED4AB /* TopicViewModel.swift in Sources */,
 				350C879E1EEA427F00FED4AB /* UserModel.swift in Sources */,
 				350C87391EEA427F00FED4AB /* Date+Extension.swift in Sources */,
-				350C87BC1EEA428000FED4AB /* NSObject+KeyValue.swift in Sources */,
 				350C87761EEA427F00FED4AB /* StrategyColumnSubCell.swift in Sources */,
 				35BB820E1EE91EF600804A2B /* OperateAccountBookView.swift in Sources */,
 				35BB82141EE91EF600804A2B /* String+.swift in Sources */,
@@ -1470,6 +1417,7 @@
 				350C87471EEA427F00FED4AB /* BaseGoodsViewController.swift in Sources */,
 				350C87A21EEA427F00FED4AB /* ExpressionChatCellViewModel.swift in Sources */,
 				350C87771EEA427F00FED4AB /* StrategyColumnSubCellViewModel.swift in Sources */,
+				350507B11EEA946C00BED934 /* QuoraTabBarController.swift in Sources */,
 				350C87EA1EEA452D00FED4AB /* ThemeModel.swift in Sources */,
 				350C874B1EEA427F00FED4AB /* CoverView.swift in Sources */,
 				350C879B1EEA427F00FED4AB /* MessageModel.swift in Sources */,
@@ -1594,7 +1542,6 @@
 			baseConfigurationReference = 9EAC51129CBD0357AE5BC9A0 /* Pods-XLsn0wQuora.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7L4YK5W6WP;
 				INFOPLIST_FILE = XLsn0wQuora/Info.plist;
@@ -1613,7 +1560,6 @@
 			baseConfigurationReference = E80546247F30C9421EB41B76 /* Pods-XLsn0wQuora.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7L4YK5W6WP;
 				INFOPLIST_FILE = XLsn0wQuora/Info.plist;

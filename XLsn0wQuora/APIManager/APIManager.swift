@@ -9,6 +9,12 @@
 import Foundation
 import Moya
 
+//: URL基地址
+let BASE_URL = "http://english.6ag.cn/"
+
+//: 登录
+let LOGIN = BASE_URL + "api/auth/login.api"
+
 enum APIManager {
     case getLaunchImg
     case getNewsList

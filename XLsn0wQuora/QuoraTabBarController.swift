@@ -1,22 +1,23 @@
 //
-//  MainViewController.swift
-//  小礼品
+//  QUoraTabBarController.swift
+//  XLsn0wQuora
 //
-//  Created by 李莎鑫 on 2017/4/15.
-//  Copyright © 2017年 李莎鑫. All rights reserved.
+//  Created by XLsn0w on 2017/6/9.
+//  Copyright © 2017年 XLsn0w. All rights reserved.
 //
 
 import UIKit
+import XLsn0wKit_swift
 
-class GiftMainViewController: UITabBarController {
+class QuoraTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         addChildViewController()
     }
-
+    
     private func addChildViewController() {
-        addChildViewController(controller: GiftHomeViewController(), title: "小礼品", imageName: "tabbar_home")
+        addChildViewController(controller: GiftHomeViewController(), title: "首页", imageName: "tabbar_home")
         addChildViewController(controller: HotViewController(), title: "热门", imageName: "tabbar_gift")
         addChildViewController(controller: ClassifyViewController(), title: "分类", imageName: "tabbar_category")
         addChildViewController(controller: MeViewController(), title: "我", imageName: "tabbar_me")
@@ -30,6 +31,11 @@ class GiftMainViewController: UITabBarController {
         let nav = NavigationController()
         nav.addChildViewController(controller)
         addChildViewController(nav)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 
 }

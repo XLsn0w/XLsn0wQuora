@@ -49,7 +49,6 @@ import SnapKit
 import XLsn0wKit_swift
 import QorumLogs
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -62,38 +61,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let SPLASHIMAGE = "SPLASHIMAGE"
     let drawerController = DrawerController()
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         UIApplication.shared.statusBarStyle = .lightContent
-//        addWindow()
+        addWindow()
+
+        
 //        XLsn0wQuoraRequest.requestSplashImage(reqName: requestSplashImage, delegate: self)
 //        addAdvertisement()
 //        removeAdvertisement()
-        
+    
+          setupPrintLog()
+//        setupRootViewController()
+//        setupGlobalStyle()
+//        setupGlobalNotice()
         
         
 
         
-        
-        //: 配置打印
-        setupPrintLog()
-        //: 配置控制器
-        setupRootViewController()
-        //: 配置主题样式
-        setupGlobalStyle()
-        //: 配置系统通知
-        setupGlobalNotice()
-        
-        
-        
-        
+
         return true
     }
-    
-   
 }
-    
-//MARK: 程序更新
+
+// MARK: - AppDelegate extension
 extension AppDelegate {
 
     fileprivate func setupPrintLog() {
@@ -104,9 +94,7 @@ extension AppDelegate {
     fileprivate func setupRootViewController() {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        
-        window?.rootViewController = MainViewController()
-        
+        window?.rootViewController = GiftMainViewController()
     }
     
     //: 设置主题样式
@@ -123,8 +111,7 @@ extension AppDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(changeDefaultRootViewController(notification:)), name: NSNotification.Name(rawValue: SystemChangeRootViewControllerNotification), object: nil)
         
     }
-    
-    
+
     //MARK: 登陆业务逻辑
     //: 新特性
     func isNewFeatureVersion() -> Bool {
@@ -225,8 +212,7 @@ extension AppDelegate {
     }
     
     /// 移除广告
-    fileprivate func removeAdvertisement()
-    {
+    fileprivate func removeAdvertisement() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute:
             {
                 UIView.animate(withDuration: 1.0, animations:
@@ -250,7 +236,7 @@ extension AppDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)//init
         window?.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()
-        window?.rootViewController = drawerController
+        window?.rootViewController = QuoraTabBarController()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

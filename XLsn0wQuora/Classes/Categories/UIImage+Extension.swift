@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIImage {
+public extension UIImage {
     
     class func image(withColor color: UIColor,withSize size: CGSize) -> UIImage {
         

@@ -141,9 +141,9 @@ extension AccountModel {
             if result["status"] == "success" {
                 
                 //: 字典转模型
-                let account = ExchangeToModel.model(withClassName: "AccountModel", withDictionary: result["result"].dictionaryObject!) as! AccountModel
-                //: 存储用户信息
-                account.saveAccountInfo()
+//                let account = ExchangeToModel.model(withClassName: "AccountModel", withDictionary: result["result"].dictionaryObject!) as! AccountModel
+//                //: 存储用户信息
+//                account.saveAccountInfo()
                 
                 finished(true,"登陆成功")
             }

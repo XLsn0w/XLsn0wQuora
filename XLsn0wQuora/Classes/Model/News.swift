@@ -62,8 +62,7 @@ extension News {
         }
         
         var top_stories:[Story]?
-        if let top_storiesDicts = json["top_stories"] as? [[String:AnyObject]]
-        {
+        if let top_storiesDicts = json["top_stories"] as? [[String:AnyObject]] {
             top_stories = top_storiesDicts.map({ (tempJson) -> Story in
                 return Story.parseJson(json: tempJson)
             })

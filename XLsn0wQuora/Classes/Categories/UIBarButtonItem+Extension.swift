@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIBarButtonItem{
+extension UIBarButtonItem {
     //: 遍历构造方法
     convenience init(_ imageName:String,target: Any?,action: Selector) {
         let button = UIButton(type: .custom)

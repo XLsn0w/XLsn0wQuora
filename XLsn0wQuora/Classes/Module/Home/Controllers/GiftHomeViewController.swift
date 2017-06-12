@@ -69,6 +69,8 @@ class GiftHomeViewController: UIViewController {
     private func setupHomeView() {
         view.backgroundColor = SystemGlobalBackgroundColor
         
+        self.title = "xxxx";
+        
         navigationItem.leftBarButtonItem = UIBarButtonItem("ico_camera", target: self, action: #selector(scanButtonClick))
         navigationItem.rightBarButtonItem = UIBarButtonItem("icon_navigation_search",target: self,action: #selector(searchButtonClick))
         
