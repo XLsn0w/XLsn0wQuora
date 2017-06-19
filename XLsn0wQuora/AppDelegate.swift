@@ -62,7 +62,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let drawerController = DrawerController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        UIApplication.shared.statusBarStyle = .lightContent
+        
+//        默认的黑色（UIStatusBarStyleDefault）
+//        白色（UIStatusBarStyleLightContent）
+//        UIApplication.shared.statusBarStyle = .lightContent
+        UIApplication.shared.statusBarStyle = .default
+        
+        
+        
         addWindow()
 
         
@@ -82,7 +89,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
         
 
+        
+        
         return true
+    }
+    
+    
+    
+    
+    func CustomUncaughtExceptionHandler() -> @convention(c) (NSException) -> Void {
+        return { (exception) -> Void in
+            let arr = exception.callStackSymbols//得到当前调用栈信息
+            let reason = exception.reason//非常重要，就是崩溃的原因
+            let name = exception.name//异常类型
+            
+            NSLog("exception type : \(name) \n crash reason : \(reason) \n call stack info : \(arr)");
+            
+            
+        }
     }
 }
 
@@ -239,7 +263,10 @@ extension AppDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)//init
         window?.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()
-        window?.rootViewController = QuoraTabBarController()
+//        window?.rootViewController = QuoraTabBarController()
+        
+        
+        window?.rootViewController = UINavigationController.init(rootViewController: QuoraTableViewController())
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

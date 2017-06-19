@@ -169,6 +169,18 @@
 		350C87EE1EEA452D00FED4AB /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C87D81EEA452D00FED4AB /* ListTableViewCell.swift */; };
 		350C87EF1EEA452D00FED4AB /* RefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C87D91EEA452D00FED4AB /* RefreshView.swift */; };
 		350C87F01EEA452D00FED4AB /* ThemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C87DA1EEA452D00FED4AB /* ThemeTableViewCell.swift */; };
+		35327CEA1EF7A3040009EDC6 /* UIImageView+JKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 35327CE91EF7A3040009EDC6 /* UIImageView+JKImage.m */; };
+		35327CED1EF7A3890009EDC6 /* UIBezierPathDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 35327CEC1EF7A3890009EDC6 /* UIBezierPathDemo.m */; };
+		35327CF01EF7A4A70009EDC6 /* WXPullView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35327CEF1EF7A4A70009EDC6 /* WXPullView.m */; };
+		35327CF41EF7ABDB0009EDC6 /* YWDrawLineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35327CF31EF7ABDB0009EDC6 /* YWDrawLineController.swift */; };
+		35327CF61EF7AC0D0009EDC6 /* YWWaterWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35327CF51EF7AC0D0009EDC6 /* YWWaterWaveView.swift */; };
+		35327CF81EF7AC170009EDC6 /* YWFireAnimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35327CF71EF7AC170009EDC6 /* YWFireAnimController.swift */; };
+		35327CFA1EF7AC300009EDC6 /* YWSpringAnimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35327CF91EF7AC300009EDC6 /* YWSpringAnimViewController.swift */; };
+		35327CFD1EF7AC840009EDC6 /* YWBasicAnimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35327CFC1EF7AC840009EDC6 /* YWBasicAnimController.swift */; };
+		35327CFF1EF7AC890009EDC6 /* YWKeyframeAnimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35327CFE1EF7AC890009EDC6 /* YWKeyframeAnimController.swift */; };
+		35327D011EF7AC940009EDC6 /* YWTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35327D001EF7AC940009EDC6 /* YWTransitionViewController.swift */; };
+		35327D031EF7ACD10009EDC6 /* jquery-3.2.1.js in Resources */ = {isa = PBXBuildFile; fileRef = 35327D021EF7ACD10009EDC6 /* jquery-3.2.1.js */; };
+		35327D051EF7AF0B0009EDC6 /* QuoraTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35327D041EF7AF0B0009EDC6 /* QuoraTableViewController.swift */; };
 		3591B2721ED3BFED00179D6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591B2711ED3BFED00179D6F /* AppDelegate.swift */; };
 		3591B2791ED3BFED00179D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3591B2781ED3BFED00179D6F /* Assets.xcassets */; };
 		3591B27C1ED3BFEE00179D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3591B27A1ED3BFEE00179D6F /* LaunchScreen.storyboard */; };
@@ -424,6 +436,21 @@
 		350C87D81EEA452D00FED4AB /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		350C87D91EEA452D00FED4AB /* RefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshView.swift; sourceTree = "<group>"; };
 		350C87DA1EEA452D00FED4AB /* ThemeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeTableViewCell.swift; sourceTree = "<group>"; };
+		35327CE81EF7A3040009EDC6 /* UIImageView+JKImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JKImage.h"; sourceTree = "<group>"; };
+		35327CE91EF7A3040009EDC6 /* UIImageView+JKImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JKImage.m"; sourceTree = "<group>"; };
+		35327CEB1EF7A3890009EDC6 /* UIBezierPathDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathDemo.h; sourceTree = "<group>"; };
+		35327CEC1EF7A3890009EDC6 /* UIBezierPathDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathDemo.m; sourceTree = "<group>"; };
+		35327CEE1EF7A4A70009EDC6 /* WXPullView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPullView.h; sourceTree = "<group>"; };
+		35327CEF1EF7A4A70009EDC6 /* WXPullView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXPullView.m; sourceTree = "<group>"; };
+		35327CF31EF7ABDB0009EDC6 /* YWDrawLineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWDrawLineController.swift; sourceTree = "<group>"; };
+		35327CF51EF7AC0D0009EDC6 /* YWWaterWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWWaterWaveView.swift; sourceTree = "<group>"; };
+		35327CF71EF7AC170009EDC6 /* YWFireAnimController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWFireAnimController.swift; sourceTree = "<group>"; };
+		35327CF91EF7AC300009EDC6 /* YWSpringAnimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWSpringAnimViewController.swift; sourceTree = "<group>"; };
+		35327CFC1EF7AC840009EDC6 /* YWBasicAnimController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWBasicAnimController.swift; sourceTree = "<group>"; };
+		35327CFE1EF7AC890009EDC6 /* YWKeyframeAnimController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWKeyframeAnimController.swift; sourceTree = "<group>"; };
+		35327D001EF7AC940009EDC6 /* YWTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWTransitionViewController.swift; sourceTree = "<group>"; };
+		35327D021EF7ACD10009EDC6 /* jquery-3.2.1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-3.2.1.js"; sourceTree = "<group>"; };
+		35327D041EF7AF0B0009EDC6 /* QuoraTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoraTableViewController.swift; sourceTree = "<group>"; };
 		353C82081ED3D1980007188A /* XLsn0wQuora-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XLsn0wQuora-Bridging-Header.h"; sourceTree = "<group>"; };
 		3591B26E1ED3BFED00179D6F /* XLsn0wQuora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0wQuora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3591B2711ED3BFED00179D6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -1027,6 +1054,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		35327CE41EF7A1AC0009EDC6 /* CAShapeLayer */ = {
+			isa = PBXGroup;
+			children = (
+				35327CF51EF7AC0D0009EDC6 /* YWWaterWaveView.swift */,
+			);
+			path = CAShapeLayer;
+			sourceTree = "<group>";
+		};
+		35327CF21EF7A90F0009EDC6 /* UIBezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				35327CF31EF7ABDB0009EDC6 /* YWDrawLineController.swift */,
+			);
+			path = UIBezierPath;
+			sourceTree = "<group>";
+		};
+		35327CFB1EF7AC670009EDC6 /* CATransition */ = {
+			isa = PBXGroup;
+			children = (
+				35327D001EF7AC940009EDC6 /* YWTransitionViewController.swift */,
+			);
+			path = CATransition;
+			sourceTree = "<group>";
+		};
 		353C82071ED3D1880007188A /* Bridging-Header */ = {
 			isa = PBXGroup;
 			children = (
@@ -1040,6 +1091,7 @@
 			children = (
 				3591B2711ED3BFED00179D6F /* AppDelegate.swift */,
 				350507B01EEA946C00BED934 /* QuoraTabBarController.swift */,
+				35327D041EF7AF0B0009EDC6 /* QuoraTableViewController.swift */,
 				35D181B51ED4206C00C9DC24 /* Main.storyboard */,
 				3591B2781ED3BFED00179D6F /* Assets.xcassets */,
 				3591B27A1ED3BFEE00179D6F /* LaunchScreen.storyboard */,
@@ -1073,15 +1125,16 @@
 		3591B2701ED3BFED00179D6F /* XLsn0wQuora */ = {
 			isa = PBXGroup;
 			children = (
+				35327D021EF7ACD10009EDC6 /* jquery-3.2.1.js */,
 				35D025151EF77E02004478A6 /* CALayer */,
 				35D025101EF77C48004478A6 /* CAAnimation */,
-				353C82071ED3D1880007188A /* Bridging-Header */,
 				353E52871ED3C36D008BA28E /* UIApplication */,
 				35BB81E71EE91EAF00804A2B /* Swift */,
 				35D181DD1ED4361900C9DC24 /* APIManager */,
 				35D181E51ED4361900C9DC24 /* Extension */,
 				350C86881EEA427F00FED4AB /* Classes */,
 				350C86831EEA3C6400FED4AB /* PublicMacro */,
+				353C82071ED3D1880007188A /* Bridging-Header */,
 				35BB81DA1EE91E9100804A2B /* Objective-C */,
 			);
 			path = XLsn0wQuora;
@@ -1090,11 +1143,17 @@
 		35BB81DA1EE91E9100804A2B /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
-				3505077A1EEA6E0900BED934 /* MMDrawerController */,
+				35327CEE1EF7A4A70009EDC6 /* WXPullView.h */,
+				35327CEF1EF7A4A70009EDC6 /* WXPullView.m */,
+				35327CE81EF7A3040009EDC6 /* UIImageView+JKImage.h */,
+				35327CE91EF7A3040009EDC6 /* UIImageView+JKImage.m */,
 				35D3F6481EE92D81007C5AFF /* RJHTTPDownloader.h */,
 				35D3F6491EE92D81007C5AFF /* RJHTTPDownloader.m */,
 				35BB81DF1EE91EA100804A2B /* RetainCount.h */,
 				35BB81E01EE91EA100804A2B /* RetainCount.m */,
+				35327CEB1EF7A3890009EDC6 /* UIBezierPathDemo.h */,
+				35327CEC1EF7A3890009EDC6 /* UIBezierPathDemo.m */,
+				3505077A1EEA6E0900BED934 /* MMDrawerController */,
 			);
 			path = "Objective-C";
 			sourceTree = "<group>";
@@ -1151,6 +1210,7 @@
 		35D025101EF77C48004478A6 /* CAAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				35327CFB1EF7AC670009EDC6 /* CATransition */,
 				35D025111EF77C6C004478A6 /* CAPropertyAnimation */,
 			);
 			path = CAAnimation;
@@ -1168,6 +1228,7 @@
 		35D025121EF77C87004478A6 /* CABasicAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				35327CFC1EF7AC840009EDC6 /* YWBasicAnimController.swift */,
 				35D025141EF77CC8004478A6 /* CASpringAnimation */,
 			);
 			path = CABasicAnimation;
@@ -1176,6 +1237,7 @@
 		35D025131EF77C9D004478A6 /* CAKeyframeAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				35327CFE1EF7AC890009EDC6 /* YWKeyframeAnimController.swift */,
 			);
 			path = CAKeyframeAnimation;
 			sourceTree = "<group>";
@@ -1183,6 +1245,7 @@
 		35D025141EF77CC8004478A6 /* CASpringAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				35327CF91EF7AC300009EDC6 /* YWSpringAnimViewController.swift */,
 			);
 			path = CASpringAnimation;
 			sourceTree = "<group>";
@@ -1190,6 +1253,9 @@
 		35D025151EF77E02004478A6 /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
+				35327CF71EF7AC170009EDC6 /* YWFireAnimController.swift */,
+				35327CF21EF7A90F0009EDC6 /* UIBezierPath */,
+				35327CE41EF7A1AC0009EDC6 /* CAShapeLayer */,
 			);
 			path = CALayer;
 			sourceTree = "<group>";
@@ -1373,6 +1439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				350C87591EEA427F00FED4AB /* ico_camera@2x.png in Resources */,
+				35327D031EF7ACD10009EDC6 /* jquery-3.2.1.js in Resources */,
 				35D181B61ED4206C00C9DC24 /* Main.storyboard in Resources */,
 				350C87571EEA427F00FED4AB /* audio_nav@2x.png in Resources */,
 				350C87581EEA427F00FED4AB /* changeProductListGrid@2x.png in Resources */,
@@ -1468,6 +1535,7 @@
 				350C874E1EEA427F00FED4AB /* PopoverSortCell.swift in Sources */,
 				350C877A1EEA427F00FED4AB /* TitleView.swift in Sources */,
 				350C87B91EEA428000FED4AB /* AudioRecorder.swift in Sources */,
+				35327CF01EF7A4A70009EDC6 /* WXPullView.m in Sources */,
 				350C878B1EEA427F00FED4AB /* BaseChatCell.swift in Sources */,
 				350C876F1EEA427F00FED4AB /* SingleGiftCellViewModel.swift in Sources */,
 				350C87741EEA427F00FED4AB /* StrategyClassifyViewCell.swift in Sources */,
@@ -1503,6 +1571,7 @@
 				35BB82091EE91EF600804A2B /* CommonLabel.swift in Sources */,
 				350C87611EEA427F00FED4AB /* TopicViewCell.swift in Sources */,
 				350507751EEA6DD100BED934 /* WRCycleCell.swift in Sources */,
+				35327CF81EF7AC170009EDC6 /* YWFireAnimController.swift in Sources */,
 				350C87E91EEA452D00FED4AB /* StoryModel.swift in Sources */,
 				35BB82101EE91EF600804A2B /* FMDB_Extension.swift in Sources */,
 				350C87E11EEA452D00FED4AB /* MainController.swift in Sources */,
@@ -1540,26 +1609,33 @@
 				350C879F1EEA427F00FED4AB /* VideoMessage.swift in Sources */,
 				350C87731EEA427F00FED4AB /* SingleGiftSectionViewModel.swift in Sources */,
 				350C877B1EEA427F00FED4AB /* GiftHomeViewController.swift in Sources */,
+				35327D051EF7AF0B0009EDC6 /* QuoraTableViewController.swift in Sources */,
 				35D3F6471EE9246A007C5AFF /* JKEmployer.swift in Sources */,
 				350C87B21EEA427F00FED4AB /* MeFooterViewModel.swift in Sources */,
 				350C87DF1EEA452D00FED4AB /* DrawerController.swift in Sources */,
 				350C87451EEA427F00FED4AB /* BaseClassifyViewModel.swift in Sources */,
+				35327CED1EF7A3890009EDC6 /* UIBezierPathDemo.m in Sources */,
 				350C87971EEA427F00FED4AB /* UIView+Extension.swift in Sources */,
 				350C87AF1EEA427F00FED4AB /* LoginView.swift in Sources */,
 				350C87521EEA427F00FED4AB /* PopoverSortView.swift in Sources */,
+				35327CEA1EF7A3040009EDC6 /* UIImageView+JKImage.m in Sources */,
 				350C87B71EEA428000FED4AB /* SettingFooterView.swift in Sources */,
 				350C87A51EEA427F00FED4AB /* TextChatCellViewModel.swift in Sources */,
 				350C879A1EEA427F00FED4AB /* ImageMessage.swift in Sources */,
+				35327D011EF7AC940009EDC6 /* YWTransitionViewController.swift in Sources */,
 				35BB82131EE91EF600804A2B /* NSObject+Extension.swift in Sources */,
 				35BB820F1EE91EF600804A2B /* TypeBtnDB.swift in Sources */,
 				350C87AB1EEA427F00FED4AB /* RegisterViewController.swift in Sources */,
 				350C87BA1EEA428000FED4AB /* NetworkTools.swift in Sources */,
 				35BB820C1EE91EF600804A2B /* FlagBtn.swift in Sources */,
+				35327CF41EF7ABDB0009EDC6 /* YWDrawLineController.swift in Sources */,
+				35327CF61EF7AC0D0009EDC6 /* YWWaterWaveView.swift in Sources */,
 				350C87791EEA427F00FED4AB /* StrategySectionView.swift in Sources */,
 				350C87B01EEA427F00FED4AB /* MeFooterSectionView.swift in Sources */,
 				35BB81F51EE91EDD00804A2B /* CZDispatchQueueTests.swift in Sources */,
 				350C87B81EEA428000FED4AB /* AudioPlayer.swift in Sources */,
 				350C87DC1EEA452D00FED4AB /* BaseViewController.swift in Sources */,
+				35327CFF1EF7AC890009EDC6 /* YWKeyframeAnimController.swift in Sources */,
 				35D181F41ED4361900C9DC24 /* APIManager.swift in Sources */,
 				350C87441EEA427F00FED4AB /* BaseClassifyViewController.swift in Sources */,
 				350C87491EEA427F00FED4AB /* MenuView.swift in Sources */,
@@ -1580,6 +1656,7 @@
 				350C87911EEA427F00FED4AB /* VoiceChatCell.swift in Sources */,
 				350C87671EEA427F00FED4AB /* SingleGiftViewController.swift in Sources */,
 				350507861EEA6E0900BED934 /* MMDrawerVisualState.m in Sources */,
+				35327CFA1EF7AC300009EDC6 /* YWSpringAnimViewController.swift in Sources */,
 				35BB82151EE91EF600804A2B /* UIImage+.swift in Sources */,
 				350C87851EEA427F00FED4AB /* ChatExpression.swift in Sources */,
 				350C878E1EEA427F00FED4AB /* PositionChatCell.swift in Sources */,
@@ -1604,6 +1681,7 @@
 				350C87A41EEA427F00FED4AB /* PositionChatCellViewModel.swift in Sources */,
 				350C87641EEA427F00FED4AB /* ClassifySingleListViewController.swift in Sources */,
 				350C87621EEA427F00FED4AB /* TopicViewModel.swift in Sources */,
+				35327CFD1EF7AC840009EDC6 /* YWBasicAnimController.swift in Sources */,
 				350C879E1EEA427F00FED4AB /* UserModel.swift in Sources */,
 				350C87391EEA427F00FED4AB /* Date+Extension.swift in Sources */,
 				350C87761EEA427F00FED4AB /* StrategyColumnSubCell.swift in Sources */,
@@ -1917,6 +1995,7 @@
 				35D025391EF78089004478A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35D0253B1EF78089004478A6 /* Build configuration list for PBXNativeTarget "XLsn0wQuoraWatch" */ = {
 			isa = XCConfigurationList;
@@ -1925,6 +2004,7 @@
 				35D0253D1EF78089004478A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,10 +1,4 @@
-//
-//  ApiManager.swift
-//  ZhiHu+RxSwift
-//
-//  Created by like on 2017/1/28.
-//  Copyright © 2017年 like. All rights reserved.
-//
+
 
 import Foundation
 import Moya

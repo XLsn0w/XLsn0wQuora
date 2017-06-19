@@ -48,10 +48,24 @@ class GiftHomeViewController: UIViewController {
         return view
     }()
 //MARK: 系统方法
+    
+    var pullView:WXPullView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupHomeView()
+        
+        
+        pullView =  WXPullView.init(frame: CGRect(x: UIScreen.main.bounds.width/2-25, y: -64, width:50, height: 30))
+        
+        
+        scrollView.addSubview(pullView!)
+        
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,6 +77,11 @@ class GiftHomeViewController: UIViewController {
         super.viewWillLayoutSubviews()
         
         setupHomeViewSubView()
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        pullView?.animation(with: scrollView.contentOffset.y)
+        //[self.pullView animationWith:scrollView.contentOffset.y];
     }
  
 //MARK: 私有方法

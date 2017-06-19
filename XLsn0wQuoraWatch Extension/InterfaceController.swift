@@ -11,7 +11,7 @@ import Foundation
 import WatchConnectivity
 
 
-class InterfaceController: WKInterfaceController, WCSessionDelegate {
+class InterfaceController: WKInterfaceController {
     
     
     var wcSession:WCSession?
