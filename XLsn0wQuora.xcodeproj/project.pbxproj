@@ -195,6 +195,14 @@
 		35BB82141EE91EF600804A2B /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BB82041EE91EF600804A2B /* String+.swift */; };
 		35BB82151EE91EF600804A2B /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BB82051EE91EF600804A2B /* UIImage+.swift */; };
 		35BB82161EE91EF600804A2B /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BB82061EE91EF600804A2B /* UITableView+Extension.swift */; };
+		35D0251C1EF78089004478A6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D0251A1EF78089004478A6 /* Interface.storyboard */; };
+		35D0251E1EF78089004478A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D0251D1EF78089004478A6 /* Assets.xcassets */; };
+		35D025251EF78089004478A6 /* XLsn0wQuoraWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 35D025241EF78089004478A6 /* XLsn0wQuoraWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		35D0252C1EF78089004478A6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D0252B1EF78089004478A6 /* InterfaceController.swift */; };
+		35D0252E1EF78089004478A6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D0252D1EF78089004478A6 /* ExtensionDelegate.swift */; };
+		35D025301EF78089004478A6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D0252F1EF78089004478A6 /* NotificationController.swift */; };
+		35D025321EF78089004478A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D025311EF78089004478A6 /* Assets.xcassets */; };
+		35D025361EF78089004478A6 /* XLsn0wQuoraWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 35D025181EF78088004478A6 /* XLsn0wQuoraWatch.app */; };
 		35D181B61ED4206C00C9DC24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D181B51ED4206C00C9DC24 /* Main.storyboard */; };
 		35D181F41ED4361900C9DC24 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D181DE1ED4361900C9DC24 /* APIManager.swift */; };
 		35D181FA1ED4361900C9DC24 /* ToModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D181E61ED4361900C9DC24 /* ToModelExtension.swift */; };
@@ -205,6 +213,48 @@
 		35D3F64C1EE93AE1007C5AFF /* XLsn0wQuoraRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D3F64B1EE93AE1007C5AFF /* XLsn0wQuoraRequest.swift */; };
 		56FA8756A380BD2A5AFE5E1E /* Pods_XLsn0wQuora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EC1875BDF7823506E86F10 /* Pods_XLsn0wQuora.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35D025261EF78089004478A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3591B2661ED3BFED00179D6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35D025231EF78089004478A6;
+			remoteInfo = "XLsn0wQuoraWatch Extension";
+		};
+		35D025341EF78089004478A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3591B2661ED3BFED00179D6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35D025171EF78088004478A6;
+			remoteInfo = XLsn0wQuoraWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35D0253A1EF78089004478A6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				35D025251EF78089004478A6 /* XLsn0wQuoraWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35D0253E1EF78089004478A6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				35D025361EF78089004478A6 /* XLsn0wQuoraWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		350507721EEA6DD100BED934 /* WRCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleCell.swift; sourceTree = "<group>"; };
@@ -404,6 +454,17 @@
 		35BB82041EE91EF600804A2B /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		35BB82051EE91EF600804A2B /* UIImage+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		35BB82061EE91EF600804A2B /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		35D025181EF78088004478A6 /* XLsn0wQuoraWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0wQuoraWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35D0251B1EF78089004478A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		35D0251D1EF78089004478A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35D0251F1EF78089004478A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35D025241EF78089004478A6 /* XLsn0wQuoraWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "XLsn0wQuoraWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35D0252A1EF78089004478A6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		35D0252B1EF78089004478A6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		35D0252D1EF78089004478A6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		35D0252F1EF78089004478A6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		35D025311EF78089004478A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35D025331EF78089004478A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35D181B51ED4206C00C9DC24 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		35D181DE1ED4361900C9DC24 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		35D181E61ED4361900C9DC24 /* ToModelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToModelExtension.swift; sourceTree = "<group>"; };
@@ -424,6 +485,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				56FA8756A380BD2A5AFE5E1E /* Pods_XLsn0wQuora.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35D025211EF78089004478A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -984,6 +1052,8 @@
 			isa = PBXGroup;
 			children = (
 				3591B2701ED3BFED00179D6F /* XLsn0wQuora */,
+				35D025191EF78089004478A6 /* XLsn0wQuoraWatch */,
+				35D025281EF78089004478A6 /* XLsn0wQuoraWatch Extension */,
 				3591B26F1ED3BFED00179D6F /* Products */,
 				E6EC82A07124EA55D5403880 /* Pods */,
 				EC6535FDD5B6D709CEDBB11F /* Frameworks */,
@@ -994,6 +1064,8 @@
 			isa = PBXGroup;
 			children = (
 				3591B26E1ED3BFED00179D6F /* XLsn0wQuora.app */,
+				35D025181EF78088004478A6 /* XLsn0wQuoraWatch.app */,
+				35D025241EF78089004478A6 /* XLsn0wQuoraWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1001,6 +1073,8 @@
 		3591B2701ED3BFED00179D6F /* XLsn0wQuora */ = {
 			isa = PBXGroup;
 			children = (
+				35D025151EF77E02004478A6 /* CALayer */,
+				35D025101EF77C48004478A6 /* CAAnimation */,
 				353C82071ED3D1880007188A /* Bridging-Header */,
 				353E52871ED3C36D008BA28E /* UIApplication */,
 				35BB81E71EE91EAF00804A2B /* Swift */,
@@ -1074,6 +1148,83 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		35D025101EF77C48004478A6 /* CAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				35D025111EF77C6C004478A6 /* CAPropertyAnimation */,
+			);
+			path = CAAnimation;
+			sourceTree = "<group>";
+		};
+		35D025111EF77C6C004478A6 /* CAPropertyAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				35D025121EF77C87004478A6 /* CABasicAnimation */,
+				35D025131EF77C9D004478A6 /* CAKeyframeAnimation */,
+			);
+			path = CAPropertyAnimation;
+			sourceTree = "<group>";
+		};
+		35D025121EF77C87004478A6 /* CABasicAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				35D025141EF77CC8004478A6 /* CASpringAnimation */,
+			);
+			path = CABasicAnimation;
+			sourceTree = "<group>";
+		};
+		35D025131EF77C9D004478A6 /* CAKeyframeAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CAKeyframeAnimation;
+			sourceTree = "<group>";
+		};
+		35D025141EF77CC8004478A6 /* CASpringAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CASpringAnimation;
+			sourceTree = "<group>";
+		};
+		35D025151EF77E02004478A6 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		35D025191EF78089004478A6 /* XLsn0wQuoraWatch */ = {
+			isa = PBXGroup;
+			children = (
+				35D0251A1EF78089004478A6 /* Interface.storyboard */,
+				35D0251D1EF78089004478A6 /* Assets.xcassets */,
+				35D0251F1EF78089004478A6 /* Info.plist */,
+			);
+			path = XLsn0wQuoraWatch;
+			sourceTree = "<group>";
+		};
+		35D025281EF78089004478A6 /* XLsn0wQuoraWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				35D0252B1EF78089004478A6 /* InterfaceController.swift */,
+				35D0252D1EF78089004478A6 /* ExtensionDelegate.swift */,
+				35D0252F1EF78089004478A6 /* NotificationController.swift */,
+				35D025311EF78089004478A6 /* Assets.xcassets */,
+				35D025331EF78089004478A6 /* Info.plist */,
+				35D025291EF78089004478A6 /* Supporting Files */,
+			);
+			path = "XLsn0wQuoraWatch Extension";
+			sourceTree = "<group>";
+		};
+		35D025291EF78089004478A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35D0252A1EF78089004478A6 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		35D181DD1ED4361900C9DC24 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -1122,15 +1273,51 @@
 				3591B26C1ED3BFED00179D6F /* Resources */,
 				C2B8194ADB591655073EF7B3 /* [CP] Embed Pods Frameworks */,
 				3766649B9F92095E93774ADD /* [CP] Copy Pods Resources */,
+				35D0253E1EF78089004478A6 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				35D025351EF78089004478A6 /* PBXTargetDependency */,
 			);
 			name = XLsn0wQuora;
 			productName = XLsn0wQuora;
 			productReference = 3591B26E1ED3BFED00179D6F /* XLsn0wQuora.app */;
 			productType = "com.apple.product-type.application";
+		};
+		35D025171EF78088004478A6 /* XLsn0wQuoraWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35D0253B1EF78089004478A6 /* Build configuration list for PBXNativeTarget "XLsn0wQuoraWatch" */;
+			buildPhases = (
+				35D025161EF78088004478A6 /* Resources */,
+				35D0253A1EF78089004478A6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35D025271EF78089004478A6 /* PBXTargetDependency */,
+			);
+			name = XLsn0wQuoraWatch;
+			productName = XLsn0wQuoraWatch;
+			productReference = 35D025181EF78088004478A6 /* XLsn0wQuoraWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		35D025231EF78089004478A6 /* XLsn0wQuoraWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35D025371EF78089004478A6 /* Build configuration list for PBXNativeTarget "XLsn0wQuoraWatch Extension" */;
+			buildPhases = (
+				35D025201EF78089004478A6 /* Sources */,
+				35D025211EF78089004478A6 /* Frameworks */,
+				35D025221EF78089004478A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XLsn0wQuoraWatch Extension";
+			productName = "XLsn0wQuoraWatch Extension";
+			productReference = 35D025241EF78089004478A6 /* XLsn0wQuoraWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -1146,6 +1333,16 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 7L4YK5W6WP;
 						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					35D025171EF78088004478A6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7L4YK5W6WP;
+						ProvisioningStyle = Automatic;
+					};
+					35D025231EF78089004478A6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7L4YK5W6WP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1164,6 +1361,8 @@
 			projectRoot = "";
 			targets = (
 				3591B26D1ED3BFED00179D6F /* XLsn0wQuora */,
+				35D025171EF78088004478A6 /* XLsn0wQuoraWatch */,
+				35D025231EF78089004478A6 /* XLsn0wQuoraWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -1180,6 +1379,23 @@
 				350C875A1EEA427F00FED4AB /* Info_more_search@2x.png in Resources */,
 				3591B27C1ED3BFEE00179D6F /* LaunchScreen.storyboard in Resources */,
 				3591B2791ED3BFED00179D6F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35D025161EF78088004478A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35D0251E1EF78089004478A6 /* Assets.xcassets in Resources */,
+				35D0251C1EF78089004478A6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35D025221EF78089004478A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35D025321EF78089004478A6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1430,7 +1646,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		35D025201EF78089004478A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35D025301EF78089004478A6 /* NotificationController.swift in Sources */,
+				35D0252E1EF78089004478A6 /* ExtensionDelegate.swift in Sources */,
+				35D0252C1EF78089004478A6 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35D025271EF78089004478A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35D025231EF78089004478A6 /* XLsn0wQuoraWatch Extension */;
+			targetProxy = 35D025261EF78089004478A6 /* PBXContainerItemProxy */;
+		};
+		35D025351EF78089004478A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35D025171EF78088004478A6 /* XLsn0wQuoraWatch */;
+			targetProxy = 35D025341EF78089004478A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3591B27A1ED3BFEE00179D6F /* LaunchScreen.storyboard */ = {
@@ -1439,6 +1678,14 @@
 				3591B27B1ED3BFEE00179D6F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		35D0251A1EF78089004478A6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35D0251B1EF78089004478A6 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1572,6 +1819,76 @@
 			};
 			name = Release;
 		};
+		35D025381EF78089004478A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 7L4YK5W6WP;
+				INFOPLIST_FILE = "XLsn0wQuoraWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xlsn0w.XLsn0wQuora.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		35D025391EF78089004478A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 7L4YK5W6WP;
+				INFOPLIST_FILE = "XLsn0wQuoraWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xlsn0w.XLsn0wQuora.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		35D0253C1EF78089004478A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7L4YK5W6WP;
+				IBSC_MODULE = XLsn0wQuoraWatch_Extension;
+				INFOPLIST_FILE = XLsn0wQuoraWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xlsn0w.XLsn0wQuora.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		35D0253D1EF78089004478A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7L4YK5W6WP;
+				IBSC_MODULE = XLsn0wQuoraWatch_Extension;
+				INFOPLIST_FILE = XLsn0wQuoraWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xlsn0w.XLsn0wQuora.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1592,6 +1909,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		35D025371EF78089004478A6 /* Build configuration list for PBXNativeTarget "XLsn0wQuoraWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35D025381EF78089004478A6 /* Debug */,
+				35D025391EF78089004478A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		35D0253B1EF78089004478A6 /* Build configuration list for PBXNativeTarget "XLsn0wQuoraWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35D0253C1EF78089004478A6 /* Debug */,
+				35D0253D1EF78089004478A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -71,12 +71,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        removeAdvertisement()
     
           setupPrintLog()
+        
+        
 //        setupRootViewController()
 //        setupGlobalStyle()
 //        setupGlobalNotice()
         
         
 
+    
         
 
         return true
