@@ -26,7 +26,7 @@ class QuoraTableViewController: UIViewController, UITableViewDelegate, UITableVi
                                            ["clsName":"YWFireAnimController","title":"粒子动画-火苗效果"]]
     ]
     
-    var sectionTitleArr = ["动画基础示例","动画常见经典案例"]
+    var sectionTitleArr = ["CAAnimation","动画常见经典案例"]
     
     func add_tableView() {
         let tableView = UITableView(frame: view.bounds, style: .grouped)

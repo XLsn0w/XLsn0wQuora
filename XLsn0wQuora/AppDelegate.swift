@@ -66,31 +66,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        默认的黑色（UIStatusBarStyleDefault）
 //        白色（UIStatusBarStyleLightContent）
 //        UIApplication.shared.statusBarStyle = .lightContent
-        UIApplication.shared.statusBarStyle = .default
-        
-        
-        
-        addWindow()
+//        UIApplication.shared.statusBarStyle = .default
 
         
+        addWindow()
 //        XLsn0wQuoraRequest.requestSplashImage(reqName: requestSplashImage, delegate: self)
 //        addAdvertisement()
 //        removeAdvertisement()
-    
-          setupPrintLog()
-        
-        
+//          setupPrintLog()
 //        setupRootViewController()
 //        setupGlobalStyle()
 //        setupGlobalNotice()
-        
-        
-
-    
-        
-
-        
-        
         return true
     }
     
