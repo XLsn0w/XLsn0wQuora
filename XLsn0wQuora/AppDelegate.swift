@@ -256,8 +256,8 @@ extension AppDelegate {
 
 ///Swift 的扩展 extension 可以用来继承协议,实现代码隔离，便于维护
 extension AppDelegate: XLsn0wNetworkingDelegate {
-    func netWortDidSuccess(result: AnyObject, requestName: String, parameters: NSDictionary?)
-    {
+    
+    func netWortDidSuccess(result: AnyObject, requestName: String, parameters: NSDictionary?) {
         if (requestName == requestSplashImage)
         {
             let json = JSON(result)
@@ -267,8 +267,6 @@ extension AppDelegate: XLsn0wNetworkingDelegate {
             
             let splashUrl = json.dictionaryValue["creatives"]?[0]["url"].string
             
-            // 对喵神的 Kingfisher 修改了一下，解决了当placeholder为nil的时候，如果原图片框中已有图片，则会闪一下的问题
-            // https://github.com/wangrui460/Kingfisher
             advImageView?.kf.setImage(with: URL(string: splashUrl!), completionHandler:
                 { [weak self] (image, error, cachtType, url) in
                     if let weakSelf = self
