@@ -37,12 +37,15 @@ public func XLsn0wLog<T>(_ printObject: T,
  *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
  *                                                                                           *
  *********************************************************************************************/
-public func printout<T>(_ printObject: T,
+public func XLsn0wPrint<T>(_ printObject: T,
                        printFile: String = #file,
                        printLine: Int    = #line,
                    printFunction: String = #function) -> Void {
-    #if DEBUG/*****只有Debug***才执行打印*********************************************************/
-        print("\n©XLsn0wLog© \n file: \((printFile as NSString).lastPathComponent) \n line: \(printLine) \n func: \(printFunction) \n---print---\n\(printObject) \n---print---\n©XLsn0wLog©\n")
+    #if DEBUG
+        let filePath = printFile as NSString
+        let filePath_copy = filePath.lastPathComponent as NSString
+        let fileName = filePath_copy.deletingPathExtension
+        print("\n©XLsn0wLog©\(fileName).\(printFunction)[\(printLine)]: \(printObject)\n")
     #endif
 }
 /*********************************************************************************************
@@ -66,7 +69,7 @@ public func printNSLog<T>(_ printObject : T,
         let filePath = file as NSString
         let filePath_copy = filePath.lastPathComponent as NSString
         let fileName = filePath_copy.deletingPathExtension
-        NSLog("\n©XLsn0wLog©\n \(fileName)_\(line)_\(function)]\n\(printObject)")
+        NSLog("\n©XLsn0wLog©\(fileName).\(function)[\(line)]: \(printObject)\n")
     #endif
 }
 /*********************************************************************************************

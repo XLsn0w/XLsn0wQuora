@@ -7,6 +7,8 @@ use_frameworks! #由于是Swift(objc不需要), 我们这里还需要换行输�
 target "XLsn0wQuora" do
     
     pod 'XLsn0wKit_swift'
+    pod 'XLsn0wKit_objc'
+    pod 'YYKit'
     
     pod 'SnapKit'    #纯代码布局库 Swift版本的AutoLayout 类似于OC 下的Masonry
     pod 'Kingfisher' #图片缓存库 Swift 版本AFNetworking
