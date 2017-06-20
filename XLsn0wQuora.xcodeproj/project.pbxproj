@@ -181,6 +181,10 @@
 		352B48BC1EF8C4DF00201D07 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352B48BA1EF8C4DF00201D07 /* APIManager.swift */; };
 		352B48BD1EF8C4DF00201D07 /* XLsn0wQuoraRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352B48BB1EF8C4DF00201D07 /* XLsn0wQuoraRequest.swift */; };
 		352B48C01EF8C50600201D07 /* SwiftyMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352B48BF1EF8C50600201D07 /* SwiftyMacro.swift */; };
+		352B48C91EF8CE9600201D07 /* HMEmoticon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 352B48C41EF8CE9600201D07 /* HMEmoticon.bundle */; };
+		352B48CA1EF8CE9600201D07 /* YWEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352B48C61EF8CE9600201D07 /* YWEmoticon.swift */; };
+		352B48CB1EF8CE9600201D07 /* YWEmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352B48C71EF8CE9600201D07 /* YWEmoticonPackage.swift */; };
+		352B48CC1EF8CE9600201D07 /* YWEmonticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352B48C81EF8CE9600201D07 /* YWEmonticonManager.swift */; };
 		35327CEA1EF7A3040009EDC6 /* UIImageView+JKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 35327CE91EF7A3040009EDC6 /* UIImageView+JKImage.m */; };
 		35327CED1EF7A3890009EDC6 /* UIBezierPathDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 35327CEC1EF7A3890009EDC6 /* UIBezierPathDemo.m */; };
 		35327CF01EF7A4A70009EDC6 /* WXPullView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35327CEF1EF7A4A70009EDC6 /* WXPullView.m */; };
@@ -447,6 +451,10 @@
 		352B48BA1EF8C4DF00201D07 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		352B48BB1EF8C4DF00201D07 /* XLsn0wQuoraRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLsn0wQuoraRequest.swift; sourceTree = "<group>"; };
 		352B48BF1EF8C50600201D07 /* SwiftyMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyMacro.swift; sourceTree = "<group>"; };
+		352B48C41EF8CE9600201D07 /* HMEmoticon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HMEmoticon.bundle; sourceTree = "<group>"; };
+		352B48C61EF8CE9600201D07 /* YWEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWEmoticon.swift; sourceTree = "<group>"; };
+		352B48C71EF8CE9600201D07 /* YWEmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWEmoticonPackage.swift; sourceTree = "<group>"; };
+		352B48C81EF8CE9600201D07 /* YWEmonticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWEmonticonManager.swift; sourceTree = "<group>"; };
 		35327CE81EF7A3040009EDC6 /* UIImageView+JKImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JKImage.h"; sourceTree = "<group>"; };
 		35327CE91EF7A3040009EDC6 /* UIImageView+JKImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JKImage.m"; sourceTree = "<group>"; };
 		35327CEB1EF7A3890009EDC6 /* UIBezierPathDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathDemo.h; sourceTree = "<group>"; };
@@ -559,9 +567,9 @@
 		350C86881EEA427F00FED4AB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				350C86911EEA427F00FED4AB /* Module */,
 				352B48BE1EF8C50600201D07 /* SwiftyMacro */,
 				352B48B91EF8C4DF00201D07 /* APIManager */,
-				350C86911EEA427F00FED4AB /* Module */,
 				350C87C01EEA452D00FED4AB /* Controller */,
 				350C87CD1EEA452D00FED4AB /* Model */,
 				350C87D41EEA452D00FED4AB /* View */,
@@ -1157,6 +1165,33 @@
 			path = SwiftyMacro;
 			sourceTree = "<group>";
 		};
+		352B48C21EF8CE6000201D07 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				352B48C31EF8CE9600201D07 /* Emoticon */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		352B48C31EF8CE9600201D07 /* Emoticon */ = {
+			isa = PBXGroup;
+			children = (
+				352B48C41EF8CE9600201D07 /* HMEmoticon.bundle */,
+				352B48C51EF8CE9600201D07 /* Model */,
+				352B48C81EF8CE9600201D07 /* YWEmonticonManager.swift */,
+			);
+			path = Emoticon;
+			sourceTree = "<group>";
+		};
+		352B48C51EF8CE9600201D07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				352B48C61EF8CE9600201D07 /* YWEmoticon.swift */,
+				352B48C71EF8CE9600201D07 /* YWEmoticonPackage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		353C82071ED3D1880007188A /* Bridging-Header */ = {
 			isa = PBXGroup;
 			children = (
@@ -1234,6 +1269,7 @@
 		35BB81E71EE91EAF00804A2B /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				352B48C21EF8CE6000201D07 /* Components */,
 				350507711EEA6DD100BED934 /* WRCycleScrollView */,
 				35BB81F61EE91EF600804A2B /* Cell */,
 				35BB81FF1EE91EF600804A2B /* Extension */,
@@ -1447,6 +1483,7 @@
 				35D181B61ED4206C00C9DC24 /* Main.storyboard in Resources */,
 				350C87571EEA427F00FED4AB /* audio_nav@2x.png in Resources */,
 				350C87581EEA427F00FED4AB /* changeProductListGrid@2x.png in Resources */,
+				352B48C91EF8CE9600201D07 /* HMEmoticon.bundle in Resources */,
 				350C875A1EEA427F00FED4AB /* Info_more_search@2x.png in Resources */,
 				3591B27C1ED3BFEE00179D6F /* LaunchScreen.storyboard in Resources */,
 				3591B2791ED3BFED00179D6F /* Assets.xcassets in Resources */,
@@ -1559,6 +1596,7 @@
 				350C87981EEA427F00FED4AB /* ChatViewController.swift in Sources */,
 				35BB81F11EE91EDD00804A2B /* TestViewController.swift in Sources */,
 				350507851EEA6E0900BED934 /* MMDrawerController.m in Sources */,
+				352B48CB1EF8CE9600201D07 /* YWEmoticonPackage.swift in Sources */,
 				350C87421EEA427F00FED4AB /* BannerCarouseViewModel.swift in Sources */,
 				350C87861EEA427F00FED4AB /* RecordButton.swift in Sources */,
 				350C873D1EEA427F00FED4AB /* UIButton+Extension.swift in Sources */,
@@ -1628,6 +1666,7 @@
 				350C87B71EEA428000FED4AB /* SettingFooterView.swift in Sources */,
 				350C87A51EEA427F00FED4AB /* TextChatCellViewModel.swift in Sources */,
 				350C879A1EEA427F00FED4AB /* ImageMessage.swift in Sources */,
+				352B48CC1EF8CE9600201D07 /* YWEmonticonManager.swift in Sources */,
 				35BB82131EE91EF600804A2B /* NSObject+Extension.swift in Sources */,
 				35BB820F1EE91EF600804A2B /* TypeBtnDB.swift in Sources */,
 				350C87AB1EEA427F00FED4AB /* RegisterViewController.swift in Sources */,
@@ -1643,6 +1682,7 @@
 				350C87491EEA427F00FED4AB /* MenuView.swift in Sources */,
 				350C87711EEA427F00FED4AB /* SingleGiftColumnCellViewModel.swift in Sources */,
 				350C875D1EEA427F00FED4AB /* SearchHeaderView.swift in Sources */,
+				352B48CA1EF8CE9600201D07 /* YWEmoticon.swift in Sources */,
 				352B48BC1EF8C4DF00201D07 /* APIManager.swift in Sources */,
 				350C87891EEA427F00FED4AB /* ChatBoardView.swift in Sources */,
 				350C87E01EEA452D00FED4AB /* LeftController.swift in Sources */,

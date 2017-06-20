@@ -61,38 +61,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let SPLASHIMAGE = "SPLASHIMAGE"
     let drawerController = DrawerController()
 
+    //入口函数
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-//        默认的黑色（UIStatusBarStyleDefault）
-//        白色（UIStatusBarStyleLightContent）
-//        UIApplication.shared.statusBarStyle = .lightContent
-//        UIApplication.shared.statusBarStyle = .default
-
-        
         addWindow()
 //        XLsn0wQuoraRequest.requestSplashImage(reqName: requestSplashImage, delegate: self)
 //        addAdvertisement()
 //        removeAdvertisement()
-//          setupPrintLog()
+//        setupPrintLog()
 //        setupRootViewController()
 //        setupGlobalStyle()
 //        setupGlobalNotice()
+        
+        
+        
+      //NSSetUncaughtExceptionHandler(&UncaughtExceptionHandler);
+        NSSetUncaughtExceptionHandler(objc_UncaughtExceptionHandler());
         return true
     }
-    
-    
-    
-    
-    func CustomUncaughtExceptionHandler() -> @convention(c) (NSException) -> Void {
-        return { (exception) -> Void in
-            let arr = exception.callStackSymbols//得到当前调用栈信息
-            let reason = exception.reason//非常重要，就是崩溃的原因
-            let name = exception.name//异常类型
-            
-            NSLog("exception type : \(name) \n crash reason : \(reason) \n call stack info : \(arr)");
-            
-            
-        }
+
+}
+
+
+/// 捕获崩溃信息
+func objc_UncaughtExceptionHandler() -> @convention(c) (NSException) -> Void {
+    return { (exception) -> Void in
+        let callStackSymbols = exception.callStackSymbols//得到当前调用栈信息
+        let reason = exception.reason//非常重要，就是崩溃的原因
+        let name = exception.name//异常类型
+        
+        XLsn0wLog(reason)
+        XLsn0wLog(name)
+        XLsn0wLog(callStackSymbols)
+        //NSLog("exception type : \(name) \n crash reason : \(String(describing: reason)) \n call stack info : \(callStackSymbols)");
     }
 }
 
@@ -243,7 +243,12 @@ extension AppDelegate {
     }
     
 
-    
+    func set_statusBarStyle() -> () {
+        //默认的黑色（UIStatusBarStyleDefault） .default
+        //白色（UIStatusBarStyleLightContent） .lightContent
+        UIApplication.shared.statusBarStyle = .lightContent
+        UIApplication.shared.statusBarStyle = .default
+    }
     
     func addWindow() -> Void {
         window? = UIWindow(frame: UIScreen.main.bounds)//init
