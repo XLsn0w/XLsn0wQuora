@@ -28,7 +28,7 @@ class UserDBManager: NSObject {
     
     class func createDB(DBPath:String) ->Void {
        let db = self.getDB(DBPath)
-       print(db.databasePath())
+       print(db.databasePath)
     }
     //取得数据库文件
     class func getDB(_ path:String)->FMDatabase{
@@ -43,22 +43,22 @@ class UserDBManager: NSObject {
             let db = FMDatabase(path: btnPath)
             //判断是否创建成功
             if (db != nil){
-                if db?.open() == true{
+                if db.open() == true{
                     let sql_stmt = createTableSQL
-                    if db?.executeStatements(sql_stmt) == false  {
+                    if db.executeStatements(sql_stmt) == false  {
                         //执行语句错误
-                        print("Error: \(String(describing: db?.lastErrorMessage()))")
+                        print("Error: \(String(describing: db.lastErrorMessage()))")
                     }
-                    db?.close()
+                    db.close()
                 }
                 else{
                     //打不开文件
-                    print("Error: \(String(describing: db?.lastErrorMessage()))")
+                    print("Error: \(String(describing: db.lastErrorMessage()))")
                 }
             }
             else{
                 //文件创建不成功
-                print("Error: \(String(describing: db?.lastErrorMessage()))")
+                print("Error: \(String(describing: db.lastErrorMessage()))")
             }
         }
         return FMDatabase(path: btnPath)
@@ -111,7 +111,7 @@ class UserDBManager: NSObject {
     class func selectDataOrderByDate(_ path:String)->[AccountItem] {
         let db = self.getDB(path)
         db.open()
-        let rs = db.executeQuery(selectOrderByDateSQL, withArgumentsIn: nil)
+        let rs = db.executeQuery(selectOrderByDateSQL, withArgumentsIn: [])
         
         var items:[AccountItem] = []
         while rs != nil && (rs?.next())!{

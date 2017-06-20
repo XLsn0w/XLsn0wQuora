@@ -38,22 +38,22 @@ class TypeBtnDB: NSObject {
             let db = FMDatabase(path: btnPath)
             //判断是否创建成功
             if (db != nil){
-                if db?.open() == true{
+                if db.open() == true{
                     let sql_stmt = "CREATE TABLE IF NOT EXISTS btnDB(ID INTEGER PRIMARY KEY , IMAGENAME TEXT, ICONTITLE TEXT)"
-                    if db?.executeStatements(sql_stmt) == false  {
+                    if db.executeStatements(sql_stmt) == false  {
                         //执行语句错误
-                        print("Error: \(db?.lastErrorMessage())")
+                        print("Error: \(db.lastErrorMessage())")
                     }
-                    db?.close()
+                    db.close()
                 }
                 else{
                     //打不开文件
-                    print("Error: \(db?.lastErrorMessage())")
+                    print("Error: \(db.lastErrorMessage())")
                 }
             }
             else{
                 //文件创建不成功
-                print("Error: \(db?.lastErrorMessage())")
+                print("Error: \(db.lastErrorMessage())")
             }
         }
         return FMDatabase(path: btnPath)
@@ -94,8 +94,8 @@ class TypeBtnDB: NSObject {
         let item = btnModel(ID: 1, imageName: "", iconTitle: "")
         while (rs?.next())!{
             item.ID = Int((rs?.int(forColumn: "ID"))!)
-            item.imageName = rs!.string(forColumn: "IMAGENAME") as NSString
-            item.iconTitle = rs!.string(forColumn: "ICONTITLE") as NSString
+            item.imageName = rs!.string(forColumn: "IMAGENAME") as! NSString
+            item.iconTitle = rs!.string(forColumn: "ICONTITLE") as! NSString
         }
         db.close()
         return item

@@ -15,16 +15,16 @@ let screenH: CGFloat = UIScreen.main.bounds.height
 extension UIColor {
     
     static func rgb(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat) -> UIColor {
-        return UIColor.init(red: r / 255,
+        return UIColor.init(red  : r / 255,
                             green: g / 255,
-                            blue: b / 255,
+                            blue : b / 255,
                             alpha: 1.0)
     }
     
     static func colorFromHex(_ Hex: UInt32) -> UIColor {
-        return UIColor.init(red: CGFloat((Hex & 0xFF0000) >> 16) / 255.0,
+        return UIColor.init(red  : CGFloat((Hex & 0xFF0000) >> 16) / 255.0,
                             green: CGFloat((Hex & 0xFF00) >> 8) / 255.0,
-                            blue: CGFloat((Hex & 0xFF)) / 255.0,
+                            blue : CGFloat((Hex & 0xFF)) / 255.0,
                             alpha: 1.0)
     }
     

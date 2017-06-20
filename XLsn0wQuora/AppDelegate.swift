@@ -246,13 +246,13 @@ extension AppDelegate {
     
     
     func addWindow() -> Void {
-        window = UIWindow(frame: UIScreen.main.bounds)//init
+        window? = UIWindow(frame: UIScreen.main.bounds)//init
         window?.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()
 //        window?.rootViewController = QuoraTabBarController()
         
         
-        window?.rootViewController = UINavigationController.init(rootViewController: QuoraTableViewController())
+        window?.rootViewController = UINavigationController.init(rootViewController: QuoraAnimationTableViewController())
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
