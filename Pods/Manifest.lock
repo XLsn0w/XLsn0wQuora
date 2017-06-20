@@ -62,9 +62,6 @@ PODS:
     - SnapKit
     - SwiftyJSON
     - Then
-  - YYKit (1.0.9):
-    - YYKit/no-arc (= 1.0.9)
-  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - Alamofire
@@ -87,7 +84,6 @@ DEPENDENCIES:
   - Then
   - XLsn0wKit_objc
   - XLsn0wKit_swift
-  - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -113,8 +109,7 @@ SPEC CHECKSUMS:
   Then: 8496793c8fcac95482b943909b440724c7d8d82c
   XLsn0wKit_objc: 5818eafb7db77102e6e1516684039a1fcc1350bf
   XLsn0wKit_swift: 322df42e3ab6298ca17a6bfb625f6dee167b33da
-  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: c448c5fbcf9958297318df0ac37d778e33776351
+PODFILE CHECKSUM: c56a9cf7614f084ef84d7d4583c202ab46fadff5
 
 COCOAPODS: 1.2.1

@@ -1,13 +1,6 @@
-//
-//  YWEmoticonPackage.swift
-//  表情包Demo
-//
-//  Created by 姚巍 on 16/10/15.
-//  Copyright © 2016年 Guangxi City Network Technology Co.,Ltd. All rights reserved.
-//  表情包模型
+
 
 import UIKit
-import YYModel
 
 class YWEmoticonPackage: NSObject {
     

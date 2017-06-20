@@ -48,6 +48,7 @@ import Kingfisher
 import SnapKit
 import XLsn0wKit_swift
 import QorumLogs
+import XLsn0wKit_objc
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -60,6 +61,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let jumpBtn = UIButton()
     let SPLASHIMAGE = "SPLASHIMAGE"
     let drawerController = DrawerController()
+    
+
+    
 
     //入口函数
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -71,16 +75,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        setupRootViewController()
 //        setupGlobalStyle()
 //        setupGlobalNotice()
-        
-        
-        
       //NSSetUncaughtExceptionHandler(&UncaughtExceptionHandler);
         NSSetUncaughtExceptionHandler(objc_UncaughtExceptionHandler());
         return true
     }
-
 }
-
 
 /// 捕获崩溃信息
 func objc_UncaughtExceptionHandler() -> @convention(c) (NSException) -> Void {
