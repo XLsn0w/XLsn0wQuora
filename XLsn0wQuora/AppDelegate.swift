@@ -39,8 +39,7 @@
  [person eat:"milk"];
  通过Person类调用,会直接到堆中去找Person类的类对象,然后进行调用.
  [Person show];
- 
- */
+*/
 
 import UIKit
 import SwiftyJSON
@@ -53,6 +52,7 @@ import XLsn0wKit_objc
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    //全局变量
     var window: UIWindow?
     
     let requestSplashImage = "requestSplashImage"
@@ -61,9 +61,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let jumpBtn = UIButton()
     let SPLASHIMAGE = "SPLASHIMAGE"
     let drawerController = DrawerController()
-    
-
-    
 
     //入口函数
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -128,8 +125,7 @@ extension AppDelegate {
     //: 新特性
     func isNewFeatureVersion() -> Bool {
         
-        let newVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"]
-            as! String
+        let newVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
         
         
         //: 旧版本到新版本为升序
@@ -180,8 +176,7 @@ extension AppDelegate {
     
     
     /// 添加广告
-    fileprivate func addAdvertisement()
-    {
+    fileprivate func addAdvertisement() {
         bgImageView?.image = UIImage(named: "backImage")
         window!.addSubview(bgImageView!)
         if (IS_SCREEN_4_INCH) {
@@ -253,37 +248,13 @@ extension AppDelegate {
         window? = UIWindow(frame: UIScreen.main.bounds)//init
         window?.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()
-//        window?.rootViewController = QuoraTabBarController()
-        
-        
-        window?.rootViewController = UINavigationController.init(rootViewController: QuoraAnimationTableViewController())
+        window?.rootViewController = QuoraTabBarController()
+        //window?.rootViewController = UINavigationController.init(rootViewController: QuoraAnimationTableViewController())
     }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-
 }
 
+
+///Swift 的扩展 extension 可以用来继承协议,实现代码隔离，便于维护
 extension AppDelegate: XLsn0wNetworkingDelegate {
     func netWortDidSuccess(result: AnyObject, requestName: String, parameters: NSDictionary?)
     {
@@ -311,8 +282,7 @@ extension AppDelegate: XLsn0wNetworkingDelegate {
         }
     }
     
-    func netWortDidFailed(result: AnyObject, error:Error?, requestName: String, parameters: NSDictionary?)
-    {
+    func netWortDidFailed(result: AnyObject, error:Error?, requestName: String, parameters: NSDictionary?) {
         print("\(requestName)---\(error)---")
     }
 }
