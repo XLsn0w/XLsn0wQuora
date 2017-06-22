@@ -228,6 +228,7 @@
 		35D3F6461EE9246A007C5AFF /* ZhihuAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D3F6431EE9246A007C5AFF /* ZhihuAPI.swift */; };
 		35D3F6471EE9246A007C5AFF /* JKEmployer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D3F6441EE9246A007C5AFF /* JKEmployer.swift */; };
 		35D3F64A1EE92D81007C5AFF /* RJHTTPDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D3F6491EE92D81007C5AFF /* RJHTTPDownloader.m */; };
+		35F87DD21EFB75A000370F66 /* YWFPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F87DD11EFB75A000370F66 /* YWFPSLabel.swift */; };
 		56FA8756A380BD2A5AFE5E1E /* Pods_XLsn0wQuora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EC1875BDF7823506E86F10 /* Pods_XLsn0wQuora.framework */; };
 /* End PBXBuildFile section */
 
@@ -514,6 +515,7 @@
 		35D3F6441EE9246A007C5AFF /* JKEmployer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKEmployer.swift; sourceTree = "<group>"; };
 		35D3F6481EE92D81007C5AFF /* RJHTTPDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJHTTPDownloader.h; sourceTree = "<group>"; };
 		35D3F6491EE92D81007C5AFF /* RJHTTPDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJHTTPDownloader.m; sourceTree = "<group>"; };
+		35F87DD11EFB75A000370F66 /* YWFPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWFPSLabel.swift; sourceTree = "<group>"; };
 		73EC1875BDF7823506E86F10 /* Pods_XLsn0wQuora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLsn0wQuora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EAC51129CBD0357AE5BC9A0 /* Pods-XLsn0wQuora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wQuora.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wQuora/Pods-XLsn0wQuora.debug.xcconfig"; sourceTree = "<group>"; };
 		E80546247F30C9421EB41B76 /* Pods-XLsn0wQuora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wQuora.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wQuora/Pods-XLsn0wQuora.release.xcconfig"; sourceTree = "<group>"; };
@@ -1224,6 +1226,7 @@
 			children = (
 				3591B2711ED3BFED00179D6F /* AppDelegate.swift */,
 				350507B01EEA946C00BED934 /* QuoraTabBarController.swift */,
+				35F87DD11EFB75A000370F66 /* YWFPSLabel.swift */,
 				35D181B51ED4206C00C9DC24 /* Main.storyboard */,
 				3591B2781ED3BFED00179D6F /* Assets.xcassets */,
 				3591B27A1ED3BFEE00179D6F /* LaunchScreen.storyboard */,
@@ -1644,6 +1647,7 @@
 				350C87A91EEA427F00FED4AB /* loginViewController.swift in Sources */,
 				350C874F1EEA427F00FED4AB /* PopoverSortCellViewModel.swift in Sources */,
 				35D3F64A1EE92D81007C5AFF /* RJHTTPDownloader.m in Sources */,
+				35F87DD21EFB75A000370F66 /* YWFPSLabel.swift in Sources */,
 				35BB82161EE91EF600804A2B /* UITableView+Extension.swift in Sources */,
 				350C87E41EEA452D00FED4AB /* ThemeViewController.swift in Sources */,
 				350C87E71EEA452D00FED4AB /* NewsDetailModel.swift in Sources */,

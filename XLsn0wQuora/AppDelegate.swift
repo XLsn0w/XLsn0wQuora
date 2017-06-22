@@ -74,6 +74,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        setupGlobalNotice()
       //NSSetUncaughtExceptionHandler(&UncaughtExceptionHandler);
         NSSetUncaughtExceptionHandler(objc_UncaughtExceptionHandler());
+        
+        
+        let lab = YWFPSLabel(frame: CGRect())
+        UIApplication.shared.keyWindow!.addSubview(lab)
         return true
     }
 }
