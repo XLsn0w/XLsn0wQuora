@@ -58,12 +58,12 @@ class FPSLabel: UILabel {
         count = 0
         
         let attrMStr = NSMutableAttributedString(attributedString: NSAttributedString(string: "\(fpsText) FPS" ))
-        if fps > 55.0{
+        if fps > 55.0 {// height
             fpsColor = UIColor.green
         } else if(fps >= 50.0 && fps <= 55.0) {
             fpsColor = UIColor.yellow
         } else {
-            fpsColor = UIColor.red
+            fpsColor = UIColor.red// low
         }
         
         attrMStr.setAttributes([NSForegroundColorAttributeName:fpsColor], range: NSMakeRange(0, attrMStr.length - 3))
