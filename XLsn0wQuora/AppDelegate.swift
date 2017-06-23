@@ -47,7 +47,6 @@ import Kingfisher
 import SnapKit
 import XLsn0wKit_swift
 import QorumLogs
-import XLsn0wKit_objc
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -76,8 +75,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NSSetUncaughtExceptionHandler(objc_UncaughtExceptionHandler());
         
         
-        let lab = YWFPSLabel(frame: CGRect())
-        UIApplication.shared.keyWindow!.addSubview(lab)
+   
+        
+        UIApplication.shared.keyWindow!.addSubview(FPSLabel(frame: CGRect()))
         return true
     }
 }
