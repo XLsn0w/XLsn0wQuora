@@ -14,7 +14,8 @@ class FPSLabel: UILabel {
     override init(frame: CGRect) {
         var fpsFrame = frame
         if fpsFrame.origin.x == 0 && fpsFrame.origin.y == 0 {
-            fpsFrame = CGRect(x: UIScreen.main.bounds.width/2 - (60/2), y: 20, width: 60, height: 20)
+            fpsFrame = CGRect(x: 100, y: 0, width: 60, height: 20)
+//            fpsFrame = CGRect(x: UIScreen.main.bounds.width/2 - (60/2), y: 20, width: 60, height: 20)
         }
         super.init(frame: fpsFrame)
         layer.cornerRadius = 5
@@ -67,7 +68,7 @@ class FPSLabel: UILabel {
         }
         
         attrMStr.setAttributes([NSForegroundColorAttributeName:fpsColor], range: NSMakeRange(0, attrMStr.length - 3))
-        attrMStr.setAttributes([NSForegroundColorAttributeName:UIColor.blue], range: NSMakeRange(attrMStr.length - 3, 3))
+        attrMStr.setAttributes([NSForegroundColorAttributeName:UIColor.black], range: NSMakeRange(attrMStr.length - 3, 3))
         self.attributedText = attrMStr
     }
 }

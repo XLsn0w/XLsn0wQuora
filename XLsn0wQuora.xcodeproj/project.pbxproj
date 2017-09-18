@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30D741741F6FB3BD009CEBA5 /* LoadWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D741731F6FB3BD009CEBA5 /* LoadWebViewController.swift */; };
+		30FBAA9D1F6BD4020093F8F3 /* WebViewLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FBAA9C1F6BD4020093F8F3 /* WebViewLoader.swift */; };
 		350507751EEA6DD100BED934 /* WRCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350507721EEA6DD100BED934 /* WRCycleCell.swift */; };
 		350507761EEA6DD100BED934 /* WRCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350507731EEA6DD100BED934 /* WRCycleScrollView.swift */; };
 		350507771EEA6DD100BED934 /* WRProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350507741EEA6DD100BED934 /* WRProxy.swift */; };
@@ -275,6 +277,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		30D741731F6FB3BD009CEBA5 /* LoadWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadWebViewController.swift; sourceTree = "<group>"; };
+		30FBAA9C1F6BD4020093F8F3 /* WebViewLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewLoader.swift; sourceTree = "<group>"; };
 		350507721EEA6DD100BED934 /* WRCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleCell.swift; sourceTree = "<group>"; };
 		350507731EEA6DD100BED934 /* WRCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleScrollView.swift; sourceTree = "<group>"; };
 		350507741EEA6DD100BED934 /* WRProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRProxy.swift; sourceTree = "<group>"; };
@@ -1082,9 +1086,9 @@
 		352B48741EF8BF6800201D07 /* CAAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				352B487E1EF8BF6800201D07 /* QuoraAnimationTableViewController.swift */,
 				352B48751EF8BF6800201D07 /* CAPropertyAnimation */,
 				352B487C1EF8BF6800201D07 /* CATransition */,
-				352B487E1EF8BF6800201D07 /* QuoraAnimationTableViewController.swift */,
 			);
 			path = CAAnimation;
 			sourceTree = "<group>";
@@ -1227,6 +1231,8 @@
 				3591B2711ED3BFED00179D6F /* AppDelegate.swift */,
 				350507B01EEA946C00BED934 /* QuoraTabBarController.swift */,
 				35F87DD11EFB75A000370F66 /* FPSLabel.swift */,
+				30FBAA9C1F6BD4020093F8F3 /* WebViewLoader.swift */,
+				30D741731F6FB3BD009CEBA5 /* LoadWebViewController.swift */,
 				35D181B51ED4206C00C9DC24 /* Main.storyboard */,
 				3591B2781ED3BFED00179D6F /* Assets.xcassets */,
 				3591B27A1ED3BFEE00179D6F /* LaunchScreen.storyboard */,
@@ -1604,6 +1610,7 @@
 				35327CF01EF7A4A70009EDC6 /* WXPullView.m in Sources */,
 				350C878B1EEA427F00FED4AB /* BaseChatCell.swift in Sources */,
 				350C876F1EEA427F00FED4AB /* SingleGiftCellViewModel.swift in Sources */,
+				30D741741F6FB3BD009CEBA5 /* LoadWebViewController.swift in Sources */,
 				350C87741EEA427F00FED4AB /* StrategyClassifyViewCell.swift in Sources */,
 				350C87661EEA427F00FED4AB /* SearchGiftViewController.swift in Sources */,
 				350C87841EEA427F00FED4AB /* ChatEmojiGroup.swift in Sources */,
@@ -1709,6 +1716,7 @@
 				350C875D1EEA427F00FED4AB /* SearchHeaderView.swift in Sources */,
 				352B48CA1EF8CE9600201D07 /* YWEmoticon.swift in Sources */,
 				352B48BC1EF8C4DF00201D07 /* APIManager.swift in Sources */,
+				30FBAA9D1F6BD4020093F8F3 /* WebViewLoader.swift in Sources */,
 				350C87891EEA427F00FED4AB /* ChatBoardView.swift in Sources */,
 				350C87E01EEA452D00FED4AB /* LeftController.swift in Sources */,
 				350C87921EEA427F00FED4AB /* VoiceView.swift in Sources */,
