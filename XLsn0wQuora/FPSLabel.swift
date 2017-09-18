@@ -4,17 +4,29 @@ import UIKit
 ///FPS（Frames Per Second）：每秒传输帧数 
 ///FPS越高，画面越连续，越低，画面越卡
 
+/*!
+ *1. iPhone 5      分辨率: 320x568，像素640x1136， @2x
+ *2. iPhone 6      分辨率: 375x667，像素750x1334， @2x
+ *3. iPhone 6 Plus 分辨率: 414x736，像素1242x2208，@3x
+ 
+ /*! 屏幕比率 以 iPhone 6 为基准 */
+ #define kFitWidth  ([UIScreen mainScreen].bounds.size.width / 375)
+ #define kFitHeight ([UIScreen mainScreen].bounds.size.height / 667)
+ */
+
 class FPSLabel: UILabel {
 
     private lazy var disPlayLink = CADisplayLink()
     private lazy var count: NSInteger = 0
     private lazy var lastTime: TimeInterval = 0
     private var fpsColor: UIColor = UIColor.green
+    ///屏幕比率 以 iPhone 6 为基准
+    private var kFitWidth: Float = Float(UIScreen.main.bounds.size.width / 375.0)
 
     override init(frame: CGRect) {
         var fpsFrame = frame
         if fpsFrame.origin.x == 0 && fpsFrame.origin.y == 0 {
-            fpsFrame = CGRect(x: 100, y: 0, width: 60, height: 20)
+            fpsFrame = CGRect(x: Int(80*kFitWidth), y: 0, width: 60, height: 20)
 //            fpsFrame = CGRect(x: UIScreen.main.bounds.width/2 - (60/2), y: 20, width: 60, height: 20)
         }
         super.init(frame: fpsFrame)
@@ -68,7 +80,7 @@ class FPSLabel: UILabel {
         }
         
         attrMStr.setAttributes([NSForegroundColorAttributeName:fpsColor], range: NSMakeRange(0, attrMStr.length - 3))
-        attrMStr.setAttributes([NSForegroundColorAttributeName:UIColor.black], range: NSMakeRange(attrMStr.length - 3, 3))
+        attrMStr.setAttributes([NSForegroundColorAttributeName:fpsColor], range: NSMakeRange(attrMStr.length - 3, 3))
         self.attributedText = attrMStr
     }
 }
