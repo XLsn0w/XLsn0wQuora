@@ -29,7 +29,7 @@ class GiftHomeViewController: UIViewController {
     }()
     
     //: 主滚动视图
-    fileprivate lazy var scrollView:UIScrollView = { () -> UIScrollView in
+    fileprivate lazy var scrollView: UIScrollView = { () -> UIScrollView in
         let view = UIScrollView()
        
         view.delegate = self

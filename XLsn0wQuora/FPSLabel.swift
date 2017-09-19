@@ -4,15 +4,17 @@ import UIKit
 ///FPS（Frames Per Second）：每秒传输帧数 
 ///FPS越高，画面越连续，越低，画面越卡
 
-/*!
- *1. iPhone 5      分辨率: 320x568，像素640x1136， @2x
- *2. iPhone 6      分辨率: 375x667，像素750x1334， @2x
- *3. iPhone 6 Plus 分辨率: 414x736，像素1242x2208，@3x
+/*
  
- /*! 屏幕比率 以 iPhone 6 为基准 */
- #define kFitWidth  ([UIScreen mainScreen].bounds.size.width / 375)
- #define kFitHeight ([UIScreen mainScreen].bounds.size.height / 667)
- */
+ *1. iPhone 5      4.0   分辨率: 320x568，像素640x1136， @2x
+ *2. iPhone 6      4.7   分辨率: 375x667，像素750x1334， @2x
+ *3. iPhone 6 Plus 5.5   分辨率: 414x736，像素1242x2208，@3x
+ 
+ *4. 屏幕比率 以 iPhone 6 为基准
+ *5. #define kFitWidth  ([UIScreen mainScreen].bounds.size.width / 375)
+ *6. #define kFitHeight ([UIScreen mainScreen].bounds.size.height / 667)
+ 
+*/
 
 class FPSLabel: UILabel {
 
