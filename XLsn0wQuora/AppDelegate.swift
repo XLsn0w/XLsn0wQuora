@@ -72,12 +72,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        setupGlobalStyle()
 //        setupGlobalNotice()
       //NSSetUncaughtExceptionHandler(&UncaughtExceptionHandler);
-        NSSetUncaughtExceptionHandler(objc_UncaughtExceptionHandler());
-        
-        
-   
-        
-        UIApplication.shared.keyWindow!.addSubview(FPSLabel(frame: CGRect()))
+        NSSetUncaughtExceptionHandler(objc_UncaughtExceptionHandler());///开启崩溃捕捉
+        UIApplication.shared.keyWindow!.addSubview(FPSLabel(frame: CGRect()))///添加FPS显示器到屏幕状态栏
         return true
     }
 }

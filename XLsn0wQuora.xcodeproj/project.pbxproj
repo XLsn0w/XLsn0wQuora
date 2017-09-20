@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30D741741F6FB3BD009CEBA5 /* LoadWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D741731F6FB3BD009CEBA5 /* LoadWebViewController.swift */; };
-		30FBAA9D1F6BD4020093F8F3 /* WebViewLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FBAA9C1F6BD4020093F8F3 /* WebViewLoader.swift */; };
+		3085D6231F726B4700D9349E /* LoadWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3085D6211F726B4700D9349E /* LoadWebViewController.swift */; };
+		3085D6241F726B4700D9349E /* WebViewLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3085D6221F726B4700D9349E /* WebViewLoader.swift */; };
+		3085D6271F726C6100D9349E /* FPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3085D6261F726C6100D9349E /* FPSLabel.swift */; };
 		350507751EEA6DD100BED934 /* WRCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350507721EEA6DD100BED934 /* WRCycleCell.swift */; };
 		350507761EEA6DD100BED934 /* WRCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350507731EEA6DD100BED934 /* WRCycleScrollView.swift */; };
 		350507771EEA6DD100BED934 /* WRProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350507741EEA6DD100BED934 /* WRProxy.swift */; };
@@ -230,7 +231,6 @@
 		35D3F6461EE9246A007C5AFF /* ZhihuAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D3F6431EE9246A007C5AFF /* ZhihuAPI.swift */; };
 		35D3F6471EE9246A007C5AFF /* JKEmployer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D3F6441EE9246A007C5AFF /* JKEmployer.swift */; };
 		35D3F64A1EE92D81007C5AFF /* RJHTTPDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D3F6491EE92D81007C5AFF /* RJHTTPDownloader.m */; };
-		35F87DD21EFB75A000370F66 /* FPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F87DD11EFB75A000370F66 /* FPSLabel.swift */; };
 		56FA8756A380BD2A5AFE5E1E /* Pods_XLsn0wQuora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EC1875BDF7823506E86F10 /* Pods_XLsn0wQuora.framework */; };
 /* End PBXBuildFile section */
 
@@ -277,8 +277,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		30D741731F6FB3BD009CEBA5 /* LoadWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadWebViewController.swift; sourceTree = "<group>"; };
-		30FBAA9C1F6BD4020093F8F3 /* WebViewLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewLoader.swift; sourceTree = "<group>"; };
+		3085D6211F726B4700D9349E /* LoadWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadWebViewController.swift; sourceTree = "<group>"; };
+		3085D6221F726B4700D9349E /* WebViewLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewLoader.swift; sourceTree = "<group>"; };
+		3085D6261F726C6100D9349E /* FPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSLabel.swift; sourceTree = "<group>"; };
 		350507721EEA6DD100BED934 /* WRCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleCell.swift; sourceTree = "<group>"; };
 		350507731EEA6DD100BED934 /* WRCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleScrollView.swift; sourceTree = "<group>"; };
 		350507741EEA6DD100BED934 /* WRProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRProxy.swift; sourceTree = "<group>"; };
@@ -519,7 +520,6 @@
 		35D3F6441EE9246A007C5AFF /* JKEmployer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKEmployer.swift; sourceTree = "<group>"; };
 		35D3F6481EE92D81007C5AFF /* RJHTTPDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJHTTPDownloader.h; sourceTree = "<group>"; };
 		35D3F6491EE92D81007C5AFF /* RJHTTPDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJHTTPDownloader.m; sourceTree = "<group>"; };
-		35F87DD11EFB75A000370F66 /* FPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSLabel.swift; sourceTree = "<group>"; };
 		73EC1875BDF7823506E86F10 /* Pods_XLsn0wQuora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLsn0wQuora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EAC51129CBD0357AE5BC9A0 /* Pods-XLsn0wQuora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wQuora.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wQuora/Pods-XLsn0wQuora.debug.xcconfig"; sourceTree = "<group>"; };
 		E80546247F30C9421EB41B76 /* Pods-XLsn0wQuora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wQuora.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wQuora/Pods-XLsn0wQuora.release.xcconfig"; sourceTree = "<group>"; };
@@ -551,6 +551,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3085D6201F726B4700D9349E /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				3085D6211F726B4700D9349E /* LoadWebViewController.swift */,
+				3085D6221F726B4700D9349E /* WebViewLoader.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		3085D6251F726C6100D9349E /* FPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				3085D6261F726C6100D9349E /* FPSLabel.swift */,
+			);
+			path = FPSLabel;
+			sourceTree = "<group>";
+		};
 		350507711EEA6DD100BED934 /* WRCycleScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1230,9 +1247,6 @@
 			children = (
 				3591B2711ED3BFED00179D6F /* AppDelegate.swift */,
 				350507B01EEA946C00BED934 /* QuoraTabBarController.swift */,
-				35F87DD11EFB75A000370F66 /* FPSLabel.swift */,
-				30FBAA9C1F6BD4020093F8F3 /* WebViewLoader.swift */,
-				30D741731F6FB3BD009CEBA5 /* LoadWebViewController.swift */,
 				35D181B51ED4206C00C9DC24 /* Main.storyboard */,
 				3591B2781ED3BFED00179D6F /* Assets.xcassets */,
 				3591B27A1ED3BFEE00179D6F /* LaunchScreen.storyboard */,
@@ -1267,6 +1281,8 @@
 			isa = PBXGroup;
 			children = (
 				353E52871ED3C36D008BA28E /* Application */,
+				3085D6251F726C6100D9349E /* FPSLabel */,
+				3085D6201F726B4700D9349E /* Web */,
 				350C86881EEA427F00FED4AB /* Classes */,
 				352B48731EF8BF6800201D07 /* QuartzCore */,
 				35BB81E71EE91EAF00804A2B /* Swift */,
@@ -1610,7 +1626,6 @@
 				35327CF01EF7A4A70009EDC6 /* WXPullView.m in Sources */,
 				350C878B1EEA427F00FED4AB /* BaseChatCell.swift in Sources */,
 				350C876F1EEA427F00FED4AB /* SingleGiftCellViewModel.swift in Sources */,
-				30D741741F6FB3BD009CEBA5 /* LoadWebViewController.swift in Sources */,
 				350C87741EEA427F00FED4AB /* StrategyClassifyViewCell.swift in Sources */,
 				350C87661EEA427F00FED4AB /* SearchGiftViewController.swift in Sources */,
 				350C87841EEA427F00FED4AB /* ChatEmojiGroup.swift in Sources */,
@@ -1628,6 +1643,7 @@
 				350507851EEA6E0900BED934 /* MMDrawerController.m in Sources */,
 				352B48CB1EF8CE9600201D07 /* YWEmoticonPackage.swift in Sources */,
 				350C87421EEA427F00FED4AB /* BannerCarouseViewModel.swift in Sources */,
+				3085D6231F726B4700D9349E /* LoadWebViewController.swift in Sources */,
 				350C87861EEA427F00FED4AB /* RecordButton.swift in Sources */,
 				350C873D1EEA427F00FED4AB /* UIButton+Extension.swift in Sources */,
 				350C873A1EEA427F00FED4AB /* DispatchQueue+Extension.swift in Sources */,
@@ -1654,7 +1670,6 @@
 				350C87A91EEA427F00FED4AB /* loginViewController.swift in Sources */,
 				350C874F1EEA427F00FED4AB /* PopoverSortCellViewModel.swift in Sources */,
 				35D3F64A1EE92D81007C5AFF /* RJHTTPDownloader.m in Sources */,
-				35F87DD21EFB75A000370F66 /* FPSLabel.swift in Sources */,
 				35BB82161EE91EF600804A2B /* UITableView+Extension.swift in Sources */,
 				350C87E41EEA452D00FED4AB /* ThemeViewController.swift in Sources */,
 				350C87E71EEA452D00FED4AB /* NewsDetailModel.swift in Sources */,
@@ -1716,7 +1731,6 @@
 				350C875D1EEA427F00FED4AB /* SearchHeaderView.swift in Sources */,
 				352B48CA1EF8CE9600201D07 /* YWEmoticon.swift in Sources */,
 				352B48BC1EF8C4DF00201D07 /* APIManager.swift in Sources */,
-				30FBAA9D1F6BD4020093F8F3 /* WebViewLoader.swift in Sources */,
 				350C87891EEA427F00FED4AB /* ChatBoardView.swift in Sources */,
 				350C87E01EEA452D00FED4AB /* LeftController.swift in Sources */,
 				350C87921EEA427F00FED4AB /* VoiceView.swift in Sources */,
@@ -1755,6 +1769,7 @@
 				352B48D41EF8DCD300201D07 /* YYClassInfo.m in Sources */,
 				350C87E51EEA452D00FED4AB /* LaunchModel.swift in Sources */,
 				350C873C1EEA427F00FED4AB /* UIBarButtonItem+Extension.swift in Sources */,
+				3085D6271F726C6100D9349E /* FPSLabel.swift in Sources */,
 				350C87A01EEA427F00FED4AB /* VoiceMessage.swift in Sources */,
 				350C87751EEA427F00FED4AB /* StrategyClassifyViewCellViewModel.swift in Sources */,
 				350C87A41EEA427F00FED4AB /* PositionChatCellViewModel.swift in Sources */,
@@ -1782,6 +1797,7 @@
 				350507761EEA6DD100BED934 /* WRCycleScrollView.swift in Sources */,
 				350C87631EEA427F00FED4AB /* AllClassifyViewController.swift in Sources */,
 				350C87AE1EEA427F00FED4AB /* CustomButton.swift in Sources */,
+				3085D6241F726B4700D9349E /* WebViewLoader.swift in Sources */,
 				35BB820D1EE91EF600804A2B /* HorizIndicatorView.swift in Sources */,
 				350C87EC1EEA452D00FED4AB /* BannerView.swift in Sources */,
 				350C87561EEA427F00FED4AB /* Refresh.swift in Sources */,
