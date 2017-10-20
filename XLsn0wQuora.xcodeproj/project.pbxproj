@@ -10,6 +10,7 @@
 		3085D6231F726B4700D9349E /* LoadWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3085D6211F726B4700D9349E /* LoadWebViewController.swift */; };
 		3085D6241F726B4700D9349E /* WebViewLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3085D6221F726B4700D9349E /* WebViewLoader.swift */; };
 		3085D6271F726C6100D9349E /* FPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3085D6261F726C6100D9349E /* FPSLabel.swift */; };
+		30A3321F1F9989510037625A /* AlgorithmObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A3321E1F9989510037625A /* AlgorithmObject.m */; };
 		350507751EEA6DD100BED934 /* WRCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350507721EEA6DD100BED934 /* WRCycleCell.swift */; };
 		350507761EEA6DD100BED934 /* WRCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350507731EEA6DD100BED934 /* WRCycleScrollView.swift */; };
 		350507771EEA6DD100BED934 /* WRProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350507741EEA6DD100BED934 /* WRProxy.swift */; };
@@ -280,6 +281,8 @@
 		3085D6211F726B4700D9349E /* LoadWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadWebViewController.swift; sourceTree = "<group>"; };
 		3085D6221F726B4700D9349E /* WebViewLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewLoader.swift; sourceTree = "<group>"; };
 		3085D6261F726C6100D9349E /* FPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSLabel.swift; sourceTree = "<group>"; };
+		30A3321D1F9989510037625A /* AlgorithmObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgorithmObject.h; sourceTree = "<group>"; };
+		30A3321E1F9989510037625A /* AlgorithmObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmObject.m; sourceTree = "<group>"; };
 		350507721EEA6DD100BED934 /* WRCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleCell.swift; sourceTree = "<group>"; };
 		350507731EEA6DD100BED934 /* WRCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleScrollView.swift; sourceTree = "<group>"; };
 		350507741EEA6DD100BED934 /* WRProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRProxy.swift; sourceTree = "<group>"; };
@@ -1306,6 +1309,8 @@
 				35BB81E01EE91EA100804A2B /* RetainCount.m */,
 				35327CEB1EF7A3890009EDC6 /* UIBezierPathDemo.h */,
 				35327CEC1EF7A3890009EDC6 /* UIBezierPathDemo.m */,
+				30A3321D1F9989510037625A /* AlgorithmObject.h */,
+				30A3321E1F9989510037625A /* AlgorithmObject.m */,
 				3505077A1EEA6E0900BED934 /* MMDrawerController */,
 			);
 			path = "Objective-C";
@@ -1662,6 +1667,7 @@
 				350C87611EEA427F00FED4AB /* TopicViewCell.swift in Sources */,
 				350507751EEA6DD100BED934 /* WRCycleCell.swift in Sources */,
 				350C87E91EEA452D00FED4AB /* StoryModel.swift in Sources */,
+				30A3321F1F9989510037625A /* AlgorithmObject.m in Sources */,
 				35BB82101EE91EF600804A2B /* FMDB_Extension.swift in Sources */,
 				350C87E11EEA452D00FED4AB /* MainController.swift in Sources */,
 				350C874D1EEA427F00FED4AB /* PopoverClassifyView.swift in Sources */,
