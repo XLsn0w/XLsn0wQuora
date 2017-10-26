@@ -12,16 +12,16 @@ import Foundation
 
 extension UIView {
     
-    func height() -> CGFloat {
-        var maxHeight:CGFloat = 0.0
-        
-        for i in  0..<subviews.count {
-            let view = subviews[i]
-            if view.frame.maxY > maxHeight {
-                maxHeight = view.frame.maxY
-            }
-        }
-        
-        return maxHeight
-    }
+//    func height() -> CGFloat {
+//        var maxHeight:CGFloat = 0.0
+//
+//        for i in  0..<subviews.count {
+//            let view = subviews[i]
+//            if view.frame.maxY > maxHeight {
+//                maxHeight = view.frame.maxY
+//            }
+//        }
+//
+//        return maxHeight
+//    }
 }
