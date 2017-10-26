@@ -1588,13 +1588,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XLsn0wQuora-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C2B8194ADB591655073EF7B3 /* [CP] Embed Pods Frameworks */ = {
@@ -1603,9 +1606,50 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XLsn0wQuora/Pods-XLsn0wQuora-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/QorumLogs/QorumLogs.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+				"${BUILT_PRODUCTS_DIR}/XLsn0wKit_swift/XLsn0wKit_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QorumLogs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLsn0wKit_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

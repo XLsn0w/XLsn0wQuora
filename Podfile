@@ -34,4 +34,6 @@ target "XLsn0wQuora" do
     pod 'SDWebImage' #SDWebImage
     pod 'MJRefresh' #MJRefresh
     
+    pod 'YYKit'
+    
 end
