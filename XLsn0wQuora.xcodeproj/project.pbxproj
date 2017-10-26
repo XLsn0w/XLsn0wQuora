@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30743EBB1FA19457009CE4D8 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743EBA1FA19457009CE4D8 /* IJKMediaFramework.framework */; };
 		3085D6231F726B4700D9349E /* LoadWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3085D6211F726B4700D9349E /* LoadWebViewController.swift */; };
 		3085D6241F726B4700D9349E /* WebViewLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3085D6221F726B4700D9349E /* WebViewLoader.swift */; };
 		3085D6271F726C6100D9349E /* FPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3085D6261F726C6100D9349E /* FPSLabel.swift */; };
@@ -279,6 +280,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		30743EBA1FA19457009CE4D8 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		3085D6211F726B4700D9349E /* LoadWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadWebViewController.swift; sourceTree = "<group>"; };
 		3085D6221F726B4700D9349E /* WebViewLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewLoader.swift; sourceTree = "<group>"; };
 		3085D6261F726C6100D9349E /* FPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSLabel.swift; sourceTree = "<group>"; };
@@ -538,6 +540,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56FA8756A380BD2A5AFE5E1E /* Pods_XLsn0wQuora.framework in Frameworks */,
+				30743EBB1FA19457009CE4D8 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1259,6 +1262,7 @@
 				3591B27A1ED3BFEE00179D6F /* LaunchScreen.storyboard */,
 				3591B27D1ED3BFEE00179D6F /* Info.plist */,
 				30A332201F99A62F0037625A /* 数据结构和算法.jpg */,
+				30743EBA1FA19457009CE4D8 /* IJKMediaFramework.framework */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -2021,6 +2025,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7L4YK5W6WP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XLsn0wQuora",
+				);
 				INFOPLIST_FILE = XLsn0wQuora/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2039,6 +2047,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7L4YK5W6WP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XLsn0wQuora",
+				);
 				INFOPLIST_FILE = XLsn0wQuora/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
