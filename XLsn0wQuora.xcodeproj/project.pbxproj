@@ -67,6 +67,7 @@
 		305E8AD71FA2CA4200E731F8 /* UILabelPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E8AD61FA2CA4100E731F8 /* UILabelPadding.swift */; };
 		30711D4D1FA319C900AD4CD4 /* 数据结构和算法.png in Resources */ = {isa = PBXBuildFile; fileRef = 30711D4C1FA319C900AD4CD4 /* 数据结构和算法.png */; };
 		30711D4F1FA319F000AD4CD4 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30711D4E1FA319EF00AD4CD4 /* IJKMediaFramework.framework */; };
+		30711D511FA31D4E00AD4CD4 /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 30711D501FA31D4E00AD4CD4 /* LaunchScreen.png */; };
 		30743EBD1FA1AB9F009CE4D8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743EBC1FA1AB93009CE4D8 /* AudioToolbox.framework */; };
 		30743EBF1FA1ABBB009CE4D8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743EBE1FA1ABB4009CE4D8 /* AVFoundation.framework */; };
 		30743EC11FA1ABD2009CE4D8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743EC01FA1ABC7009CE4D8 /* CoreGraphics.framework */; };
@@ -380,6 +381,7 @@
 		305E8AD61FA2CA4100E731F8 /* UILabelPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelPadding.swift; sourceTree = "<group>"; };
 		30711D4C1FA319C900AD4CD4 /* 数据结构和算法.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "数据结构和算法.png"; sourceTree = "<group>"; };
 		30711D4E1FA319EF00AD4CD4 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		30711D501FA31D4E00AD4CD4 /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
 		30743EBC1FA1AB93009CE4D8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		30743EBE1FA1ABB4009CE4D8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		30743EC01FA1ABC7009CE4D8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -906,6 +908,7 @@
 			isa = PBXGroup;
 			children = (
 				30711D4C1FA319C900AD4CD4 /* 数据结构和算法.png */,
+				30711D501FA31D4E00AD4CD4 /* LaunchScreen.png */,
 				30711D4E1FA319EF00AD4CD4 /* IJKMediaFramework.framework */,
 			);
 			path = Resource;
@@ -1380,10 +1383,10 @@
 		350C87C01EEA452D00FED4AB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				350C87C61EEA452D00FED4AB /* Main */,
 				350C87C11EEA452D00FED4AB /* Base */,
 				350C87C41EEA452D00FED4AB /* DetailViewController.swift */,
 				350C87C51EEA452D00FED4AB /* HomeViewController.swift */,
-				350C87C61EEA452D00FED4AB /* Main */,
 				350C87CA1EEA452D00FED4AB /* MainViewController.swift */,
 				350C87CB1EEA452D00FED4AB /* MenuViewController.swift */,
 				350C87CC1EEA452D00FED4AB /* ThemeViewController.swift */,
@@ -1763,6 +1766,7 @@
 				3004A6CE1FA2D17F00E7D52F /* NDHotCellHeaderView.xib in Resources */,
 				3004A6D21FA2D17F00E7D52F /* NDLivingBottomView.xib in Resources */,
 				3004A6C81FA2D17F00E7D52F /* NDNearbyCollectionViewCell.xib in Resources */,
+				30711D511FA31D4E00AD4CD4 /* LaunchScreen.png in Resources */,
 				350C87591EEA427F00FED4AB /* ico_camera@2x.png in Resources */,
 				35D181B61ED4206C00C9DC24 /* Main.storyboard in Resources */,
 				350C87571EEA427F00FED4AB /* audio_nav@2x.png in Resources */,
