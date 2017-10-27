@@ -1,10 +1,3 @@
-//
-//  NSDate+.swift
-//  Timi
-//
-//  Created by 田子瑶 on 16/8/30.
-//  Copyright © 2016年 田子瑶. All rights reserved.
-//
 
 import UIKit
 

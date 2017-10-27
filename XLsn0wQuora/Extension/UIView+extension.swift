@@ -1,10 +1,3 @@
-//
-//  UIView+category.swift
-//  UI_Overload
-//
-//  Created by 李家奇_南湖国旅 on 2017/7/31.
-//  Copyright © 2017年 李家奇_南湖国旅. All rights reserved.
-//
 
 import Foundation
 import UIKit

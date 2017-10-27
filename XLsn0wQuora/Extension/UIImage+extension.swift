@@ -1,15 +1,37 @@
-//
-//  UIImage+NDImage.swift
-//  NDYingKe_swift4
-//
-//  Created by 李家奇_南湖国旅 on 2017/9/7.
-//  Copyright © 2017年 NorthDogLi. All rights reserved.
-//
 
 import UIKit
 import Accelerate.vImage
 
 extension UIImage {
+    public class func cropImage(_ original:UIImage, scale:CGFloat)->UIImage{
+        let originalSize = original.size
+        let newSize = CGSize(width: originalSize.width * scale, height: originalSize.height * scale)
+        
+        //在画布里画原始图
+        UIGraphicsBeginImageContext(newSize)
+        original.draw(in: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
+        let cropedImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return cropedImage!
+    }
+    public class func compressImage(_ original:UIImage, compressionQuality:CGFloat)->Data?{
+        let imageData = UIImageJPEGRepresentation(original, compressionQuality)
+        return imageData
+    }
+    public class func cropAndCompressImage(_ original:UIImage, scale:CGFloat, compressionQualiy:CGFloat)->Data?{
+        let cropImage = UIImage.cropImage(original, scale: scale)
+        let imageData = compressImage(cropImage, compressionQuality: compressionQualiy)
+        return imageData
+    }
+    public class func generateImageWithFileName(_ fileName:String)->UIImage?{
+        let imagePath = String.createFilePathInDocumentWith(fileName) ?? ""
+        if let data = try? Data(contentsOf: URL(fileURLWithPath: imagePath)){
+            return UIImage(data: data)
+        }
+        else{
+            return nil
+        }
+    }
     
     public func circleImage() -> UIImage {
         let size = self.size
@@ -37,11 +59,11 @@ extension UIImage {
     }
     
     /** 将当前图片缩放到指定宽度
- 
-        parameter height: 指定宽度
- 
-        returns: UIImage，如果本身比指定的宽度小，直接返回
-    */
+     
+     parameter height: 指定宽度
+     
+     returns: UIImage，如果本身比指定的宽度小，直接返回
+     */
     func scaleImageToWidth(_ width: CGFloat) -> UIImage {
         
         // 1. 判断宽度，如果小于指定宽度直接返回当前图像
@@ -71,8 +93,8 @@ extension UIImage {
     }
     
     /**
-        图片模糊效果处理
-        高斯模糊
+     图片模糊效果处理
+     高斯模糊
      */
     func gaussianBlur(blurAmount:CGFloat) -> UIImage {
         //高斯模糊参数(0-1)之间，超出范围强行转成0.5
