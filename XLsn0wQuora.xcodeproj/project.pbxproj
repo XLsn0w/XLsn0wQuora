@@ -65,7 +65,6 @@
 		305E8AD31FA2C9CF00E731F8 /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E8ACE1FA2C9CF00E731F8 /* UIImageView+extension.swift */; };
 		305E8AD41FA2C9CF00E731F8 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E8ACF1FA2C9CF00E731F8 /* UIColor+extension.swift */; };
 		305E8AD71FA2CA4200E731F8 /* UILabelPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E8AD61FA2CA4100E731F8 /* UILabelPadding.swift */; };
-		30711D4D1FA319C900AD4CD4 /* 数据结构和算法.png in Resources */ = {isa = PBXBuildFile; fileRef = 30711D4C1FA319C900AD4CD4 /* 数据结构和算法.png */; };
 		30711D4F1FA319F000AD4CD4 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30711D4E1FA319EF00AD4CD4 /* IJKMediaFramework.framework */; };
 		30711D511FA31D4E00AD4CD4 /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 30711D501FA31D4E00AD4CD4 /* LaunchScreen.png */; };
 		30743EBD1FA1AB9F009CE4D8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743EBC1FA1AB93009CE4D8 /* AudioToolbox.framework */; };
@@ -379,7 +378,6 @@
 		305E8ACE1FA2C9CF00E731F8 /* UIImageView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
 		305E8ACF1FA2C9CF00E731F8 /* UIColor+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 		305E8AD61FA2CA4100E731F8 /* UILabelPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelPadding.swift; sourceTree = "<group>"; };
-		30711D4C1FA319C900AD4CD4 /* 数据结构和算法.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "数据结构和算法.png"; sourceTree = "<group>"; };
 		30711D4E1FA319EF00AD4CD4 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		30711D501FA31D4E00AD4CD4 /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
 		30743EBC1FA1AB93009CE4D8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -907,7 +905,6 @@
 		30711D4B1FA319C900AD4CD4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				30711D4C1FA319C900AD4CD4 /* 数据结构和算法.png */,
 				30711D501FA31D4E00AD4CD4 /* LaunchScreen.png */,
 				30711D4E1FA319EF00AD4CD4 /* IJKMediaFramework.framework */,
 			);
@@ -1775,7 +1772,6 @@
 				350C875A1EEA427F00FED4AB /* Info_more_search@2x.png in Resources */,
 				3591B27C1ED3BFEE00179D6F /* LaunchScreen.storyboard in Resources */,
 				3591B2791ED3BFED00179D6F /* Assets.xcassets in Resources */,
-				30711D4D1FA319C900AD4CD4 /* 数据结构和算法.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

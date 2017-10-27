@@ -53,25 +53,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     //全局变量
     var window: UIWindow?
-    
-    let requestSplashImage = "requestSplashImage"
-    var bgImageView:UIImageView? = UIImageView(frame: UIScreen.main.bounds)
-    var advImageView:UIImageView?
-    let jumpBtn = UIButton()
-    let SPLASHIMAGE = "SPLASHIMAGE"
-    let drawerController = DrawerController()
 
     //入口函数
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         addWindow()
-//        XLsn0wQuoraRequest.requestSplashImage(reqName: requestSplashImage, delegate: self)
-//        addAdvertisement()
-//        removeAdvertisement()
-//        setupPrintLog()
-//        setupRootViewController()
-//        setupGlobalStyle()
-//        setupGlobalNotice()
-        
         NSSetUncaughtExceptionHandler(objc_UncaughtExceptionHandler());///开启崩溃捕捉 NSSetUncaughtExceptionHandler(&UncaughtExceptionHandler);
         UIApplication.shared.keyWindow!.addSubview(FPSLabel(frame: CGRect()))///添加FPS显示器到屏幕状态栏
         return true
@@ -114,129 +99,7 @@ extension AppDelegate {
         ProgressHUD.setupProgressHUD()
         
     }
-    //: 注册系统通知
-    fileprivate func setupGlobalNotice() {
-        //: 注册系统通知
-        NotificationCenter.default.addObserver(self, selector: #selector(changeDefaultRootViewController(notification:)), name: NSNotification.Name(rawValue: SystemChangeRootViewControllerNotification), object: nil)
-        
-    }
-
-    //MARK: 登陆业务逻辑
-    //: 新特性
-    func isNewFeatureVersion() -> Bool {
-        
-        let newVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
-        
-        
-        //: 旧版本到新版本为升序
-        guard let sanboxVersion = UserDefaults.standard.object(forKey: "APPVersion") as? String , sanboxVersion.compare(newVersion) != .orderedAscending else {
-            //: 跟新版本
-            UserDefaults.standard.set(newVersion, forKey: "APPVersion")
-            return true
-        }
-        
-        
-        return false
-    }
     
-    func defaultRootViewController() -> UIViewController {
-        
-        return MainViewController()
-        //: 没有登陆跳转到系统主界面
-        //        guard LSXUserAccountModel.isLogin() else {
-        //            return MainViewController()
-        //        }
-        //
-        //        //: 判断是否新版本
-        //        if isNewFeatureVersion() {
-        //            return LSXNewFeatureViewController()
-        //        }
-        //
-        //        //: 跳转到欢迎主界面
-        //        return LSXWelcomeViewController()
-    }
-    
-    func changeDefaultRootViewController(notification:Notification) {
-        
-        QL2(notification.userInfo?[ToControllerKey])
-        
-        
-        guard let controllerName = notification.userInfo?[ToControllerKey] as? String else {
-            QL4("跳转根控制器失败，传入的控制器名称为空")
-            return
-        }
-        
-        guard let controller = UIViewController.controller(withName: controllerName) else {
-            QL4("创建控制器失败")
-            return
-        }
-        
-        window?.rootViewController = controller
-    }
-    
-    
-    /// 添加广告
-    fileprivate func addAdvertisement() {
-        bgImageView?.image = UIImage(named: "backImage")
-        window!.addSubview(bgImageView!)
-        if (IS_SCREEN_4_INCH) {
-            advImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight - 100))
-        } else if (IS_SCREEN_47_INCH) {
-            advImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight - 115))
-        } else {
-            advImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight - 130))
-        }
-        bgImageView?.addSubview(advImageView!)
-        if let data = UserDefaults.standard.object(forKey: SPLASHIMAGE) as? Data
-        {
-            advImageView?.image = UIImage(data: data)
-        }
-        
-        bgImageView?.isUserInteractionEnabled = true
-        advImageView?.isUserInteractionEnabled = true
-        jumpBtn.setTitle("跳过", for: .normal)
-        jumpBtn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
-        jumpBtn.backgroundColor = UIColor.black.withAlphaComponent(0.9)
-        jumpBtn.setTitleColor(UIColor.white, for: .normal)
-        advImageView?.addSubview(jumpBtn)
-        jumpBtn.snp.makeConstraints { (make) in
-            make.width.equalTo(50)
-            make.height.equalTo(25)
-            make.top.equalTo(self.advImageView!).offset(30)
-            make.right.equalTo(self.advImageView!).offset(-30)
-        }
-        jumpBtn.layer.cornerRadius = 6
-        jumpBtn.layer.masksToBounds = true
-        //        jumpBtn.setTapActionWithBlock { [weak self] in
-        //            if let weakSelf = self
-        //            {
-        //                weakSelf.bgImageView?.removeFromSuperview()
-        //                weakSelf.bgImageView = nil
-        //                weakSelf.drawerController.checkAppVersion()
-        //            }
-        //        }
-        jumpBtn.isHidden = true
-    }
-    
-    /// 移除广告
-    fileprivate func removeAdvertisement() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute:
-            {
-                UIView.animate(withDuration: 1.0, animations:
-                    {
-                        self.advImageView?.alpha = 0
-                        self.bgImageView?.alpha = 0
-                },completion: { (finish) in
-                    self.bgImageView?.removeFromSuperview()
-                    if self.bgImageView != nil {
-                        self.drawerController.checkAppVersion()
-                    }
-                    self.bgImageView = nil
-                })
-        })
-    }
-    
-
     func set_statusBarStyle() -> () {
         //默认的黑色（UIStatusBarStyleDefault） .default
         //白色（UIStatusBarStyleLightContent） .lightContent
@@ -257,32 +120,9 @@ extension AppDelegate {
 ///Swift 的扩展 extension 可以用来继承协议,实现代码隔离，便于维护
 extension AppDelegate: XLsn0wNetworkingDelegate {
     
-    func netWortDidSuccess(result: AnyObject, requestName: String, parameters: NSDictionary?) {
-        if (requestName == requestSplashImage)
-        {
-            let json = JSON(result)
-            //            let dict = json.dictionaryValue
-            //            let creatives = dict["creatives"]
-            //            let url = creatives?[0]["url"].string
-            
-            let splashUrl = json.dictionaryValue["creatives"]?[0]["url"].string
-            
-            advImageView?.kf.setImage(with: URL(string: splashUrl!), completionHandler:
-                { [weak self] (image, error, cachtType, url) in
-                    if let weakSelf = self
-                    {
-                        weakSelf.jumpBtn.isHidden = false
-                        let data = UIImagePNGRepresentation(image!)
-                        UserDefaults.standard.set(data, forKey: weakSelf.SPLASHIMAGE)
-                    }
-            })
-            return
-        }
-    }
+
     
-    func netWortDidFailed(result: AnyObject, error:Error?, requestName: String, parameters: NSDictionary?) {
-        print("\(requestName)---\(error)---")
-    }
+    
 }
 
 
