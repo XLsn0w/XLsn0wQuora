@@ -65,7 +65,8 @@
 		305E8AD31FA2C9CF00E731F8 /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E8ACE1FA2C9CF00E731F8 /* UIImageView+extension.swift */; };
 		305E8AD41FA2C9CF00E731F8 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E8ACF1FA2C9CF00E731F8 /* UIColor+extension.swift */; };
 		305E8AD71FA2CA4200E731F8 /* UILabelPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E8AD61FA2CA4100E731F8 /* UILabelPadding.swift */; };
-		30743EBB1FA19457009CE4D8 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743EBA1FA19457009CE4D8 /* IJKMediaFramework.framework */; };
+		30711D4D1FA319C900AD4CD4 /* 数据结构和算法.png in Resources */ = {isa = PBXBuildFile; fileRef = 30711D4C1FA319C900AD4CD4 /* 数据结构和算法.png */; };
+		30711D4F1FA319F000AD4CD4 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30711D4E1FA319EF00AD4CD4 /* IJKMediaFramework.framework */; };
 		30743EBD1FA1AB9F009CE4D8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743EBC1FA1AB93009CE4D8 /* AudioToolbox.framework */; };
 		30743EBF1FA1ABBB009CE4D8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743EBE1FA1ABB4009CE4D8 /* AVFoundation.framework */; };
 		30743EC11FA1ABD2009CE4D8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743EC01FA1ABC7009CE4D8 /* CoreGraphics.framework */; };
@@ -240,8 +241,6 @@
 		352B48CA1EF8CE9600201D07 /* YWEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352B48C61EF8CE9600201D07 /* YWEmoticon.swift */; };
 		352B48CB1EF8CE9600201D07 /* YWEmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352B48C71EF8CE9600201D07 /* YWEmoticonPackage.swift */; };
 		352B48CC1EF8CE9600201D07 /* YWEmonticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352B48C81EF8CE9600201D07 /* YWEmonticonManager.swift */; };
-		352B48D31EF8DCD300201D07 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 352B48CF1EF8DCD300201D07 /* NSObject+YYModel.m */; };
-		352B48D41EF8DCD300201D07 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 352B48D11EF8DCD300201D07 /* YYClassInfo.m */; };
 		35327CEA1EF7A3040009EDC6 /* UIImageView+JKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 35327CE91EF7A3040009EDC6 /* UIImageView+JKImage.m */; };
 		35327CED1EF7A3890009EDC6 /* UIBezierPathDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 35327CEC1EF7A3890009EDC6 /* UIBezierPathDemo.m */; };
 		35327CF01EF7A4A70009EDC6 /* WXPullView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35327CEF1EF7A4A70009EDC6 /* WXPullView.m */; };
@@ -379,7 +378,8 @@
 		305E8ACE1FA2C9CF00E731F8 /* UIImageView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
 		305E8ACF1FA2C9CF00E731F8 /* UIColor+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 		305E8AD61FA2CA4100E731F8 /* UILabelPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelPadding.swift; sourceTree = "<group>"; };
-		30743EBA1FA19457009CE4D8 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		30711D4C1FA319C900AD4CD4 /* 数据结构和算法.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "数据结构和算法.png"; sourceTree = "<group>"; };
+		30711D4E1FA319EF00AD4CD4 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		30743EBC1FA1AB93009CE4D8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		30743EBE1FA1ABB4009CE4D8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		30743EC01FA1ABC7009CE4D8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -395,7 +395,6 @@
 		30743ECD1FA1ACE2009CE4D8 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		30A3321D1F9989510037625A /* AlgorithmObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgorithmObject.h; sourceTree = "<group>"; };
 		30A3321E1F9989510037625A /* AlgorithmObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmObject.m; sourceTree = "<group>"; };
-		30A332201F99A62F0037625A /* 数据结构和算法.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "数据结构和算法.jpg"; sourceTree = "<group>"; };
 		30A332211F99C75A0037625A /* DataStructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructure.h; sourceTree = "<group>"; };
 		30A332221F99C75A0037625A /* DataStructure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStructure.m; sourceTree = "<group>"; };
 		350507721EEA6DD100BED934 /* WRCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleCell.swift; sourceTree = "<group>"; };
@@ -569,11 +568,6 @@
 		352B48C61EF8CE9600201D07 /* YWEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWEmoticon.swift; sourceTree = "<group>"; };
 		352B48C71EF8CE9600201D07 /* YWEmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWEmoticonPackage.swift; sourceTree = "<group>"; };
 		352B48C81EF8CE9600201D07 /* YWEmonticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWEmonticonManager.swift; sourceTree = "<group>"; };
-		352B48CE1EF8DCD300201D07 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
-		352B48CF1EF8DCD300201D07 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
-		352B48D01EF8DCD300201D07 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
-		352B48D11EF8DCD300201D07 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
-		352B48D21EF8DCD300201D07 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 		35327CE81EF7A3040009EDC6 /* UIImageView+JKImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JKImage.h"; sourceTree = "<group>"; };
 		35327CE91EF7A3040009EDC6 /* UIImageView+JKImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JKImage.m"; sourceTree = "<group>"; };
 		35327CEB1EF7A3890009EDC6 /* UIBezierPathDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathDemo.h; sourceTree = "<group>"; };
@@ -630,10 +624,10 @@
 				30743EC31FA1AC42009CE4D8 /* CoreMedia.framework in Frameworks */,
 				30743EC11FA1ABD2009CE4D8 /* CoreGraphics.framework in Frameworks */,
 				30743ECC1FA1ACD2009CE4D8 /* libz.tbd in Frameworks */,
+				30711D4F1FA319F000AD4CD4 /* IJKMediaFramework.framework in Frameworks */,
 				30743EBF1FA1ABBB009CE4D8 /* AVFoundation.framework in Frameworks */,
 				30743EBD1FA1AB9F009CE4D8 /* AudioToolbox.framework in Frameworks */,
 				56FA8756A380BD2A5AFE5E1E /* Pods_XLsn0wQuora.framework in Frameworks */,
-				30743EBB1FA19457009CE4D8 /* IJKMediaFramework.framework in Frameworks */,
 				30743ECE1FA1ACE2009CE4D8 /* libbz2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -906,6 +900,15 @@
 				305E8AD61FA2CA4100E731F8 /* UILabelPadding.swift */,
 			);
 			path = CustomClass;
+			sourceTree = "<group>";
+		};
+		30711D4B1FA319C900AD4CD4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				30711D4C1FA319C900AD4CD4 /* 数据结构和算法.png */,
+				30711D4E1FA319EF00AD4CD4 /* IJKMediaFramework.framework */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		350507711EEA6DD100BED934 /* WRCycleScrollView */ = {
@@ -1469,18 +1472,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		352B48CD1EF8DCD300201D07 /* YYModel */ = {
-			isa = PBXGroup;
-			children = (
-				352B48CE1EF8DCD300201D07 /* NSObject+YYModel.h */,
-				352B48CF1EF8DCD300201D07 /* NSObject+YYModel.m */,
-				352B48D01EF8DCD300201D07 /* YYClassInfo.h */,
-				352B48D11EF8DCD300201D07 /* YYClassInfo.m */,
-				352B48D21EF8DCD300201D07 /* YYModel.h */,
-			);
-			path = YYModel;
-			sourceTree = "<group>";
-		};
 		353C82071ED3D1880007188A /* Bridging-Header */ = {
 			isa = PBXGroup;
 			children = (
@@ -1498,8 +1489,6 @@
 				3591B2781ED3BFED00179D6F /* Assets.xcassets */,
 				3591B27A1ED3BFEE00179D6F /* LaunchScreen.storyboard */,
 				3591B27D1ED3BFEE00179D6F /* Info.plist */,
-				30A332201F99A62F0037625A /* 数据结构和算法.jpg */,
-				30743EBA1FA19457009CE4D8 /* IJKMediaFramework.framework */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -1530,6 +1519,7 @@
 			isa = PBXGroup;
 			children = (
 				353E52871ED3C36D008BA28E /* Application */,
+				30711D4B1FA319C900AD4CD4 /* Resource */,
 				3004A68D1FA2D03100E7D52F /* SwiftyMacro */,
 				305E8AD51FA2CA4100E731F8 /* CustomClass */,
 				305E8AB21FA2C72300E731F8 /* Extension */,
@@ -1544,7 +1534,6 @@
 		35BB81DA1EE91E9100804A2B /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
-				352B48CD1EF8DCD300201D07 /* YYModel */,
 				35327CEE1EF7A4A70009EDC6 /* WXPullView.h */,
 				35327CEF1EF7A4A70009EDC6 /* WXPullView.m */,
 				35327CE81EF7A3040009EDC6 /* UIImageView+JKImage.h */,
@@ -1782,6 +1771,7 @@
 				350C875A1EEA427F00FED4AB /* Info_more_search@2x.png in Resources */,
 				3591B27C1ED3BFEE00179D6F /* LaunchScreen.storyboard in Resources */,
 				3591B2791ED3BFED00179D6F /* Assets.xcassets in Resources */,
+				30711D4D1FA319C900AD4CD4 /* 数据结构和算法.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2009,7 +1999,6 @@
 				350C87431EEA427F00FED4AB /* BaseClassifyViewCell.swift in Sources */,
 				350C87E61EEA452D00FED4AB /* News.swift in Sources */,
 				350C87EE1EEA452D00FED4AB /* ListTableViewCell.swift in Sources */,
-				352B48D31EF8DCD300201D07 /* NSObject+YYModel.m in Sources */,
 				350C879F1EEA427F00FED4AB /* VideoMessage.swift in Sources */,
 				350C87731EEA427F00FED4AB /* SingleGiftSectionViewModel.swift in Sources */,
 				350C877B1EEA427F00FED4AB /* GiftHomeViewController.swift in Sources */,
@@ -2082,7 +2071,6 @@
 				350C876D1EEA427F00FED4AB /* ClassifySingleListSectionView.swift in Sources */,
 				350C875C1EEA427F00FED4AB /* SearchGiftCell.swift in Sources */,
 				3591B2721ED3BFED00179D6F /* AppDelegate.swift in Sources */,
-				352B48D41EF8DCD300201D07 /* YYClassInfo.m in Sources */,
 				350C87E51EEA452D00FED4AB /* LaunchModel.swift in Sources */,
 				350C873C1EEA427F00FED4AB /* UIBarButtonItem+Extension.swift in Sources */,
 				350C87A01EEA427F00FED4AB /* VoiceMessage.swift in Sources */,
@@ -2292,6 +2280,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/XLsn0wQuora",
+					"$(PROJECT_DIR)/XLsn0wQuora/Resource",
 				);
 				INFOPLIST_FILE = XLsn0wQuora/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2314,6 +2303,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/XLsn0wQuora",
+					"$(PROJECT_DIR)/XLsn0wQuora/Resource",
 				);
 				INFOPLIST_FILE = XLsn0wQuora/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

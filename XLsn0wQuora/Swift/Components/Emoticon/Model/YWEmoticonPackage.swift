@@ -1,6 +1,7 @@
 
 
 import UIKit
+import YYKit
 
 class YWEmoticonPackage: NSObject {
     
@@ -16,7 +17,7 @@ class YWEmoticonPackage: NSObject {
                 let bundle = Bundle(path: path),
                 let infoPath = bundle.path(forResource: "info", ofType: "plist", inDirectory: directory),
                 let array = NSArray(contentsOfFile: infoPath) as? [[String: String]],
-                let modelArr = NSArray.yy_modelArray(with: YWEmoticon.self, json: array) as? [YWEmoticon] else {
+                let modelArr = NSArray.modelArray(with: YWEmoticon.self, json: array) as? [YWEmoticon] else {
                     return
             }
             //遍历modelArr 数组，设置每一个表情符号的目录
@@ -33,6 +34,6 @@ class YWEmoticonPackage: NSObject {
     lazy var emoticonArr = [YWEmoticon]()
     
     override var description: String{
-        return yy_modelDescription()
+        return modelDescription()
     }
 }

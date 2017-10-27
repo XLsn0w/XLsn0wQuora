@@ -73,24 +73,7 @@
  
  NSOperation默认是非并发的(non-concurrent), 也就说如果你把operation放到某个线程执行, 它会一直block住该线程, 直到operation finished. 对于非并发的operation你只需要继承NSOperation, 然后重写main()方法就妥妥滴了, 比如我们用非并发的operation来实现一个下载需求:
  
- 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
+
  @implementation YourOperation
  - (void)main
  {

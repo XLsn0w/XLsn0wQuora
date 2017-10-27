@@ -4,6 +4,3 @@
 
 #import "MMDrawerController.h"
 #import "WXPullView.h"
-
-#import "NSObject+YYModel.h"
-#import "YYClassInfo.h"

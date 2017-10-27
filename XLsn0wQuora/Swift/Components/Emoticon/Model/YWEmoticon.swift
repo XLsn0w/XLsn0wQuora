@@ -1,6 +1,7 @@
 
 
 import UIKit
+import YYKit
 
 class YWEmoticon: NSObject {
 
@@ -53,7 +54,7 @@ class YWEmoticon: NSObject {
     }
     
    override var description: String{
-        return yy_modelDescription()
+    return modelDescription()
     }
     
 }

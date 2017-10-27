@@ -3,6 +3,7 @@
 
 import Foundation
 import UIKit
+import YYKit.NSObject_YYModel
 
 //表情单例：为了便于表情是复用，使用单例，只加载一次表情数据
 class YWEmoticonManager {
@@ -109,7 +110,7 @@ fileprivate extension YWEmoticonManager {
             let bundle = Bundle(path: path),
             let plistPath = bundle.path(forResource: "emoticons", ofType: "plist"),
             let array = NSArray(contentsOfFile: plistPath) as? [[String:String]],
-            let modelArr = NSArray.yy_modelArray(with: YWEmoticonPackage.self, json: array) as? [YWEmoticonPackage] else {
+            let modelArr = NSArray.modelArray(with: YWEmoticonPackage.self, json: array) as? [YWEmoticonPackage] else {
                 return
         }
         //设置表情包数组 使用 += 不会再次给packetArr 分配空间， 直接追加数据
