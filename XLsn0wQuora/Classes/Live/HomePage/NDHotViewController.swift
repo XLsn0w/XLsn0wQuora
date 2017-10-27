@@ -1,13 +1,6 @@
-//
-//  NDHotViewController.swift
-//  NDYingKe_swift4
-//
-//  Created by 李家奇_南湖国旅 on 2017/8/14.
-//  Copyright © 2017年 NorthDogLi. All rights reserved.
-//
+
 
 import UIKit
-
 
 private let Identifier = "BaseStrategyCell"
 
@@ -27,7 +20,7 @@ class NDHotViewController: UIViewController {
         
         self.view.backgroundColor = UIColor.white
         // 原点从（0，0）开始
-        self.automaticallyAdjustsScrollViewInsets = false
+//        self.automaticallyAdjustsScrollViewInsets = false
         
         initloadView()
         
@@ -37,7 +30,7 @@ class NDHotViewController: UIViewController {
     }
     
     fileprivate func initloadView() {
-        tableView = UITableView.init(frame: CGRect.init(x: 0, y: 64, width: kSCREEN_WIDTH, height: kSCREEN_HEIGHT), style: UITableViewStyle.plain)
+        tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kSCREEN_WIDTH, height: kSCREEN_HEIGHT), style: UITableViewStyle.plain)
         self.view.addSubview(tableView)
         //tableView.register(UINib.init(nibName: "NDHotTableCell", bundle: nil), forCellReuseIdentifier: Identifier)
         //tableView.register(NDHotTableViewCell.self, forCellReuseIdentifier: Identifier)
@@ -47,7 +40,6 @@ class NDHotViewController: UIViewController {
         //不显示下划线
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         
-        tableView.tableHeaderView = self.headerView
         //加载下拉刷新
         let gifHeader = NDRefreshGifHeader()
         tableView.mj_header = gifHeader
@@ -55,20 +47,6 @@ class NDHotViewController: UIViewController {
             self.initLivedata()
         }
     }
-    
-    //懒加载
-    lazy var headerView: LPBannerView = {
-        let header = LPBannerView.init(frame: CGRect.init(x: 0, y: 0, width: kSCREEN_WIDTH, height: __Y(y: 170)))
-        header.delegate = self
-        header.pageDotColor = UIColor.white
-        header.currentPageDotColor = kGlobalLightBlueColor
-        //block
-        header.clickItemClosure = { (index) -> Void in
-            //print("闭包回调---\(index)")
-        }
-        return header
-    }()
-    
     
     func pushController(controller:UIViewController) {
         
@@ -102,7 +80,7 @@ extension NDHotViewController {
                         self.imageArray.append(item.image)
                     }
                     DispatchQueue.main.async {
-                        self.headerView.imagePaths = self.imageArray
+                        //self.headerView.imagePaths = self.imageArray
                     }
                 }
             }

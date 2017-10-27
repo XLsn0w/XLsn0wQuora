@@ -47,25 +47,18 @@ class GiftHomeViewController: UIViewController {
         
         return view
     }()
-//MARK: 系统方法
+
     
     var pullView:WXPullView?
     
+    /// 入口
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupHomeView()
         
-        
         pullView =  WXPullView.init(frame: CGRect(x: UIScreen.main.bounds.width/2-25, y: -64, width:50, height: 30))
-        
-        
         scrollView.addSubview(pullView!)
-        
-        
-        
-        
-        
     }
 
     override func didReceiveMemoryWarning() {

@@ -677,12 +677,12 @@
 		3004A6931FA2D17F00E7D52F /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				3004A69C1FA2D17F00E7D52F /* View */,
 				3004A6941FA2D17F00E7D52F /* Model */,
 				3004A6981FA2D17F00E7D52F /* NDHomePageViewController.swift */,
 				3004A6991FA2D17F00E7D52F /* NDHotViewController.swift */,
 				3004A69A1FA2D17F00E7D52F /* NDNearByViewController.swift */,
 				3004A69B1FA2D17F00E7D52F /* NDWebViewController.swift */,
-				3004A69C1FA2D17F00E7D52F /* View */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";

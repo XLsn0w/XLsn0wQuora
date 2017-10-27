@@ -1,10 +1,3 @@
-//
-//  NDNearByViewController.swift
-//  NDYingKe_swift4
-//
-//  Created by 李家奇_南湖国旅 on 2017/8/14.
-//  Copyright © 2017年 NorthDogLi. All rights reserved.
-//
 
 import UIKit
 
@@ -38,7 +31,7 @@ class NDNearByViewController: UIViewController {
     lazy var collectionView: UICollectionView = {
         //创建collectionView
         let flowLayout = NDCollectionView()
-        let collection = UICollectionView.init(frame: CGRect.init(x: 0, y: 64, width: kSCREEN_WIDTH, height: kSCREEN_HEIGHT-60), collectionViewLayout: flowLayout)
+        let collection = UICollectionView.init(frame: CGRect.init(x: 0, y: 0, width: kSCREEN_WIDTH, height: kSCREEN_HEIGHT-60), collectionViewLayout: flowLayout)
         self.view.addSubview(collection)
         //注册
         collection.register(UINib.init(nibName: "NDNearbyCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: self.collectionID)
