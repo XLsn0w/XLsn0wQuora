@@ -1,8 +1,8 @@
 
 import UIKit
-import SnapKit //和masonry一样的功能
-import YYKit.NSObject_YYModel //数据解析
 import SDWebImage
+import SnapKit
+import YYKit ///YYModel
 
 /**************************************************************************************************/
 /**************************************************************************************************/

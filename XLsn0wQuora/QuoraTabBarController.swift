@@ -13,10 +13,10 @@ class QuoraTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        addChildViewController()
+        addTabBarChildViewController()
     }
     
-    private func addChildViewController() {
+    private func addTabBarChildViewController() {
         addChildViewController(controller: GiftHomeViewController(), title: "首页", imageName: "tabbar_home")
         addChildViewController(controller: NDHomePageViewController(), title: "直播", imageName: "tabbar_gift")
         addChildViewController(controller: LoadWebViewController(), title: "XLsn0w", imageName: "tabbar_me");
@@ -27,9 +27,9 @@ class QuoraTabBarController: UITabBarController {
         controller.tabBarItem.selectedImage = UIImage(named: imageName + "_selected")
         controller.title = title
         
-        let nav = NavigationController()
-        nav.addChildViewController(controller)
-        addChildViewController(nav)
+        let navController = NavigationController()
+        navController.addChildViewController(controller)
+        addChildViewController(navController)
     }
     
     override func didReceiveMemoryWarning() {
