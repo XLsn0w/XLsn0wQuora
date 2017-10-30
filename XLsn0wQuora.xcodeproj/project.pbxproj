@@ -50,12 +50,8 @@
 		3004A6F81FA2D21100E7D52F /* YWFireAnimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6F01FA2D21100E7D52F /* YWFireAnimController.swift */; };
 		3004A6FD1FA2D2AB00E7D52F /* FPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6FC1FA2D2AB00E7D52F /* FPSLabel.swift */; };
 		303C516E1FA6C54E00AC7AAD /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303C516D1FA6C54E00AC7AAD /* IJKMediaFramework.framework */; };
-		303C51761FA6CFBD00AC7AAD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C516F1FA6CFB900AC7AAD /* UIViewController+Extension.swift */; };
 		303C51771FA6CFBD00AC7AAD /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C51701FA6CFBA00AC7AAD /* UIButton+Extension.swift */; };
-		303C51781FA6CFBD00AC7AAD /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C51711FA6CFBA00AC7AAD /* UIBarButtonItem+Extension.swift */; };
-		303C51791FA6CFBD00AC7AAD /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C51721FA6CFBB00AC7AAD /* UIImage+Extension.swift */; };
 		303C517A1FA6CFBD00AC7AAD /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C51731FA6CFBB00AC7AAD /* Date+Extension.swift */; };
-		303C517B1FA6CFBD00AC7AAD /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C51741FA6CFBC00AC7AAD /* String+Extension.swift */; };
 		303C517C1FA6CFBD00AC7AAD /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C51751FA6CFBC00AC7AAD /* DispatchQueue+Extension.swift */; };
 		305E8ABF1FA2C72300E731F8 /* FMDB+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E8AB31FA2C72300E731F8 /* FMDB+Extension.swift */; };
 		305E8AC11FA2C72300E731F8 /* MemoryLeak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305E8AB51FA2C72300E731F8 /* MemoryLeak.swift */; };
@@ -363,12 +359,8 @@
 		3004A6F01FA2D21100E7D52F /* YWFireAnimController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWFireAnimController.swift; sourceTree = "<group>"; };
 		3004A6FC1FA2D2AB00E7D52F /* FPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSLabel.swift; sourceTree = "<group>"; };
 		303C516D1FA6C54E00AC7AAD /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
-		303C516F1FA6CFB900AC7AAD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extension.swift"; path = "../../../Desktop/Categories/UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		303C51701FA6CFBA00AC7AAD /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
-		303C51711FA6CFBA00AC7AAD /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem+Extension.swift"; path = "../../../Desktop/Categories/UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
-		303C51721FA6CFBB00AC7AAD /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "../../../Desktop/Categories/UIImage+Extension.swift"; sourceTree = "<group>"; };
 		303C51731FA6CFBB00AC7AAD /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		303C51741FA6CFBC00AC7AAD /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "../../../Desktop/Categories/String+Extension.swift"; sourceTree = "<group>"; };
 		303C51751FA6CFBC00AC7AAD /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
 		305E8AB31FA2C72300E731F8 /* FMDB+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FMDB+Extension.swift"; sourceTree = "<group>"; };
 		305E8AB51FA2C72300E731F8 /* MemoryLeak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryLeak.swift; sourceTree = "<group>"; };
@@ -876,11 +868,7 @@
 			children = (
 				303C51731FA6CFBB00AC7AAD /* Date+Extension.swift */,
 				303C51751FA6CFBC00AC7AAD /* DispatchQueue+Extension.swift */,
-				303C51741FA6CFBC00AC7AAD /* String+Extension.swift */,
-				303C51711FA6CFBA00AC7AAD /* UIBarButtonItem+Extension.swift */,
 				303C51701FA6CFBA00AC7AAD /* UIButton+Extension.swift */,
-				303C51721FA6CFBB00AC7AAD /* UIImage+Extension.swift */,
-				303C516F1FA6CFB900AC7AAD /* UIViewController+Extension.swift */,
 				305E8ACC1FA2C9CF00E731F8 /* UIBarButtonItem+extension.swift */,
 				305E8ACF1FA2C9CF00E731F8 /* UIColor+extension.swift */,
 				305E8ACE1FA2C9CF00E731F8 /* UIImageView+extension.swift */,
@@ -1884,7 +1872,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				303C51781FA6CFBD00AC7AAD /* UIBarButtonItem+Extension.swift in Sources */,
 				3004A6F31FA2D21100E7D52F /* YWKeyframeAnimController.swift in Sources */,
 				350C87501EEA427F00FED4AB /* PopoverSortClassifyView.swift in Sources */,
 				350C87B51EEA428000FED4AB /* MeHeadFooterView.swift in Sources */,
@@ -1923,7 +1910,6 @@
 				350C875B1EEA427F00FED4AB /* SearchBar.swift in Sources */,
 				3004A6D71FA2D17F00E7D52F /* NDTools.swift in Sources */,
 				350C877C1EEA427F00FED4AB /* mainClassifyViewController.swift in Sources */,
-				303C51791FA6CFBD00AC7AAD /* UIImage+Extension.swift in Sources */,
 				350C87981EEA427F00FED4AB /* ChatViewController.swift in Sources */,
 				3004A6BF1FA2D17F00E7D52F /* QuoraLiveViewController.swift in Sources */,
 				305E8AD21FA2C9CF00E731F8 /* UIView+extension.swift in Sources */,
@@ -1964,7 +1950,6 @@
 				350C874F1EEA427F00FED4AB /* PopoverSortCellViewModel.swift in Sources */,
 				35D3F64A1EE92D81007C5AFF /* RJHTTPDownloader.m in Sources */,
 				305E8AD71FA2CA4200E731F8 /* UILabelPadding.swift in Sources */,
-				303C517B1FA6CFBD00AC7AAD /* String+Extension.swift in Sources */,
 				3004A6CB1FA2D17F00E7D52F /* NDTopUsers.swift in Sources */,
 				350C87E41EEA452D00FED4AB /* ThemeViewController.swift in Sources */,
 				350C87E71EEA452D00FED4AB /* NewsDetailModel.swift in Sources */,
@@ -2033,7 +2018,6 @@
 				350C875D1EEA427F00FED4AB /* SearchHeaderView.swift in Sources */,
 				352B48CA1EF8CE9600201D07 /* YWEmoticon.swift in Sources */,
 				352B48BC1EF8C4DF00201D07 /* APIManager.swift in Sources */,
-				303C51761FA6CFBD00AC7AAD /* UIViewController+Extension.swift in Sources */,
 				350C87891EEA427F00FED4AB /* ChatBoardView.swift in Sources */,
 				350C87E01EEA452D00FED4AB /* LeftController.swift in Sources */,
 				350C87921EEA427F00FED4AB /* VoiceView.swift in Sources */,

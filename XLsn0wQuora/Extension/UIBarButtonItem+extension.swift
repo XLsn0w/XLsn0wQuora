@@ -16,5 +16,25 @@ extension UIBarButtonItem {
         return UIBarButtonItem.init(customView: button)
     }
     
+    convenience init(_ imageName:String,target: Any?,action: Selector) {
+        let button = UIButton(type: .custom)
+        
+        button.setImage(UIImage(named: imageName)?.withRenderingMode(.alwaysOriginal), for: .normal)
+        button.setImage(UIImage(named: imageName + "_highlighted")?.withRenderingMode(.alwaysOriginal), for: .highlighted)
+        button.addTarget(target, action: action, for: .touchUpInside)
+        button.sizeToFit()
+        self.init(customView:button)
+    }
+    
+    convenience init(_ titleName:String,_ textColor:UIColor ,_ textFont:UIFont,target: Any?,action: Selector) {
+        let button = UIButton(type: .custom)
+        button.setTitle(titleName, for: .normal)
+        button.setTitleColor(textColor, for: .normal)
+        button.titleLabel?.font = textFont
+        button.addTarget(target, action: action, for: .touchUpInside)
+        button.sizeToFit()
+        self.init(customView:button)
+    }
+    
 }
 
