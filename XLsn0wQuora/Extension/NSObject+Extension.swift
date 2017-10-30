@@ -21,9 +21,9 @@ extension NSObject{
                     if  tempValue == nil { continue }
                     
                     if let _ =  HEFoundation.getType(propertyType) {         //1,自定义的类
-                        result[propertyKey] = tempValue.keyValues as AnyObject?
+//                        result[propertyKey] = tempValue.keyValues as AnyObject?
                     }else if (propertyType.contains("NSArray")){       //2, 数组, 将数组中的模型转成字典
-                        result[propertyKey] = tempValue.keyValuesArray as AnyObject?       //3， 基本数据
+//                        result[propertyKey] = tempValue.keyValuesArray as AnyObject?       //3， 基本数据
                     }else{
                         result[propertyKey] = tempValue
                     }
@@ -120,13 +120,13 @@ extension NSArray{  //数组的拓展
             var result = [AnyObject]()
             for item in self{
                 if !HEFoundation.isClassFromFoundation((item as AnyObject).classForCoder){ //1,自定义的类
-                    let subKeyValues:[String:AnyObject]! = (item as AnyObject).keyValues
-                    if  subKeyValues == nil {continue}
-                    result.append(subKeyValues as AnyObject)
+//                    let subKeyValues:[String:AnyObject]! = (item as AnyObject).keyValues
+//                    if  subKeyValues == nil {continue}
+//                    result.append(subKeyValues as AnyObject)
                 }else if (item as AnyObject).classForCoder == NSArray.classForCoder(){    //2, 如果item 是数组
-                    let subKeyValues:[AnyObject]! = (item as AnyObject).keyValuesArray
-                    if  subKeyValues == nil {continue}
-                    result.append(subKeyValues as AnyObject)
+//                    let subKeyValues:[AnyObject]! = (item as AnyObject).keyValuesArray
+//                    if  subKeyValues == nil {continue}
+//                    result.append(subKeyValues as AnyObject)
                 }else{                                                     //3, 基本数据类型
                     result.append(item as AnyObject)
                 }
