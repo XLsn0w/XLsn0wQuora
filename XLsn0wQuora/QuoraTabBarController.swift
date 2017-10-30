@@ -16,9 +16,10 @@ class QuoraTabBarController: UITabBarController {
         addTabBarChildViewController()
     }
     
+    /// 添加TabBar子控制器
     private func addTabBarChildViewController() {
-        addChildViewController(controller: GiftHomeViewController(), title: "首页", imageName: "tabbar_home")
-        addChildViewController(controller: NDHomePageViewController(), title: "直播", imageName: "tabbar_gift")
+        addChildViewController(controller: QuoraGiftViewController(), title: "首页", imageName: "tabbar_home")
+        addChildViewController(controller: QuoraLiveViewController(), title: "直播", imageName: "tabbar_gift")
         addChildViewController(controller: LoadWebViewController(), title: "XLsn0w", imageName: "tabbar_me");
     }
     

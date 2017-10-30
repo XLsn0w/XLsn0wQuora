@@ -1,15 +1,6 @@
-//
-//  NDSegmemeItem.swift
-//  NDYingKe_swift4
-//
-//  Created by 李家奇_南湖国旅 on 2017/8/14.
-//  Copyright © 2017年 NorthDogLi. All rights reserved.
-//
-
 import UIKit
 
 @objc protocol segmentBarTargetDelegate {
-    //可选方法
     @objc optional func segmentBarTarget(selectedIndex:Int)
 }
 
