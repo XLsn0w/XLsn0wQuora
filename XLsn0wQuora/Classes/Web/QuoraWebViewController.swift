@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoadWebViewController: UIViewController {
+class QuoraWebViewController: UIViewController {
     
     let testUrl = "https://github.com/xlsn0w"
     

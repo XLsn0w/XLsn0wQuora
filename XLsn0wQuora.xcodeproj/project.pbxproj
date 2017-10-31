@@ -38,7 +38,7 @@
 		3004A6D71FA2D17F00E7D52F /* NDTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6B61FA2D17F00E7D52F /* NDTools.swift */; };
 		3004A6D81FA2D17F00E7D52F /* NDUserDefauls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6B71FA2D17F00E7D52F /* NDUserDefauls.swift */; };
 		3004A6D91FA2D17F00E7D52F /* NDSegmemeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6BB1FA2D17F00E7D52F /* NDSegmemeItem.swift */; };
-		3004A6DD1FA2D19400E7D52F /* LoadWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6DB1FA2D19300E7D52F /* LoadWebViewController.swift */; };
+		3004A6DD1FA2D19400E7D52F /* QuoraWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6DB1FA2D19300E7D52F /* QuoraWebViewController.swift */; };
 		3004A6DE1FA2D19400E7D52F /* WebViewLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6DC1FA2D19300E7D52F /* WebViewLoader.swift */; };
 		3004A6F11FA2D21100E7D52F /* YWSpringAnimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6E41FA2D21100E7D52F /* YWSpringAnimViewController.swift */; };
 		3004A6F21FA2D21100E7D52F /* YWBasicAnimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6E51FA2D21100E7D52F /* YWBasicAnimController.swift */; };
@@ -347,7 +347,7 @@
 		3004A6B71FA2D17F00E7D52F /* NDUserDefauls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDUserDefauls.swift; sourceTree = "<group>"; };
 		3004A6B81FA2D17F00E7D52F /* NDYingKe_swift4-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NDYingKe_swift4-Bridging-Header.h"; sourceTree = "<group>"; };
 		3004A6BB1FA2D17F00E7D52F /* NDSegmemeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDSegmemeItem.swift; sourceTree = "<group>"; };
-		3004A6DB1FA2D19300E7D52F /* LoadWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadWebViewController.swift; sourceTree = "<group>"; };
+		3004A6DB1FA2D19300E7D52F /* QuoraWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoraWebViewController.swift; sourceTree = "<group>"; };
 		3004A6DC1FA2D19300E7D52F /* WebViewLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewLoader.swift; sourceTree = "<group>"; };
 		3004A6E41FA2D21100E7D52F /* YWSpringAnimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWSpringAnimViewController.swift; sourceTree = "<group>"; };
 		3004A6E51FA2D21100E7D52F /* YWBasicAnimController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWBasicAnimController.swift; sourceTree = "<group>"; };
@@ -770,7 +770,7 @@
 		3004A6DA1FA2D19300E7D52F /* Web */ = {
 			isa = PBXGroup;
 			children = (
-				3004A6DB1FA2D19300E7D52F /* LoadWebViewController.swift */,
+				3004A6DB1FA2D19300E7D52F /* QuoraWebViewController.swift */,
 				3004A6DC1FA2D19300E7D52F /* WebViewLoader.swift */,
 			);
 			path = Web;
@@ -2066,7 +2066,7 @@
 				350C876B1EEA427F00FED4AB /* ClassifySingleListHeadView.swift in Sources */,
 				350C87E81EEA452D00FED4AB /* Story.swift in Sources */,
 				350C877E1EEA427F00FED4AB /* GiftMainViewController.swift in Sources */,
-				3004A6DD1FA2D19400E7D52F /* LoadWebViewController.swift in Sources */,
+				3004A6DD1FA2D19400E7D52F /* QuoraWebViewController.swift in Sources */,
 				3004A6D01FA2D17F00E7D52F /* NDLiveRoomFlowLayout.swift in Sources */,
 				3004A6D51FA2D17F00E7D52F /* NDFPSLabel.swift in Sources */,
 				3004A6CA1FA2D17F00E7D52F /* LPBannerView.swift in Sources */,
