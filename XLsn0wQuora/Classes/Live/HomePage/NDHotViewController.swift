@@ -2,10 +2,12 @@
 
 import UIKit
 
+private let cellIdentifier = "BaseStrategyCell"
+
 //热门
 class NDHotViewController: UIViewController {
     
-    private let cellIdentifier = "BaseStrategyCell"
+
 
     fileprivate let scrollerModel = NDNavigationItem()
     fileprivate let liveModel = NDLiveData()

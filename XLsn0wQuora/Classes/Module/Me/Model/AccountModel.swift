@@ -131,26 +131,26 @@ extension AccountModel {
         
     
         
-        NetworkTools.shared.get(LOGIN, parameters: parameters) { (isSucess, result, error) in
-            
-            guard let result = result else {
-                finished(false, "您的网络不给力哦")
-                return
-            }
-            
-            if result["status"] == "success" {
-                
-                //: 字典转模型
-//                let account = ExchangeToModel.model(withClassName: "AccountModel", withDictionary: result["result"].dictionaryObject!) as! AccountModel
-//                //: 存储用户信息
-//                account.saveAccountInfo()
-                
-                finished(true,"登陆成功")
-            }
-            else {
-                finished(false,result["message"].stringValue)
-            }
-        }
+//        NetworkTools.shared.get(LOGIN, parameters: parameters) { (isSucess, result, error) in
+//
+//            guard let result = result else {
+//                finished(false, "您的网络不给力哦")
+//                return
+//            }
+//
+//            if result["status"] == "success" {
+//
+//                //: 字典转模型
+////                let account = ExchangeToModel.model(withClassName: "AccountModel", withDictionary: result["result"].dictionaryObject!) as! AccountModel
+////                //: 存储用户信息
+////                account.saveAccountInfo()
+//
+//                finished(true,"登陆成功")
+//            }
+//            else {
+//                finished(false,result["message"].stringValue)
+//            }
+//        }
         
     }
 
