@@ -2,10 +2,10 @@
 
 import UIKit
 
-private let Identifier = "BaseStrategyCell"
-
 //热门
 class NDHotViewController: UIViewController {
+    
+    private let cellIdentifier = "BaseStrategyCell"
 
     fileprivate let scrollerModel = NDNavigationItem()
     fileprivate let liveModel = NDLiveData()
@@ -17,11 +17,8 @@ class NDHotViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = UIColor.white
-        // 原点从（0，0）开始
-//        self.automaticallyAdjustsScrollViewInsets = false
-        
+        self.view.backgroundColor = .white
+
         initloadView()
         
         initScrollerData()
@@ -120,7 +117,7 @@ extension NDHotViewController : UITableViewDelegate, UITableViewDataSource {
 //        let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath) as! NDHotTableViewCell
         
         //纯代码cell
-        let cell = NDHotTableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: Identifier)
+        let cell = NDHotTableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: cellIdentifier)
         //点击取消高亮
         cell.selectionStyle = UITableViewCellSelectionStyle.none
         

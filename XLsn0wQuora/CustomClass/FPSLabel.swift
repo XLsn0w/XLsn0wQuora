@@ -29,7 +29,6 @@ class FPSLabel: UILabel {
         var fpsFrame = frame
         if fpsFrame.origin.x == 0 && fpsFrame.origin.y == 0 {
             fpsFrame = CGRect(x: Int(80*kFitWidth), y: 0, width: 60, height: 20)
-//            fpsFrame = CGRect(x: UIScreen.main.bounds.width/2 - (60/2), y: 20, width: 60, height: 20)
         }
         super.init(frame: fpsFrame)
         layer.cornerRadius = 5

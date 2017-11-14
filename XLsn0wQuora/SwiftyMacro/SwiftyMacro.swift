@@ -11,6 +11,7 @@ import YYKit
 let kSCREEN_WIDTH = UIScreen.main.bounds.size.width
 let kSCREEN_HEIGHT = UIScreen.main.bounds.size.height
 let kSCREEN_BOUNDS = UIScreen.main.bounds
+
 //顶部电池条的状态栏高度
 let kStatubarHeight = UIApplication.shared.statusBarFrame.size.height
 
@@ -21,7 +22,6 @@ let ND_HEI =  kSCREEN_HEIGHT/667.0
 let ND_WID =  kSCREEN_WIDTH/375.0
 
 let __LEFT = __X(x:12)
-
 
 /** 适配屏幕宽度比例*f  */
 func __X(x:CGFloat) -> CGFloat {
