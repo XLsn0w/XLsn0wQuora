@@ -72,8 +72,8 @@ func objc_UncaughtExceptionHandler() -> @convention(c) (NSException) -> Void {
     }
 }
 
-// MARK: - AppDelegate extension
-extension AppDelegate {
+///Swift 的扩展 extension 可以用来继承协议,实现代码隔离，便于维护
+extension AppDelegate: XLsn0wNetworkingDelegate {
     
     fileprivate func setupRootViewController() {
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -103,9 +103,4 @@ extension AppDelegate {
         window?.makeKeyAndVisible()
         window?.rootViewController = QuoraTabBarController()
     }
-}
-
-///Swift 的扩展 extension 可以用来继承协议,实现代码隔离，便于维护
-extension AppDelegate: XLsn0wNetworkingDelegate {
-
 }
