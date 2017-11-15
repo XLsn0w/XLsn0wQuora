@@ -9,20 +9,6 @@
 /* Begin PBXBuildFile section */
 		3004A68F1FA2D03100E7D52F /* SwiftyMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A68E1FA2D03100E7D52F /* SwiftyMacro.swift */; };
 		3004A6911FA2D0C900E7D52F /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6901FA2D0C900E7D52F /* CustomNavigationController.swift */; };
-		3004A6BC1FA2D17F00E7D52F /* NDLiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6951FA2D17F00E7D52F /* NDLiveData.swift */; };
-		3004A6BD1FA2D17F00E7D52F /* NDNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6961FA2D17F00E7D52F /* NDNavigationItem.swift */; };
-		3004A6BE1FA2D17F00E7D52F /* NDNearbyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6971FA2D17F00E7D52F /* NDNearbyModel.swift */; };
-		3004A6BF1FA2D17F00E7D52F /* QuoraLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6981FA2D17F00E7D52F /* QuoraLiveViewController.swift */; };
-		3004A6C01FA2D17F00E7D52F /* NDHotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6991FA2D17F00E7D52F /* NDHotViewController.swift */; };
-		3004A6C11FA2D17F00E7D52F /* NDNearByViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A69A1FA2D17F00E7D52F /* NDNearByViewController.swift */; };
-		3004A6C31FA2D17F00E7D52F /* NDCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A69D1FA2D17F00E7D52F /* NDCollectionView.swift */; };
-		3004A6C41FA2D17F00E7D52F /* NDHotTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A69E1FA2D17F00E7D52F /* NDHotTableCell.swift */; };
-		3004A6C51FA2D17F00E7D52F /* NDHotTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3004A69F1FA2D17F00E7D52F /* NDHotTableCell.xib */; };
-		3004A6C61FA2D17F00E7D52F /* NDHotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6A01FA2D17F00E7D52F /* NDHotTableViewCell.swift */; };
-		3004A6C71FA2D17F00E7D52F /* NDNearbyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6A11FA2D17F00E7D52F /* NDNearbyCollectionViewCell.swift */; };
-		3004A6C81FA2D17F00E7D52F /* NDNearbyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3004A6A21FA2D17F00E7D52F /* NDNearbyCollectionViewCell.xib */; };
-		3004A6C91FA2D17F00E7D52F /* LPBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6A41FA2D17F00E7D52F /* LPBannerCell.swift */; };
-		3004A6CA1FA2D17F00E7D52F /* LPBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6A51FA2D17F00E7D52F /* LPBannerView.swift */; };
 		3004A6CB1FA2D17F00E7D52F /* NDTopUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6A81FA2D17F00E7D52F /* NDTopUsers.swift */; };
 		3004A6CC1FA2D17F00E7D52F /* NDHotLiveingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6A91FA2D17F00E7D52F /* NDHotLiveingController.swift */; };
 		3004A6CD1FA2D17F00E7D52F /* NDHotCellHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6AB1FA2D17F00E7D52F /* NDHotCellHeaderView.swift */; };
@@ -77,6 +63,22 @@
 		30A3321F1F9989510037625A /* AlgorithmObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A3321E1F9989510037625A /* AlgorithmObject.m */; };
 		30A332231F99C75A0037625A /* DataStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A332221F99C75A0037625A /* DataStructure.m */; };
 		30FABFFC1FBA9D9200563BA8 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FABFFB1FBA9D9200563BA8 /* IJKMediaFramework.framework */; };
+		30FAC00F1FBAD05300563BA8 /* NDLiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FABFFF1FBAD05300563BA8 /* NDLiveData.swift */; };
+		30FAC0101FBAD05300563BA8 /* NDNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAC0001FBAD05300563BA8 /* NDNavigationItem.swift */; };
+		30FAC0111FBAD05300563BA8 /* NDNearbyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAC0011FBAD05300563BA8 /* NDNearbyModel.swift */; };
+		30FAC0121FBAD05300563BA8 /* NDHotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAC0021FBAD05300563BA8 /* NDHotViewController.swift */; };
+		30FAC0131FBAD05300563BA8 /* NDNearByViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAC0031FBAD05300563BA8 /* NDNearByViewController.swift */; };
+		30FAC0141FBAD05300563BA8 /* QuoraLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAC0041FBAD05300563BA8 /* QuoraLiveViewController.swift */; };
+		30FAC0151FBAD05300563BA8 /* NDCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAC0061FBAD05300563BA8 /* NDCollectionView.swift */; };
+		30FAC0161FBAD05300563BA8 /* NDHotTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAC0071FBAD05300563BA8 /* NDHotTableCell.swift */; };
+		30FAC0171FBAD05300563BA8 /* NDHotTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30FAC0081FBAD05300563BA8 /* NDHotTableCell.xib */; };
+		30FAC0181FBAD05300563BA8 /* NDHotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAC0091FBAD05300563BA8 /* NDHotTableViewCell.swift */; };
+		30FAC0191FBAD05300563BA8 /* NDNearbyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAC00A1FBAD05300563BA8 /* NDNearbyCollectionViewCell.swift */; };
+		30FAC01A1FBAD05300563BA8 /* NDNearbyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30FAC00B1FBAD05300563BA8 /* NDNearbyCollectionViewCell.xib */; };
+		30FAC01B1FBAD05300563BA8 /* LPBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAC00D1FBAD05300563BA8 /* LPBannerCell.swift */; };
+		30FAC01C1FBAD05300563BA8 /* LPBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAC00E1FBAD05300563BA8 /* LPBannerView.swift */; };
+		30FAC01F1FBAD78300563BA8 /* CAEmitterLayer+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAC01E1FBAD78300563BA8 /* CAEmitterLayer+Animations.m */; };
+		30FAC0211FBAE7C300563BA8 /* CAEmitterLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAC0201FBAE7C300563BA8 /* CAEmitterLayer+Extension.swift */; };
 		350507751EEA6DD100BED934 /* WRCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350507721EEA6DD100BED934 /* WRCycleCell.swift */; };
 		350507761EEA6DD100BED934 /* WRCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350507731EEA6DD100BED934 /* WRCycleScrollView.swift */; };
 		350507771EEA6DD100BED934 /* WRProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350507741EEA6DD100BED934 /* WRProxy.swift */; };
@@ -316,20 +318,6 @@
 /* Begin PBXFileReference section */
 		3004A68E1FA2D03100E7D52F /* SwiftyMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyMacro.swift; sourceTree = "<group>"; };
 		3004A6901FA2D0C900E7D52F /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
-		3004A6951FA2D17F00E7D52F /* NDLiveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDLiveData.swift; sourceTree = "<group>"; };
-		3004A6961FA2D17F00E7D52F /* NDNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDNavigationItem.swift; sourceTree = "<group>"; };
-		3004A6971FA2D17F00E7D52F /* NDNearbyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDNearbyModel.swift; sourceTree = "<group>"; };
-		3004A6981FA2D17F00E7D52F /* QuoraLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoraLiveViewController.swift; sourceTree = "<group>"; };
-		3004A6991FA2D17F00E7D52F /* NDHotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDHotViewController.swift; sourceTree = "<group>"; };
-		3004A69A1FA2D17F00E7D52F /* NDNearByViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDNearByViewController.swift; sourceTree = "<group>"; };
-		3004A69D1FA2D17F00E7D52F /* NDCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDCollectionView.swift; sourceTree = "<group>"; };
-		3004A69E1FA2D17F00E7D52F /* NDHotTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDHotTableCell.swift; sourceTree = "<group>"; };
-		3004A69F1FA2D17F00E7D52F /* NDHotTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NDHotTableCell.xib; sourceTree = "<group>"; };
-		3004A6A01FA2D17F00E7D52F /* NDHotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDHotTableViewCell.swift; sourceTree = "<group>"; };
-		3004A6A11FA2D17F00E7D52F /* NDNearbyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDNearbyCollectionViewCell.swift; sourceTree = "<group>"; };
-		3004A6A21FA2D17F00E7D52F /* NDNearbyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NDNearbyCollectionViewCell.xib; sourceTree = "<group>"; };
-		3004A6A41FA2D17F00E7D52F /* LPBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPBannerCell.swift; sourceTree = "<group>"; };
-		3004A6A51FA2D17F00E7D52F /* LPBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPBannerView.swift; sourceTree = "<group>"; };
 		3004A6A81FA2D17F00E7D52F /* NDTopUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDTopUsers.swift; sourceTree = "<group>"; };
 		3004A6A91FA2D17F00E7D52F /* NDHotLiveingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDHotLiveingController.swift; sourceTree = "<group>"; };
 		3004A6AB1FA2D17F00E7D52F /* NDHotCellHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDHotCellHeaderView.swift; sourceTree = "<group>"; };
@@ -394,6 +382,23 @@
 		30A332211F99C75A0037625A /* DataStructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructure.h; sourceTree = "<group>"; };
 		30A332221F99C75A0037625A /* DataStructure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStructure.m; sourceTree = "<group>"; };
 		30FABFFB1FBA9D9200563BA8 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		30FABFFF1FBAD05300563BA8 /* NDLiveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDLiveData.swift; sourceTree = "<group>"; };
+		30FAC0001FBAD05300563BA8 /* NDNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDNavigationItem.swift; sourceTree = "<group>"; };
+		30FAC0011FBAD05300563BA8 /* NDNearbyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDNearbyModel.swift; sourceTree = "<group>"; };
+		30FAC0021FBAD05300563BA8 /* NDHotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDHotViewController.swift; sourceTree = "<group>"; };
+		30FAC0031FBAD05300563BA8 /* NDNearByViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDNearByViewController.swift; sourceTree = "<group>"; };
+		30FAC0041FBAD05300563BA8 /* QuoraLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoraLiveViewController.swift; sourceTree = "<group>"; };
+		30FAC0061FBAD05300563BA8 /* NDCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDCollectionView.swift; sourceTree = "<group>"; };
+		30FAC0071FBAD05300563BA8 /* NDHotTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDHotTableCell.swift; sourceTree = "<group>"; };
+		30FAC0081FBAD05300563BA8 /* NDHotTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NDHotTableCell.xib; sourceTree = "<group>"; };
+		30FAC0091FBAD05300563BA8 /* NDHotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDHotTableViewCell.swift; sourceTree = "<group>"; };
+		30FAC00A1FBAD05300563BA8 /* NDNearbyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDNearbyCollectionViewCell.swift; sourceTree = "<group>"; };
+		30FAC00B1FBAD05300563BA8 /* NDNearbyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NDNearbyCollectionViewCell.xib; sourceTree = "<group>"; };
+		30FAC00D1FBAD05300563BA8 /* LPBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPBannerCell.swift; sourceTree = "<group>"; };
+		30FAC00E1FBAD05300563BA8 /* LPBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPBannerView.swift; sourceTree = "<group>"; };
+		30FAC01D1FBAD78200563BA8 /* CAEmitterLayer+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAEmitterLayer+Animations.h"; sourceTree = "<group>"; };
+		30FAC01E1FBAD78300563BA8 /* CAEmitterLayer+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAEmitterLayer+Animations.m"; sourceTree = "<group>"; };
+		30FAC0201FBAE7C300563BA8 /* CAEmitterLayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAEmitterLayer+Extension.swift"; sourceTree = "<group>"; };
 		350507721EEA6DD100BED934 /* WRCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleCell.swift; sourceTree = "<group>"; };
 		350507731EEA6DD100BED934 /* WRCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleScrollView.swift; sourceTree = "<group>"; };
 		350507741EEA6DD100BED934 /* WRProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRProxy.swift; sourceTree = "<group>"; };
@@ -650,57 +655,12 @@
 		3004A6921FA2D17F00E7D52F /* Live */ = {
 			isa = PBXGroup;
 			children = (
-				3004A6931FA2D17F00E7D52F /* HomePage */,
+				30FABFFD1FBAD05300563BA8 /* Main */,
 				3004A6A61FA2D17F00E7D52F /* Living */,
 				3004A6B11FA2D17F00E7D52F /* Tools */,
 				3004A6B91FA2D17F00E7D52F /* UI */,
 			);
 			path = Live;
-			sourceTree = "<group>";
-		};
-		3004A6931FA2D17F00E7D52F /* HomePage */ = {
-			isa = PBXGroup;
-			children = (
-				3004A69C1FA2D17F00E7D52F /* View */,
-				3004A6941FA2D17F00E7D52F /* Model */,
-				3004A6981FA2D17F00E7D52F /* QuoraLiveViewController.swift */,
-				3004A6991FA2D17F00E7D52F /* NDHotViewController.swift */,
-				3004A69A1FA2D17F00E7D52F /* NDNearByViewController.swift */,
-			);
-			path = HomePage;
-			sourceTree = "<group>";
-		};
-		3004A6941FA2D17F00E7D52F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				3004A6951FA2D17F00E7D52F /* NDLiveData.swift */,
-				3004A6961FA2D17F00E7D52F /* NDNavigationItem.swift */,
-				3004A6971FA2D17F00E7D52F /* NDNearbyModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		3004A69C1FA2D17F00E7D52F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				3004A69D1FA2D17F00E7D52F /* NDCollectionView.swift */,
-				3004A69E1FA2D17F00E7D52F /* NDHotTableCell.swift */,
-				3004A69F1FA2D17F00E7D52F /* NDHotTableCell.xib */,
-				3004A6A01FA2D17F00E7D52F /* NDHotTableViewCell.swift */,
-				3004A6A11FA2D17F00E7D52F /* NDNearbyCollectionViewCell.swift */,
-				3004A6A21FA2D17F00E7D52F /* NDNearbyCollectionViewCell.xib */,
-				3004A6A31FA2D17F00E7D52F /* Source */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		3004A6A31FA2D17F00E7D52F /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				3004A6A41FA2D17F00E7D52F /* LPBannerCell.swift */,
-				3004A6A51FA2D17F00E7D52F /* LPBannerView.swift */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 		3004A6A61FA2D17F00E7D52F /* Living */ = {
@@ -864,6 +824,7 @@
 			isa = PBXGroup;
 			children = (
 				303C51731FA6CFBB00AC7AAD /* Date+Extension.swift */,
+				30FAC0201FBAE7C300563BA8 /* CAEmitterLayer+Extension.swift */,
 				303C51751FA6CFBC00AC7AAD /* DispatchQueue+Extension.swift */,
 				303C51701FA6CFBA00AC7AAD /* UIButton+Extension.swift */,
 				305E8ACC1FA2C9CF00E731F8 /* UIBarButtonItem+extension.swift */,
@@ -901,6 +862,51 @@
 				30711D501FA31D4E00AD4CD4 /* LaunchScreen.png */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		30FABFFD1FBAD05300563BA8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				30FAC0041FBAD05300563BA8 /* QuoraLiveViewController.swift */,
+				30FAC0021FBAD05300563BA8 /* NDHotViewController.swift */,
+				30FAC0031FBAD05300563BA8 /* NDNearByViewController.swift */,
+				30FABFFE1FBAD05300563BA8 /* Model */,
+				30FAC0051FBAD05300563BA8 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		30FABFFE1FBAD05300563BA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30FABFFF1FBAD05300563BA8 /* NDLiveData.swift */,
+				30FAC0001FBAD05300563BA8 /* NDNavigationItem.swift */,
+				30FAC0011FBAD05300563BA8 /* NDNearbyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30FAC0051FBAD05300563BA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30FAC0061FBAD05300563BA8 /* NDCollectionView.swift */,
+				30FAC0071FBAD05300563BA8 /* NDHotTableCell.swift */,
+				30FAC0081FBAD05300563BA8 /* NDHotTableCell.xib */,
+				30FAC0091FBAD05300563BA8 /* NDHotTableViewCell.swift */,
+				30FAC00A1FBAD05300563BA8 /* NDNearbyCollectionViewCell.swift */,
+				30FAC00B1FBAD05300563BA8 /* NDNearbyCollectionViewCell.xib */,
+				30FAC00C1FBAD05300563BA8 /* Source */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30FAC00C1FBAD05300563BA8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				30FAC00D1FBAD05300563BA8 /* LPBannerCell.swift */,
+				30FAC00E1FBAD05300563BA8 /* LPBannerView.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		350507711EEA6DD100BED934 /* WRCycleScrollView */ = {
@@ -1416,8 +1422,8 @@
 		352B48B91EF8C4DF00201D07 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
-				352B48BA1EF8C4DF00201D07 /* APIManager.swift */,
 				352B48BB1EF8C4DF00201D07 /* XLsn0wQuoraRequest.swift */,
+				352B48BA1EF8C4DF00201D07 /* APIManager.swift */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -1511,6 +1517,8 @@
 		35BB81DA1EE91E9100804A2B /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				30FAC01D1FBAD78200563BA8 /* CAEmitterLayer+Animations.h */,
+				30FAC01E1FBAD78300563BA8 /* CAEmitterLayer+Animations.m */,
 				35327CEE1EF7A4A70009EDC6 /* WXPullView.h */,
 				35327CEF1EF7A4A70009EDC6 /* WXPullView.m */,
 				35327CE81EF7A3040009EDC6 /* UIImageView+JKImage.h */,
@@ -1736,10 +1744,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3004A6C51FA2D17F00E7D52F /* NDHotTableCell.xib in Resources */,
+				30FAC0171FBAD05300563BA8 /* NDHotTableCell.xib in Resources */,
 				3004A6CE1FA2D17F00E7D52F /* NDHotCellHeaderView.xib in Resources */,
 				3004A6D21FA2D17F00E7D52F /* NDLivingBottomView.xib in Resources */,
-				3004A6C81FA2D17F00E7D52F /* NDNearbyCollectionViewCell.xib in Resources */,
 				30711D511FA31D4E00AD4CD4 /* LaunchScreen.png in Resources */,
 				350C87591EEA427F00FED4AB /* ico_camera@2x.png in Resources */,
 				35D181B61ED4206C00C9DC24 /* Main.storyboard in Resources */,
@@ -1748,6 +1755,7 @@
 				352B48C91EF8CE9600201D07 /* HMEmoticon.bundle in Resources */,
 				350C875A1EEA427F00FED4AB /* Info_more_search@2x.png in Resources */,
 				3591B27C1ED3BFEE00179D6F /* LaunchScreen.storyboard in Resources */,
+				30FAC01A1FBAD05300563BA8 /* NDNearbyCollectionViewCell.xib in Resources */,
 				3591B2791ED3BFED00179D6F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1877,6 +1885,7 @@
 				305E8ABF1FA2C72300E731F8 /* FMDB+Extension.swift in Sources */,
 				350C87801EEA427F00FED4AB /* SystemCommon.swift in Sources */,
 				3004A6D31FA2D17F00E7D52F /* NDConnectionManager.swift in Sources */,
+				30FAC0181FBAD05300563BA8 /* NDHotTableViewCell.swift in Sources */,
 				305E8AC11FA2C72300E731F8 /* MemoryLeak.swift in Sources */,
 				350C87411EEA427F00FED4AB /* BannerCarouselViewCell.swift in Sources */,
 				350C87B31EEA428000FED4AB /* MeHeaderView.swift in Sources */,
@@ -1887,6 +1896,7 @@
 				350C877A1EEA427F00FED4AB /* TitleView.swift in Sources */,
 				350C87B91EEA428000FED4AB /* AudioRecorder.swift in Sources */,
 				35327CF01EF7A4A70009EDC6 /* WXPullView.m in Sources */,
+				30FAC0191FBAD05300563BA8 /* NDNearbyCollectionViewCell.swift in Sources */,
 				350C878B1EEA427F00FED4AB /* BaseChatCell.swift in Sources */,
 				3004A6F81FA2D21100E7D52F /* YWFireAnimController.swift in Sources */,
 				350C876F1EEA427F00FED4AB /* SingleGiftCellViewModel.swift in Sources */,
@@ -1898,7 +1908,6 @@
 				350C87841EEA427F00FED4AB /* ChatEmojiGroup.swift in Sources */,
 				350C877F1EEA427F00FED4AB /* NavigationController.swift in Sources */,
 				35BB81F21EE91EDD00804A2B /* BlockTestViewController.swift in Sources */,
-				3004A6C71FA2D17F00E7D52F /* NDNearbyCollectionViewCell.swift in Sources */,
 				350C87ED1EEA452D00FED4AB /* DetailWebView.swift in Sources */,
 				350C87A71EEA427F00FED4AB /* ViewFrame.swift in Sources */,
 				350C87691EEA427F00FED4AB /* ClassifySingleListCell.swift in Sources */,
@@ -1906,8 +1915,8 @@
 				350C875B1EEA427F00FED4AB /* SearchBar.swift in Sources */,
 				3004A6D71FA2D17F00E7D52F /* NDTools.swift in Sources */,
 				350C877C1EEA427F00FED4AB /* mainClassifyViewController.swift in Sources */,
+				30FAC01B1FBAD05300563BA8 /* LPBannerCell.swift in Sources */,
 				350C87981EEA427F00FED4AB /* ChatViewController.swift in Sources */,
-				3004A6BF1FA2D17F00E7D52F /* QuoraLiveViewController.swift in Sources */,
 				305E8AD21FA2C9CF00E731F8 /* UIView+extension.swift in Sources */,
 				35BB81F11EE91EDD00804A2B /* TestViewController.swift in Sources */,
 				350507851EEA6E0900BED934 /* MMDrawerController.m in Sources */,
@@ -1924,8 +1933,8 @@
 				350C87DE1EEA452D00FED4AB /* HomeViewController.swift in Sources */,
 				35BB820B1EE91EF600804A2B /* CustomDatePicker.swift in Sources */,
 				350C87DB1EEA452D00FED4AB /* BaseNavigationController.swift in Sources */,
-				3004A6C41FA2D17F00E7D52F /* NDHotTableCell.swift in Sources */,
 				350C87871EEA427F00FED4AB /* RecordVoiceView.swift in Sources */,
+				30FAC0211FBAE7C300563BA8 /* CAEmitterLayer+Extension.swift in Sources */,
 				305E8AD31FA2C9CF00E731F8 /* UIImageView+extension.swift in Sources */,
 				350C87781EEA427F00FED4AB /* StrategyColumnViewCell.swift in Sources */,
 				35BB81EF1EE91EDD00804A2B /* UserDBManager.swift in Sources */,
@@ -1936,8 +1945,8 @@
 				30A3321F1F9989510037625A /* AlgorithmObject.m in Sources */,
 				350C87E11EEA452D00FED4AB /* MainController.swift in Sources */,
 				350C874D1EEA427F00FED4AB /* PopoverClassifyView.swift in Sources */,
+				30FAC0161FBAD05300563BA8 /* NDHotTableCell.swift in Sources */,
 				305E8AC81FA2C72300E731F8 /* UINavigationBar+extension.swift in Sources */,
-				3004A6BE1FA2D17F00E7D52F /* NDNearbyModel.swift in Sources */,
 				350C876E1EEA427F00FED4AB /* SingleGiftCell.swift in Sources */,
 				305E8AC51FA2C72300E731F8 /* Response+extension.swift in Sources */,
 				350C87A31EEA427F00FED4AB /* ImageChatCellViewModel.swift in Sources */,
@@ -1954,6 +1963,7 @@
 				350C87531EEA427F00FED4AB /* ProgressHUD.swift in Sources */,
 				350C87E21EEA452D00FED4AB /* MainViewController.swift in Sources */,
 				305E8AC71FA2C72300E731F8 /* UIImage+extension.swift in Sources */,
+				30FAC0141FBAD05300563BA8 /* QuoraLiveViewController.swift in Sources */,
 				350C878C1EEA427F00FED4AB /* ExpressionChatCell.swift in Sources */,
 				350C87701EEA427F00FED4AB /* SingleGiftColumnCell.swift in Sources */,
 				350C87961EEA427F00FED4AB /* NSObject_Extension.swift in Sources */,
@@ -1966,7 +1976,6 @@
 				350C87551EEA427F00FED4AB /* LSXQRCodeViewController.swift in Sources */,
 				350C87951EEA427F00FED4AB /* NSAttributedString+Extension.swift in Sources */,
 				3004A6D91FA2D17F00E7D52F /* NDSegmemeItem.swift in Sources */,
-				3004A6BC1FA2D17F00E7D52F /* NDLiveData.swift in Sources */,
 				3004A6CF1FA2D17F00E7D52F /* NDHotCollectionCell.swift in Sources */,
 				350C87AC1EEA427F00FED4AB /* SettingViewController.swift in Sources */,
 				350C87541EEA427F00FED4AB /* LSXQRCodeView.swift in Sources */,
@@ -1991,7 +2000,6 @@
 				350C87A51EEA427F00FED4AB /* TextChatCellViewModel.swift in Sources */,
 				350C879A1EEA427F00FED4AB /* ImageMessage.swift in Sources */,
 				3004A6F11FA2D21100E7D52F /* YWSpringAnimViewController.swift in Sources */,
-				3004A6C61FA2D17F00E7D52F /* NDHotTableViewCell.swift in Sources */,
 				352B48CC1EF8CE9600201D07 /* YWEmonticonManager.swift in Sources */,
 				35BB820F1EE91EF600804A2B /* TypeBtnDB.swift in Sources */,
 				350C87AB1EEA427F00FED4AB /* RegisterViewController.swift in Sources */,
@@ -2021,7 +2029,6 @@
 				35BB82081EE91EF600804A2B /* ChooseItemModel.swift in Sources */,
 				350C87B61EEA428000FED4AB /* RegisterView.swift in Sources */,
 				350C87EF1EEA452D00FED4AB /* RefreshView.swift in Sources */,
-				3004A6BD1FA2D17F00E7D52F /* NDNavigationItem.swift in Sources */,
 				350C876A1EEA427F00FED4AB /* ClassifySingleListCellViewModel.swift in Sources */,
 				350C87B41EEA428000FED4AB /* MeHeaderViewModel.swift in Sources */,
 				350C87881EEA427F00FED4AB /* ChatBoardDataModel.swift in Sources */,
@@ -2043,6 +2050,7 @@
 				350C87511EEA427F00FED4AB /* PopoverSortClassifyViewModel.swift in Sources */,
 				350C87B11EEA427F00FED4AB /* MeFooterView.swift in Sources */,
 				350C876D1EEA427F00FED4AB /* ClassifySingleListSectionView.swift in Sources */,
+				30FAC01F1FBAD78300563BA8 /* CAEmitterLayer+Animations.m in Sources */,
 				350C875C1EEA427F00FED4AB /* SearchGiftCell.swift in Sources */,
 				3591B2721ED3BFED00179D6F /* AppDelegate.swift in Sources */,
 				350C87E51EEA452D00FED4AB /* LaunchModel.swift in Sources */,
@@ -2054,18 +2062,17 @@
 				350C87621EEA427F00FED4AB /* TopicViewModel.swift in Sources */,
 				3004A6DE1FA2D19400E7D52F /* WebViewLoader.swift in Sources */,
 				350C879E1EEA427F00FED4AB /* UserModel.swift in Sources */,
-				3004A6C11FA2D17F00E7D52F /* NDNearByViewController.swift in Sources */,
-				3004A6C91FA2D17F00E7D52F /* LPBannerCell.swift in Sources */,
 				350C87761EEA427F00FED4AB /* StrategyColumnSubCell.swift in Sources */,
 				35BB820E1EE91EF600804A2B /* OperateAccountBookView.swift in Sources */,
 				350C87901EEA427F00FED4AB /* VideoChatCell.swift in Sources */,
 				350C876B1EEA427F00FED4AB /* ClassifySingleListHeadView.swift in Sources */,
 				350C87E81EEA452D00FED4AB /* Story.swift in Sources */,
 				350C877E1EEA427F00FED4AB /* GiftMainViewController.swift in Sources */,
+				30FAC0131FBAD05300563BA8 /* NDNearByViewController.swift in Sources */,
+				30FAC00F1FBAD05300563BA8 /* NDLiveData.swift in Sources */,
 				3004A6DD1FA2D19400E7D52F /* QuoraWebViewController.swift in Sources */,
 				3004A6D01FA2D17F00E7D52F /* NDLiveRoomFlowLayout.swift in Sources */,
 				3004A6D51FA2D17F00E7D52F /* NDFPSLabel.swift in Sources */,
-				3004A6CA1FA2D17F00E7D52F /* LPBannerView.swift in Sources */,
 				305E8AC41FA2C72300E731F8 /* String+extension.swift in Sources */,
 				350C879C1EEA427F00FED4AB /* PositionMessage.swift in Sources */,
 				350C87A11EEA427F00FED4AB /* BaseChatCellViewModel.swift in Sources */,
@@ -2073,7 +2080,9 @@
 				350C87461EEA427F00FED4AB /* BaseGoodsViewCell.swift in Sources */,
 				35BB81F01EE91EDD00804A2B /* ViewController.swift in Sources */,
 				350C87821EEA427F00FED4AB /* ChatBarViewModel.swift in Sources */,
+				30FAC0151FBAD05300563BA8 /* NDCollectionView.swift in Sources */,
 				350C87931EEA427F00FED4AB /* ChatFileManager+Extension.swift in Sources */,
+				30FAC01C1FBAD05300563BA8 /* LPBannerView.swift in Sources */,
 				350C87F01EEA452D00FED4AB /* ThemeTableViewCell.swift in Sources */,
 				305E8AD11FA2C9CF00E731F8 /* UIBarButtonItem+extension.swift in Sources */,
 				350507761EEA6DD100BED934 /* WRCycleScrollView.swift in Sources */,
@@ -2083,18 +2092,19 @@
 				350C87EC1EEA452D00FED4AB /* BannerView.swift in Sources */,
 				350C87561EEA427F00FED4AB /* Refresh.swift in Sources */,
 				303C51771FA6CFBD00AC7AAD /* UIButton+Extension.swift in Sources */,
-				3004A6C31FA2D17F00E7D52F /* NDCollectionView.swift in Sources */,
 				350C87471EEA427F00FED4AB /* BaseGoodsViewController.swift in Sources */,
-				3004A6C01FA2D17F00E7D52F /* NDHotViewController.swift in Sources */,
 				350C87A21EEA427F00FED4AB /* ExpressionChatCellViewModel.swift in Sources */,
 				3004A6F41FA2D21100E7D52F /* YWTransitionViewController.swift in Sources */,
 				350C87771EEA427F00FED4AB /* StrategyColumnSubCellViewModel.swift in Sources */,
+				30FAC0111FBAD05300563BA8 /* NDNearbyModel.swift in Sources */,
 				305E8AD41FA2C9CF00E731F8 /* UIColor+extension.swift in Sources */,
 				350507B11EEA946C00BED934 /* QuoraTabBarController.swift in Sources */,
+				30FAC0121FBAD05300563BA8 /* NDHotViewController.swift in Sources */,
 				350C87EA1EEA452D00FED4AB /* ThemeModel.swift in Sources */,
 				350C874B1EEA427F00FED4AB /* CoverView.swift in Sources */,
 				350C879B1EEA427F00FED4AB /* MessageModel.swift in Sources */,
 				35BB820A1EE91EF600804A2B /* CustomAlertView.swift in Sources */,
+				30FAC0101FBAD05300563BA8 /* NDNavigationItem.swift in Sources */,
 				350507771EEA6DD100BED934 /* WRProxy.swift in Sources */,
 				35BB81F41EE91EDD00804A2B /* CZDispatchQueue.swift in Sources */,
 				350C87811EEA427F00FED4AB /* ChatBar.swift in Sources */,

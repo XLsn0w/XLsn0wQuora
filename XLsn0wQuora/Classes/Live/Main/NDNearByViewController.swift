@@ -8,7 +8,6 @@ class NDNearByViewController: UIViewController {
     
     let collectionID : String = "collectionID"
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // 原点从（0，0）开始
