@@ -8,7 +8,7 @@
 
 import UIKit
 import SnapKit
-import QorumLogs
+import XLsn0wKit_swift
 
 fileprivate let chatBarHeight:CGFloat = 50.0
 
@@ -186,7 +186,7 @@ class ChatViewController: UIViewController {
         
         let frame = value as! CGRect
     
-        QL2("\(frame.origin.y),\(frame.size.height),\(chatBoard.contentSize.height)")
+        XLsn0wLog("\(frame.origin.y),\(frame.size.height),\(chatBoard.contentSize.height)")
         
         chatBar.snp.updateConstraints { (make) in
             make.bottom.equalToSuperview().offset(frame.origin.y - ScreenHeight)
@@ -275,7 +275,7 @@ extension ChatViewController:ChatBarDelegate {
             }
             
             self.voiceView.removeFromSuperview()
-            QL2(filePath)
+            XLsn0wLog(filePath)
             
             if FileManager.default.fileExists(atPath: filePath) {
                 //: .caf-> kAudioFormatAppleIMA4         .m4a -> kAudioFormatMPEG4AAC
@@ -286,7 +286,7 @@ extension ChatViewController:ChatBarDelegate {
                     try FileManager.default.moveItem(atPath: filePath, toPath: path)
                 }
                 catch{
-                    QL4("录音文件出错")
+                    XLsn0wLog("录音文件出错")
                     return
                 }
                 

@@ -1,13 +1,6 @@
-//
-//  ChatBoardView.swift
-//  小礼品
-//
-//  Created by 李莎鑫 on 2017/4/27.
-//  Copyright © 2017年 李莎鑫. All rights reserved.
-//
 
 import UIKit
-import QorumLogs
+import XLsn0wKit_swift
 
 let textMsgIdentifier = "TextChatCell"
 let imageMsgIdentifier = "ImageChatCell"
@@ -97,7 +90,7 @@ class ChatBoardView: UITableView {
                 let cell = visibleCells[i] as! BaseChatCell
                 if cell.type == model.type &&
                     cell.id == model.id   {
-                    QL2("更新cell")
+                    XLsn0wLog("更新cell")
                     //: 更新界面
                     updateCell(cellView: cell, msg: model)
                     
@@ -234,7 +227,7 @@ extension ChatBoardView:UITableViewDelegate,UITableViewDataSource {
 extension ChatBoardView:ChatViewControllerDelegate {
     
     func chatViewControllerDidLoadSubViews(withChatBoard view: ChatBoardView) {
-        QL2("视图加载完毕")
+        XLsn0wLog("视图加载完毕")
         
     }
 }

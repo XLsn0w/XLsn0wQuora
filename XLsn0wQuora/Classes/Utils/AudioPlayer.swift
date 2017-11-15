@@ -1,14 +1,7 @@
-//
-//  AudioPlayer.swift
-//  小礼品
-//
-//  Created by 李莎鑫 on 2017/5/2.
-//  Copyright © 2017年 李莎鑫. All rights reserved.
-//
 
 import UIKit
 import AVFoundation
-import QorumLogs
+import XLsn0wKit_swift
 
 class AudioPlayer: NSObject {
 //MARK: 单例
@@ -37,7 +30,7 @@ class AudioPlayer: NSObject {
             try session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: AVAudioSessionCategoryOptions.defaultToSpeaker)
         }
         catch {
-            QL4("播放会话失败!")
+            XLsn0wLog("播放会话失败!")
             return
         }
         
@@ -45,7 +38,7 @@ class AudioPlayer: NSObject {
             try session.setActive(true)
         }
         catch {
-            QL4("播放会话无法启动!")
+            XLsn0wLog("播放会话无法启动!")
             return
         }
         
@@ -79,7 +72,7 @@ class AudioPlayer: NSObject {
             try session.setActive(false)
         }
         catch {
-            QL4("播放会话无法结束!")
+            XLsn0wLog("播放会话无法结束!")
             return
         }
         
@@ -101,12 +94,12 @@ extension AudioPlayer:AVAudioPlayerDelegate {
             self.completeOperation!(true)
             self.completeOperation = nil
         }else{
-            QL4("播放音频失败")
+            XLsn0wLog("播放音频失败")
         }
     }
     
     func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
-        QL4("音频播放出现错误：\(error)")
+        XLsn0wLog("音频播放出现错误：\(error)")
         
         self.completeOperation!(false)
         self.completeOperation = nil

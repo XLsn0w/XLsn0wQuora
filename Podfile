@@ -26,7 +26,6 @@ target "XLsn0wQuora" do
     
     pod 'SwiftDate'
     pod 'Then'
-    pod 'QorumLogs' #带颜色的log输出 Swift 3.0
     
     #objc Kit
     pod 'FMDB'

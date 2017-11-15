@@ -14,7 +14,10 @@ class QuoraTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addTabBarChildViewController()
-        
+        addEmitterAnimation()
+    }
+    
+    private func addEmitterAnimation() {
         let heartEmitter =  CAEmitterLayer.initAtPosition(position: CGPoint(x: 200, y: 200), size: CGSize(width: 30, height: 30))
         view.layer.addSublayer(heartEmitter)
         let heartsBurst = CABasicAnimation(keyPath: "emitterCells.heart.birthRate")
@@ -23,8 +26,6 @@ class QuoraTabBarController: UITabBarController {
         heartsBurst.duration = 10.0
         heartsBurst.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
         heartEmitter.add(heartsBurst, forKey: "heartsBurst")
-        
-
     }
     
     /// 添加TabBar子控制器

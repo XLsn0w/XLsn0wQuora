@@ -1,14 +1,8 @@
-//
-//  AudioRecorder.swift
-//  小礼品
-//
-//  Created by 李莎鑫 on 2017/5/2.
-//  Copyright © 2017年 李莎鑫. All rights reserved.
-//
+
 
 import UIKit
 import AVFoundation
-import QorumLogs
+import XLsn0wKit_swift
 
 fileprivate let filePath = FileManager.caches().appending("/rec.caf")
 class AudioRecorder: NSObject {
@@ -23,7 +17,7 @@ class AudioRecorder: NSObject {
             try session.setCategory(AVAudioSessionCategoryPlayAndRecord)
         }
         catch {
-            QL4("创建录音会话失败!")
+            XLsn0wLog("创建录音会话失败!")
             return nil
         }
         
@@ -31,14 +25,14 @@ class AudioRecorder: NSObject {
             try session.setActive(true)
         }
         catch {
-            QL4("录音会话无法启动!")
+            XLsn0wLog("录音会话无法启动!")
             return nil
         }
         
         
         session.requestRecordPermission({ (allowed) in
             if !allowed {
-                QL2("无法访问您的麦克风")
+                XLsn0wLog("无法访问您的麦克风")
             }
         })
         
@@ -57,7 +51,7 @@ class AudioRecorder: NSObject {
             record = try AVAudioRecorder(url: URL(fileURLWithPath: filePath), settings: setting)
         }
         catch {
-            QL4("创建录音失败")
+            XLsn0wLog("创建录音失败")
         }
         
 
@@ -93,17 +87,17 @@ class AudioRecorder: NSObject {
                 try FileManager.default.removeItem(atPath: filePath)
             }
             catch{
-                QL4("移除录音文件失败！")
+                XLsn0wLog("移除录音文件失败！")
             }
         }
         
         guard let _ = recorder else {
-            QL4("获取录音对象失败！")
+            XLsn0wLog("获取录音对象失败！")
             return
         }
         
         if !recorder!.prepareToRecord() {
-            QL4("启动录音失败！")
+            XLsn0wLog("启动录音失败！")
             return
         }
         recorder?.record()
@@ -119,7 +113,7 @@ class AudioRecorder: NSObject {
     
     func stopRecording() {
         guard let _ = recorder else {
-            QL4("获取录音对象失败！")
+            XLsn0wLog("获取录音对象失败！")
             return
         }
         
@@ -134,7 +128,7 @@ class AudioRecorder: NSObject {
             try session.setActive(false)
         }
         catch {
-            QL4("录音会话无法结束!")
+            XLsn0wLog("录音会话无法结束!")
             return 
         }
         
@@ -148,7 +142,7 @@ class AudioRecorder: NSObject {
     
     func cancelRecording() {
         guard let _ = recorder else {
-           QL4("获取录音对象失败！")
+           XLsn0wLog("获取录音对象失败！")
             return
         }
         timer?.invalidate()
@@ -168,14 +162,15 @@ class AudioRecorder: NSObject {
 extension AudioRecorder:AVAudioRecorderDelegate {
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         if flag {
-            QL2("录音成功！")
+            XLsn0wLog("录音成功！")
         }
         else {
-            QL4("失败")
+            XLsn0wLog("失败")
         }
     }
     
     func audioRecorderEncodeErrorDidOccur(_ recorder: AVAudioRecorder, error: Error?) {
-        QL4("录音失败,\(error)")
+        XLsn0wLog("录音失败")
+        XLsn0wLog(error)
     }
 }

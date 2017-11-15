@@ -1,13 +1,6 @@
-//
-//  MessageModel.swift
-//  小礼品
-//
-//  Created by 李莎鑫 on 2017/4/27.
-//  Copyright © 2017年 李莎鑫. All rights reserved.
-//  IM 消息基本模型定义
 
 import UIKit
-import QorumLogs
+import XLsn0wKit_swift
 
 //MARK: 消息所有者
 public enum MessageOwner : Int {

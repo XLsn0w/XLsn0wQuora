@@ -14,7 +14,6 @@ PODS:
   - Moya/RxSwift (8.0.5):
     - Moya/Core
     - RxSwift (~> 3.0)
-  - QorumLogs (0.9)
   - Result (3.2.3)
   - RxCocoa (3.5.0):
     - RxSwift (~> 3.4)
@@ -51,7 +50,6 @@ DEPENDENCIES:
   - MJRefresh
   - Moya
   - Moya/RxSwift
-  - QorumLogs
   - RxCocoa
   - RxDataSources
   - RxSwift
@@ -72,7 +70,6 @@ SPEC CHECKSUMS:
   Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   Moya: c37eec09a098ba9991b5a963b291fc5704bdb9ef
-  QorumLogs: 9a484df6973a3697ac79fe2273140fde6b36dccc
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
   RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
   RxDataSources: b3389acc5fe2eefb8fcd81a2b76a876ad08bc82a
@@ -87,6 +84,6 @@ SPEC CHECKSUMS:
   XLsn0wKit_swift: 322df42e3ab6298ca17a6bfb625f6dee167b33da
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: b72939f315e959ed105d2f371eb70fe866e25ee4
+PODFILE CHECKSUM: 30235a587427afb569c60040a95995cac9a19dbd
 
 COCOAPODS: 1.3.1

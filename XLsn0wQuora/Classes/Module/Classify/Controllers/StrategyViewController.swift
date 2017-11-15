@@ -1,14 +1,8 @@
-//
-//  StrategyViewController.swift
-//  小礼品
-//
-//  Created by 李莎鑫 on 2017/4/21.
-//  Copyright © 2017年 李莎鑫. All rights reserved.
-//
+
 
 import UIKit
 import SnapKit
-import QorumLogs
+import XLsn0wKit_swift
 
 fileprivate let cellColumns = 2
 fileprivate let columnCellHeight:CGFloat = 250.0
@@ -120,11 +114,11 @@ extension StrategyViewController:StrategyColumnViewCellDelegate {
     func strategyColumnViewCellDidSelectItemAt(withCell cell: StrategyColumnViewCell, indexPath: IndexPath) {
         
         if indexPath.item == cell.items - 1 {
-            QL1("\(indexPath.section)")
+            XLsn0wLog("\(indexPath.section)")
             navigationController?.pushViewController(AllClassifyViewController(), animated: true)
             
         }else{
-            QL2("\(indexPath.section)")
+            XLsn0wLog("\(indexPath.section)")
              navigationController?.pushViewController(ClassifySingleListViewController(), animated: true)
         }
     }

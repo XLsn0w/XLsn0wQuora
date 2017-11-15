@@ -1,6 +1,6 @@
 
 import UIKit
-import QorumLogs
+import XLsn0wKit_swift
 
 class AccountModel: NSObject,NSCoding {
     
@@ -51,7 +51,7 @@ class AccountModel: NSObject,NSCoding {
         do {
             try FileManager.default.removeItem(atPath: AccountModel.filePath)
         } catch {
-            QL4("退出异常")
+            XLsn0wLog("退出异常")
         }
     }
     

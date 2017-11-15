@@ -1,13 +1,6 @@
-//
-//  ChatFileManager+Extension.swift
-//  小礼品
-//
-//  Created by 李莎鑫 on 2017/4/27.
-//  Copyright © 2017年 李莎鑫. All rights reserved.
-//
 
 import Foundation
-import QorumLogs
+import XLsn0wKit_swift
 
 extension FileManager {
     class func userAvatarPath(avatarName name:String) -> String {
@@ -17,7 +10,7 @@ extension FileManager {
                try FileManager.default.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
             }
             catch{
-                QL4("File Create Failed: %@", path)
+                XLsn0wLog(path)
             }
         }
         
@@ -31,7 +24,7 @@ extension FileManager {
                 try FileManager.default.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
             }
             catch{
-                QL4("File Create Failed: %@", path)
+                XLsn0wLog(path)
             }
         }
         
@@ -45,7 +38,7 @@ extension FileManager {
                 try FileManager.default.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
             }
             catch{
-                QL4("File Create Failed: %@", path)
+                XLsn0wLog(path)
             }
         }
         

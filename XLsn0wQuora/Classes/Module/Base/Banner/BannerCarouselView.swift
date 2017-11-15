@@ -1,14 +1,8 @@
-//
-//  BannerCarouselView.swift
-//  小礼品
-//
-//  Created by 李莎鑫 on 2017/4/18.
-//  Copyright © 2017年 李莎鑫. All rights reserved.
-//  图片轮播器
+
 
 import UIKit
 import SnapKit
-import QorumLogs
+import XLsn0wKit_swift
 
 let timeInterval = 2.0
 let numberOfPage = 4
@@ -130,7 +124,7 @@ extension BannerCarouselView:UICollectionViewDelegate,UICollectionViewDataSource
     
     //: 点击
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        QL2("点击了cell")
+        XLsn0wLog("点击了cell")
     }
     
 }

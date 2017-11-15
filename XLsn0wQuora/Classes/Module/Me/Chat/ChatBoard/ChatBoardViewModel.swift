@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import QorumLogs
+import XLsn0wKit_swift
 
 class ChatBoardViewModel: NSObject {
 
@@ -54,7 +54,7 @@ extension ChatBoardViewModel:VoiceChatCellDelegate {
                 }
             })
             
-            QL2("\(path)")
+            XLsn0wLog(path)
         
            AudioPlayer.shared.playAudio(atPath: path) { [unowned self] (finished) in
                 msg.status = .normal

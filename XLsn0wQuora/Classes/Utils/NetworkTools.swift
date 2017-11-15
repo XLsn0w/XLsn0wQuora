@@ -1,15 +1,9 @@
-//
-//  NetworkTools.swift
-//  小礼品
-//
-//  Created by 李莎鑫 on 2017/4/25.
-//  Copyright © 2017年 李莎鑫. All rights reserved.
-//
+
 
 import UIKit
 import Alamofire
 import SwiftyJSON
-import QorumLogs
+import XLsn0wKit_swift
 
 typealias FinishedOperation = (_ success:Bool,_ result:JSON?,_ error:Error?) ->()
 
@@ -31,7 +25,7 @@ extension NetworkTools {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
         switch response.result {
         case .success(let value):
-            QL1(value)
+            XLsn0wLog(value)
             
             let json = JSON(value)
             if json["code"].intValue >= 4000 {

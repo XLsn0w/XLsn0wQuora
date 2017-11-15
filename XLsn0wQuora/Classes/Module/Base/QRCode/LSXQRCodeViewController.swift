@@ -1,14 +1,8 @@
-//
-//  LSXQRCodeViewController.swift
-//  小礼品
-//
-//  Created by 李莎鑫 on 2017/4/4.
-//  Copyright © 2017年 李莎鑫. All rights reserved.
-//
+
 
 import UIKit
 import SnapKit
-import QorumLogs
+import XLsn0wKit_swift
 import AVFoundation
 
 class LSXQRCodeViewController: UIViewController {
@@ -100,7 +94,7 @@ class LSXQRCodeViewController: UIViewController {
     }
     
     deinit {
-        QL4("退出了")
+        XLsn0wLog("退出了")
     }
 //MARK: 内部回调方法
     @objc private func closeScanQRCode() {
@@ -153,7 +147,7 @@ class LSXQRCodeViewController: UIViewController {
         //: 添加画图层
         view.layer.addSublayer(drawContainerLayer)
         
-        QL4(".............")
+        XLsn0wLog(".............")
     
         session.startRunning()
     }
@@ -205,7 +199,7 @@ class LSXQRCodeViewController: UIViewController {
 extension LSXQRCodeViewController:UITabBarDelegate{
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem){
         if item.title == "二维码" {
-            QL1("二维码")
+            XLsn0wLog("二维码")
             mainView.containerView.snp.remakeConstraints { (make) in
                 make.centerX.equalToSuperview()
                 make.centerY.equalToSuperview().offset(-60)
@@ -247,7 +241,7 @@ extension LSXQRCodeViewController:UITabBarDelegate{
 extension LSXQRCodeViewController:AVCaptureMetadataOutputObjectsDelegate{
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
     
-        QL1((metadataObjects.last as AnyObject).stringValue)
+        XLsn0wLog((metadataObjects.last as AnyObject).stringValue)
         //: 显示结果
         mainView.resultLabel.text = (metadataObjects.last as AnyObject).stringValue
         
@@ -341,7 +335,7 @@ extension LSXQRCodeViewController:UINavigationControllerDelegate, UIImagePickerC
         // 2.3取出探测到的数据
         for result in results
         {
-            QL2((result as! CIQRCodeFeature).messageString)
+            XLsn0wLog((result as! CIQRCodeFeature).messageString)
         }
         
         // 注意: 如果实现了该方法, 当选中一张图片时系统就不会自动关闭相册控制器

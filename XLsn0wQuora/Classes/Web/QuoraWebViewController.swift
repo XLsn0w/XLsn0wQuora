@@ -28,8 +28,20 @@ class QuoraWebViewController: UIViewController {
         super.viewDidLoad()
         
         showSimpleWebView()
+        addEmitterAnimation()
         //        showComplexWebView()
         
+    }
+    
+    private func addEmitterAnimation() {
+        let heartEmitter =  CAEmitterLayer.initAtPosition(position: CGPoint(x: 200, y: 200), size: CGSize(width: 30, height: 30))
+        view.layer.addSublayer(heartEmitter)
+        let heartsBurst = CABasicAnimation(keyPath: "emitterCells.heart.birthRate")
+        heartsBurst.fromValue = 150
+        heartsBurst.toValue = 1
+        heartsBurst.duration = 10.0
+        heartsBurst.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        heartEmitter.add(heartsBurst, forKey: "heartsBurst")
     }
     
     /// 显示一个简单的（没有交互）网页

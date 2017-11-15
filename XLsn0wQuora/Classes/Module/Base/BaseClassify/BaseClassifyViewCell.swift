@@ -1,14 +1,8 @@
-//
-//  BaseClassifyViewCell.swift
-//  小礼品
-//
-//  Created by 李莎鑫 on 2017/4/20.
-//  Copyright © 2017年 李莎鑫. All rights reserved.
-//
+
 
 import UIKit
 import SnapKit
-import QorumLogs
+import XLsn0wKit_swift
 
 let topViewHeight:CGFloat = 50.0
 let middleViewHeight:CGFloat = 150
@@ -209,7 +203,7 @@ class BaseClassifyViewCell: UITableViewCell {
     }
 //MARK: 内部响应
     @objc private func sellerHeadClick() {
-        QL2("头像啦")
+        XLsn0wLog("头像啦")
     }
    
     @objc private func priseButtonClick(button:UIButton) {

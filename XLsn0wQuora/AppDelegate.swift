@@ -46,7 +46,6 @@ import SwiftyJSON
 import Kingfisher
 import SnapKit
 import XLsn0wKit_swift
-import QorumLogs
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -79,12 +78,7 @@ func objc_UncaughtExceptionHandler() -> @convention(c) (NSException) -> Void {
 
 // MARK: - AppDelegate extension
 extension AppDelegate {
-
-    fileprivate func setupPrintLog() {
-        QorumLogs.enabled = true
-        QorumLogs.minimumLogLevelShown = 1
-    }
-    //: 配置主界面流程
+    
     fileprivate func setupRootViewController() {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
@@ -112,7 +106,6 @@ extension AppDelegate {
         window?.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()
         window?.rootViewController = QuoraTabBarController()
-        //window?.rootViewController = UINavigationController.init(rootViewController: QuoraAnimationTableViewController())
     }
 }
 

@@ -1,13 +1,7 @@
-//
-//  TextChatCellViewModel.swift
-//  小礼品
-//
-//  Created by 李莎鑫 on 2017/4/27.
-//  Copyright © 2017年 李莎鑫. All rights reserved.
-//
+
 
 import UIKit
-import QorumLogs
+import XLsn0wKit_swift
 
 fileprivate let maxMessageWidth:CGFloat = ScreenWidth * 0.6
 
@@ -40,7 +34,7 @@ class TextChatCellViewModel: BaseChatCellViewModel {
         //: 设置Label大小
         var size = msgAttributedText!.sizeToFits(CGSize(width: maxMessageWidth, height: CGFloat(MAXFLOAT)))
         if size == .zero {
-            QL4("富文本字体自适应失败！")
+            XLsn0wLog("富文本字体自适应失败！")
         }
 
         size.height += margin*0.5

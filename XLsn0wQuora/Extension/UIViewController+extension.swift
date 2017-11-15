@@ -1,6 +1,6 @@
 
 import UIKit
-import QorumLogs
+import XLsn0wKit_swift
 
 extension UIViewController {
     
@@ -9,19 +9,19 @@ extension UIViewController {
         
         //: 获取命名空间
         guard let nameSpace = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String else {
-            QL4("获取命名空间失败")
+            XLsn0wLog("获取命名空间失败")
             return nil
         }
         
         guard let className = NSClassFromString(nameSpace + "." + (controllerName ?? ""))  else {
-            QL4("\(ToControllerKey):控制器名称\(controllerName)找不到!")
+            XLsn0wLog("\(ToControllerKey):控制器名称\(controllerName)找不到!")
             return nil
         }
         
         
         //: 获取类型
         guard let classType = className as? UIViewController.Type  else {
-            QL3("获取类型失败，不能创建控制器")
+            XLsn0wLog("获取类型失败，不能创建控制器")
             return nil
         }
         

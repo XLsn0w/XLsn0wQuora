@@ -1,14 +1,7 @@
-//
-//  ChatString+Extension.swift
-//  小礼品
-//
-//  Created by 李莎鑫 on 2017/4/27.
-//  Copyright © 2017年 李莎鑫. All rights reserved.
-//
 
 import Foundation
 import UIKit
-import QorumLogs
+import XLsn0wKit_swift
 
 extension String {
     func fitSize(_ size:CGSize,_ font:UIFont) -> CGSize {
@@ -29,12 +22,12 @@ extension String {
             regular = try NSRegularExpression(pattern: emojiRegular, options: .caseInsensitive)
         }
         catch{
-            QL4("Catch Error : NSRegularExpression")
+            XLsn0wLog("Catch Error : NSRegularExpression")
             return attributeStr
         }
         
         guard let result = regular?.matches(in: self, options: .init(rawValue: 0), range: range) else {
-            QL4("No result: regular.matches")
+            XLsn0wLog("No result: regular.matches")
             return attributeStr
         }
     

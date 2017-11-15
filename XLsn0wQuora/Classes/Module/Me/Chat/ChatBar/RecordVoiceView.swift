@@ -8,7 +8,7 @@
 
 import UIKit
 import SnapKit
-import QorumLogs
+import XLsn0wKit_swift
 
 public enum RecordingStatus : Int {
     
@@ -30,13 +30,13 @@ class RecordVoiceView: UIView {
 //MARK: 属性
     var volume:CGFloat = 0 {
         didSet{
-            QL2("volume:\(volume)")
+            XLsn0wLog("volume:\(volume)")
             
             var index  = volume*1000/50 + 1
             if index > 20 {
                 index = 20
             }
-            QL2("index:\(index)")
+            XLsn0wLog("index:\(index)")
             
             imageView.image = UIImage(named: String(format: "VoiceSearchFeedback%03d", Int(index)))
         }
