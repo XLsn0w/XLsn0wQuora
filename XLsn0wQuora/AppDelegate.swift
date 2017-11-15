@@ -57,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         addWindow()
         NSSetUncaughtExceptionHandler(objc_UncaughtExceptionHandler());///开启崩溃捕捉 NSSetUncaughtExceptionHandler(&UncaughtExceptionHandler);
-        UIApplication.shared.keyWindow!.addSubview(FPSLabel(frame: CGRect()))///添加FPS显示器到屏幕状态栏
+        UIApplication.shared.keyWindow!.addSubview(FPSMonitor(frame: CGRect()))///添加FPS显示器到屏幕状态栏
         return true
     }
 }
