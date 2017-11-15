@@ -45,23 +45,7 @@
         
         
         //浅复制就是指针拷贝；深复制就是内容拷贝。
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
         
 //        self.name = [NSString stringWithFormat:@"sssss"];
 //        NSLog(@"%@", self.name);

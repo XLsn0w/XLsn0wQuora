@@ -2,7 +2,7 @@
 //  QUoraTabBarController.swift
 //  XLsn0wQuora
 //
-//  Created by XLsn0w on 2017/6/9.
+//  Created by XLsn0w on 2017/6/6.
 //  Copyright © 2017年 XLsn0w. All rights reserved.
 //
 
@@ -18,21 +18,21 @@ class QuoraTabBarController: UITabBarController {
     }
     
     private func addEmitterAnimation() {
-        let heartEmitter =  CAEmitterLayer.initAtPosition(position: CGPoint(x: 200, y: 200), size: CGSize(width: 30, height: 30))
+        let heartEmitter =  CAEmitterLayer.initAtPosition(position: CGPoint(x: ScreenWidth/2, y: ScreenHeight/2), size: CGSize(width: 30, height: 30))
         view.layer.addSublayer(heartEmitter)
         let heartsBurst = CABasicAnimation(keyPath: "emitterCells.heart.birthRate")
         heartsBurst.fromValue = 150
         heartsBurst.toValue = 1
-        heartsBurst.duration = 10.0
+        heartsBurst.duration = 5.0
         heartsBurst.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
         heartEmitter.add(heartsBurst, forKey: "heartsBurst")
     }
     
     /// 添加TabBar子控制器
     private func addTabBarChildViewController() {
-        addChildViewController(controller: QuoraGiftViewController(), title: "首页", imageName: "tabbar_home")
+        addChildViewController(controller: QuoraGiftViewController(), title: "主页", imageName: "tabbar_home")
         addChildViewController(controller: QuoraLiveViewController(), title: "直播", imageName: "tabbar_gift")
-        addChildViewController(controller: QuoraWebViewController(), title: "XLsn0w", imageName: "tabbar_me");
+        addChildViewController(controller: QuoraWebViewController(),  title: "我的", imageName: "tabbar_me");
     }
     
     private func addChildViewController(controller: UIViewController, title: String, imageName: String) {

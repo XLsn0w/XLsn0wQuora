@@ -54,6 +54,7 @@
 		304DE62B1FBC0E0000661A3E /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DE6281FBC0E0000661A3E /* CustomNavigationController.swift */; };
 		304DE62C1FBC0E0000661A3E /* FPSMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DE6291FBC0E0000661A3E /* FPSMonitor.swift */; };
 		304DE62D1FBC0E0000661A3E /* UILabelPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DE62A1FBC0E0000661A3E /* UILabelPadding.swift */; };
+		304DE6301FBC11BE00661A3E /* CAReplicatorLayer+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 304DE62E1FBC11BE00661A3E /* CAReplicatorLayer+Animations.m */; };
 		30711D511FA31D4E00AD4CD4 /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 30711D501FA31D4E00AD4CD4 /* LaunchScreen.png */; };
 		30743EBD1FA1AB9F009CE4D8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743EBC1FA1AB93009CE4D8 /* AudioToolbox.framework */; };
 		30743EBF1FA1ABBB009CE4D8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743EBE1FA1ABB4009CE4D8 /* AVFoundation.framework */; };
@@ -364,6 +365,8 @@
 		304DE6281FBC0E0000661A3E /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		304DE6291FBC0E0000661A3E /* FPSMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSMonitor.swift; sourceTree = "<group>"; };
 		304DE62A1FBC0E0000661A3E /* UILabelPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelPadding.swift; sourceTree = "<group>"; };
+		304DE62E1FBC11BE00661A3E /* CAReplicatorLayer+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAReplicatorLayer+Animations.m"; sourceTree = "<group>"; };
+		304DE62F1FBC11BE00661A3E /* CAReplicatorLayer+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAReplicatorLayer+Animations.h"; sourceTree = "<group>"; };
 		30711D501FA31D4E00AD4CD4 /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
 		30743EBC1FA1AB93009CE4D8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		30743EBE1FA1ABB4009CE4D8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -1519,6 +1522,8 @@
 			children = (
 				30FAC01D1FBAD78200563BA8 /* CAEmitterLayer+Animations.h */,
 				30FAC01E1FBAD78300563BA8 /* CAEmitterLayer+Animations.m */,
+				304DE62F1FBC11BE00661A3E /* CAReplicatorLayer+Animations.h */,
+				304DE62E1FBC11BE00661A3E /* CAReplicatorLayer+Animations.m */,
 				35327CEE1EF7A4A70009EDC6 /* WXPullView.h */,
 				35327CEF1EF7A4A70009EDC6 /* WXPullView.m */,
 				35327CE81EF7A3040009EDC6 /* UIImageView+JKImage.h */,
@@ -1951,6 +1956,7 @@
 				3004A6CB1FA2D17F00E7D52F /* NDTopUsers.swift in Sources */,
 				350C87E41EEA452D00FED4AB /* ThemeViewController.swift in Sources */,
 				304DE62D1FBC0E0000661A3E /* UILabelPadding.swift in Sources */,
+				304DE6301FBC11BE00661A3E /* CAReplicatorLayer+Animations.m in Sources */,
 				350C87E71EEA452D00FED4AB /* NewsDetailModel.swift in Sources */,
 				350C879D1EEA427F00FED4AB /* TextMessage.swift in Sources */,
 				350C87EB1EEA452D00FED4AB /* BannerCell.swift in Sources */,

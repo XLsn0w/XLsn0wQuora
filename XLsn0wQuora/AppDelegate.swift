@@ -68,11 +68,7 @@ func objc_UncaughtExceptionHandler() -> @convention(c) (NSException) -> Void {
         let callStackSymbols = exception.callStackSymbols//得到当前调用栈信息
         let reason = exception.reason//非常重要，就是崩溃的原因
         let name = exception.name//异常类型
-        
-        XLsn0wLog(reason)
-        XLsn0wLog(name)
-        XLsn0wLog(callStackSymbols)
-        //NSLog("exception type : \(name) \n crash reason : \(String(describing: reason)) \n call stack info : \(callStackSymbols)");
+        XLsn0wLog(reason);XLsn0wLog(name);XLsn0wLog(callStackSymbols)
     }
 }
 
