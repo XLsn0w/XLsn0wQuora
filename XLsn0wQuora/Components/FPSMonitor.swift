@@ -1,6 +1,8 @@
 
 import UIKit
 
+/// FPS 显示器
+
 ///FPS（Frames Per Second）：每秒传输帧数 
 ///FPS越高，画面越连续，越低，画面越卡
 

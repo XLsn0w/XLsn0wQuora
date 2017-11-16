@@ -2,10 +2,9 @@
 
 import UIKit
 
-class UILabelPadding : UILabel {
+class PaddingLabel : UILabel {
     
     private var padding = UIEdgeInsets.zero
-    
     
     @IBInspectable
     var paddingLeft: CGFloat {

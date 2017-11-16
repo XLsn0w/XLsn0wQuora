@@ -70,7 +70,7 @@ extension UIViewController {
         self.showLabel(label: label)
     }
     
-    func showLabel(label : UILabelPadding) {
+    func showLabel(label : PaddingLabel) {
         
         let __width = UIScreen.main.bounds.size.width
         
@@ -92,8 +92,8 @@ extension UIViewController {
         }
     }
     
-    func creatLabel() -> UILabelPadding {
-        let label = UILabelPadding.init()
+    func creatLabel() -> PaddingLabel {
+        let label = PaddingLabel.init()
         label.textColor = UIColor.white
         label.numberOfLines = 0;
         label.textAlignment = NSTextAlignment.left

@@ -51,9 +51,9 @@
 		304DE6241FBC0CA300661A3E /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DE6121FBC0CA300661A3E /* UITableView+Extension.swift */; };
 		304DE6251FBC0CA300661A3E /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DE6131FBC0CA300661A3E /* UIView+extension.swift */; };
 		304DE6261FBC0CA300661A3E /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DE6141FBC0CA300661A3E /* UIViewController+extension.swift */; };
-		304DE62B1FBC0E0000661A3E /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DE6281FBC0E0000661A3E /* CustomNavigationController.swift */; };
+		304DE62B1FBC0E0000661A3E /* QuoraNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DE6281FBC0E0000661A3E /* QuoraNavigationController.swift */; };
 		304DE62C1FBC0E0000661A3E /* FPSMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DE6291FBC0E0000661A3E /* FPSMonitor.swift */; };
-		304DE62D1FBC0E0000661A3E /* UILabelPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DE62A1FBC0E0000661A3E /* UILabelPadding.swift */; };
+		304DE62D1FBC0E0000661A3E /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DE62A1FBC0E0000661A3E /* PaddingLabel.swift */; };
 		304DE6301FBC11BE00661A3E /* CAReplicatorLayer+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 304DE62E1FBC11BE00661A3E /* CAReplicatorLayer+Animations.m */; };
 		30711D511FA31D4E00AD4CD4 /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 30711D501FA31D4E00AD4CD4 /* LaunchScreen.png */; };
 		30743EBD1FA1AB9F009CE4D8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743EBC1FA1AB93009CE4D8 /* AudioToolbox.framework */; };
@@ -362,9 +362,9 @@
 		304DE6121FBC0CA300661A3E /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		304DE6131FBC0CA300661A3E /* UIView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		304DE6141FBC0CA300661A3E /* UIViewController+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
-		304DE6281FBC0E0000661A3E /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		304DE6281FBC0E0000661A3E /* QuoraNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoraNavigationController.swift; sourceTree = "<group>"; };
 		304DE6291FBC0E0000661A3E /* FPSMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSMonitor.swift; sourceTree = "<group>"; };
-		304DE62A1FBC0E0000661A3E /* UILabelPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelPadding.swift; sourceTree = "<group>"; };
+		304DE62A1FBC0E0000661A3E /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		304DE62E1FBC11BE00661A3E /* CAReplicatorLayer+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAReplicatorLayer+Animations.m"; sourceTree = "<group>"; };
 		304DE62F1FBC11BE00661A3E /* CAReplicatorLayer+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAReplicatorLayer+Animations.h"; sourceTree = "<group>"; };
 		30711D501FA31D4E00AD4CD4 /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
@@ -851,9 +851,9 @@
 		304DE6271FBC0E0000661A3E /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				304DE6281FBC0E0000661A3E /* CustomNavigationController.swift */,
 				304DE6291FBC0E0000661A3E /* FPSMonitor.swift */,
-				304DE62A1FBC0E0000661A3E /* UILabelPadding.swift */,
+				304DE62A1FBC0E0000661A3E /* PaddingLabel.swift */,
+				304DE6281FBC0E0000661A3E /* QuoraNavigationController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1708,7 +1708,7 @@
 				TargetAttributes = {
 					3591B26D1ED3BFED00179D6F = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 7L4YK5W6WP;
+						DevelopmentTeam = MXNSTF6JM4;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -1955,7 +1955,7 @@
 				35D3F64A1EE92D81007C5AFF /* RJHTTPDownloader.m in Sources */,
 				3004A6CB1FA2D17F00E7D52F /* NDTopUsers.swift in Sources */,
 				350C87E41EEA452D00FED4AB /* ThemeViewController.swift in Sources */,
-				304DE62D1FBC0E0000661A3E /* UILabelPadding.swift in Sources */,
+				304DE62D1FBC0E0000661A3E /* PaddingLabel.swift in Sources */,
 				304DE6301FBC11BE00661A3E /* CAReplicatorLayer+Animations.m in Sources */,
 				350C87E71EEA452D00FED4AB /* NewsDetailModel.swift in Sources */,
 				350C879D1EEA427F00FED4AB /* TextMessage.swift in Sources */,
@@ -1964,7 +1964,7 @@
 				350C87E21EEA452D00FED4AB /* MainViewController.swift in Sources */,
 				30FAC0141FBAD05300563BA8 /* QuoraLiveViewController.swift in Sources */,
 				350C878C1EEA427F00FED4AB /* ExpressionChatCell.swift in Sources */,
-				304DE62B1FBC0E0000661A3E /* CustomNavigationController.swift in Sources */,
+				304DE62B1FBC0E0000661A3E /* QuoraNavigationController.swift in Sources */,
 				350C87701EEA427F00FED4AB /* SingleGiftColumnCell.swift in Sources */,
 				350C87961EEA427F00FED4AB /* NSObject_Extension.swift in Sources */,
 				304DE61B1FBC0CA300661A3E /* NSObject+Extension.swift in Sources */,
@@ -2262,7 +2262,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 7L4YK5W6WP;
+				DEVELOPMENT_TEAM = MXNSTF6JM4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2286,7 +2286,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 7L4YK5W6WP;
+				DEVELOPMENT_TEAM = MXNSTF6JM4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

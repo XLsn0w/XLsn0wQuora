@@ -1,19 +1,8 @@
-//
-//  NDNavigationController.swift
-//  swift_非同凡享
-//
-//  Created by 李家奇_南湖国旅 on 2017/6/9.
-//  Copyright © 2017年 李家奇_南湖国旅. All rights reserved.
-//
 
 import UIKit
 
+class QuoraNavigationController: UINavigationController {
 
-class NDNavigationController: UINavigationController {
-
-    //var supportPortraitOnly:Bool = false
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
