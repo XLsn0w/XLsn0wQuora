@@ -19,7 +19,7 @@ import UIKit
 */
 
 class FPSMonitor: UILabel {
-
+    
     private lazy var disPlayLink = CADisplayLink()
     private lazy var count: NSInteger = 0
     private lazy var lastTime: TimeInterval = 0
