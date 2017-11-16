@@ -33,6 +33,7 @@
 		3004A6F61FA2D21100E7D52F /* YWWaterWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6ED1FA2D21100E7D52F /* YWWaterWaveView.swift */; };
 		3004A6F71FA2D21100E7D52F /* YWDrawLineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6EF1FA2D21100E7D52F /* YWDrawLineController.swift */; };
 		3004A6F81FA2D21100E7D52F /* YWFireAnimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A6F01FA2D21100E7D52F /* YWFireAnimController.swift */; };
+		3012A1121FBD796F0038FE1F /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3012A1111FBD796F0038FE1F /* IJKMediaFramework.framework */; };
 		304DE6151FBC0CA300661A3E /* CAEmitterLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DE6031FBC0CA300661A3E /* CAEmitterLayer+Extension.swift */; };
 		304DE6161FBC0CA300661A3E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DE6041FBC0CA300661A3E /* Date+Extension.swift */; };
 		304DE6171FBC0CA300661A3E /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DE6051FBC0CA300661A3E /* DispatchQueue+Extension.swift */; };
@@ -342,6 +343,7 @@
 		3004A6ED1FA2D21100E7D52F /* YWWaterWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWWaterWaveView.swift; sourceTree = "<group>"; };
 		3004A6EF1FA2D21100E7D52F /* YWDrawLineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWDrawLineController.swift; sourceTree = "<group>"; };
 		3004A6F01FA2D21100E7D52F /* YWFireAnimController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YWFireAnimController.swift; sourceTree = "<group>"; };
+		3012A1111FBD796F0038FE1F /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		304DE6031FBC0CA300661A3E /* CAEmitterLayer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAEmitterLayer+Extension.swift"; sourceTree = "<group>"; };
 		304DE6041FBC0CA300661A3E /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		304DE6051FBC0CA300661A3E /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
@@ -618,6 +620,7 @@
 				30743EC31FA1AC42009CE4D8 /* CoreMedia.framework in Frameworks */,
 				30743EC11FA1ABD2009CE4D8 /* CoreGraphics.framework in Frameworks */,
 				30743ECC1FA1ACD2009CE4D8 /* libz.tbd in Frameworks */,
+				3012A1121FBD796F0038FE1F /* IJKMediaFramework.framework in Frameworks */,
 				30743EBF1FA1ABBB009CE4D8 /* AVFoundation.framework in Frameworks */,
 				30743EBD1FA1AB9F009CE4D8 /* AudioToolbox.framework in Frameworks */,
 				56FA8756A380BD2A5AFE5E1E /* Pods_XLsn0wQuora.framework in Frameworks */,
@@ -816,6 +819,14 @@
 				3004A6EF1FA2D21100E7D52F /* YWDrawLineController.swift */,
 			);
 			path = UIBezierPath;
+			sourceTree = "<group>";
+		};
+		3012A1101FBD796F0038FE1F /* IJKMediaFramework */ = {
+			isa = PBXGroup;
+			children = (
+				3012A1111FBD796F0038FE1F /* IJKMediaFramework.framework */,
+			);
+			path = IJKMediaFramework;
 			sourceTree = "<group>";
 		};
 		304DE6021FBC0CA300661A3E /* Extension */ = {
@@ -1491,6 +1502,7 @@
 			isa = PBXGroup;
 			children = (
 				353E52871ED3C36D008BA28E /* Application */,
+				3012A1101FBD796F0038FE1F /* IJKMediaFramework */,
 				304DE6271FBC0E0000661A3E /* Components */,
 				304DE6021FBC0CA300661A3E /* Extension */,
 				3004A68D1FA2D03100E7D52F /* SwiftyMacro */,
