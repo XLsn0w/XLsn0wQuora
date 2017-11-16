@@ -55,7 +55,6 @@
 		304DE62C1FBC0E0000661A3E /* FPSMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DE6291FBC0E0000661A3E /* FPSMonitor.swift */; };
 		304DE62D1FBC0E0000661A3E /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304DE62A1FBC0E0000661A3E /* PaddingLabel.swift */; };
 		304DE6301FBC11BE00661A3E /* CAReplicatorLayer+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 304DE62E1FBC11BE00661A3E /* CAReplicatorLayer+Animations.m */; };
-		30711D511FA31D4E00AD4CD4 /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 30711D501FA31D4E00AD4CD4 /* LaunchScreen.png */; };
 		30743EBD1FA1AB9F009CE4D8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743EBC1FA1AB93009CE4D8 /* AudioToolbox.framework */; };
 		30743EBF1FA1ABBB009CE4D8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743EBE1FA1ABB4009CE4D8 /* AVFoundation.framework */; };
 		30743EC11FA1ABD2009CE4D8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743EC01FA1ABC7009CE4D8 /* CoreGraphics.framework */; };
@@ -64,7 +63,6 @@
 		30743ECE1FA1ACE2009CE4D8 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743ECD1FA1ACE2009CE4D8 /* libbz2.tbd */; };
 		30A3321F1F9989510037625A /* AlgorithmObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A3321E1F9989510037625A /* AlgorithmObject.m */; };
 		30A332231F99C75A0037625A /* DataStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A332221F99C75A0037625A /* DataStructure.m */; };
-		30FABFFC1FBA9D9200563BA8 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FABFFB1FBA9D9200563BA8 /* IJKMediaFramework.framework */; };
 		30FAC00F1FBAD05300563BA8 /* NDLiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FABFFF1FBAD05300563BA8 /* NDLiveData.swift */; };
 		30FAC0101FBAD05300563BA8 /* NDNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAC0001FBAD05300563BA8 /* NDNavigationItem.swift */; };
 		30FAC0111FBAD05300563BA8 /* NDNearbyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAC0011FBAD05300563BA8 /* NDNearbyModel.swift */; };
@@ -367,7 +365,6 @@
 		304DE62A1FBC0E0000661A3E /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		304DE62E1FBC11BE00661A3E /* CAReplicatorLayer+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAReplicatorLayer+Animations.m"; sourceTree = "<group>"; };
 		304DE62F1FBC11BE00661A3E /* CAReplicatorLayer+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAReplicatorLayer+Animations.h"; sourceTree = "<group>"; };
-		30711D501FA31D4E00AD4CD4 /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
 		30743EBC1FA1AB93009CE4D8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		30743EBE1FA1ABB4009CE4D8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		30743EC01FA1ABC7009CE4D8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -385,7 +382,6 @@
 		30A3321E1F9989510037625A /* AlgorithmObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmObject.m; sourceTree = "<group>"; };
 		30A332211F99C75A0037625A /* DataStructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructure.h; sourceTree = "<group>"; };
 		30A332221F99C75A0037625A /* DataStructure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStructure.m; sourceTree = "<group>"; };
-		30FABFFB1FBA9D9200563BA8 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		30FABFFF1FBAD05300563BA8 /* NDLiveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDLiveData.swift; sourceTree = "<group>"; };
 		30FAC0001FBAD05300563BA8 /* NDNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDNavigationItem.swift; sourceTree = "<group>"; };
 		30FAC0011FBAD05300563BA8 /* NDNearbyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDNearbyModel.swift; sourceTree = "<group>"; };
@@ -622,7 +618,6 @@
 				30743EC31FA1AC42009CE4D8 /* CoreMedia.framework in Frameworks */,
 				30743EC11FA1ABD2009CE4D8 /* CoreGraphics.framework in Frameworks */,
 				30743ECC1FA1ACD2009CE4D8 /* libz.tbd in Frameworks */,
-				30FABFFC1FBA9D9200563BA8 /* IJKMediaFramework.framework in Frameworks */,
 				30743EBF1FA1ABBB009CE4D8 /* AVFoundation.framework in Frameworks */,
 				30743EBD1FA1AB9F009CE4D8 /* AudioToolbox.framework in Frameworks */,
 				56FA8756A380BD2A5AFE5E1E /* Pods_XLsn0wQuora.framework in Frameworks */,
@@ -856,15 +851,6 @@
 				304DE6281FBC0E0000661A3E /* QuoraNavigationController.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		30711D4B1FA319C900AD4CD4 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				30FABFFB1FBA9D9200563BA8 /* IJKMediaFramework.framework */,
-				30711D501FA31D4E00AD4CD4 /* LaunchScreen.png */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		30FABFFD1FBAD05300563BA8 /* Main */ = {
@@ -1506,7 +1492,6 @@
 			children = (
 				353E52871ED3C36D008BA28E /* Application */,
 				304DE6271FBC0E0000661A3E /* Components */,
-				30711D4B1FA319C900AD4CD4 /* Resource */,
 				304DE6021FBC0CA300661A3E /* Extension */,
 				3004A68D1FA2D03100E7D52F /* SwiftyMacro */,
 				350C86881EEA427F00FED4AB /* Classes */,
@@ -1752,7 +1737,6 @@
 				30FAC0171FBAD05300563BA8 /* NDHotTableCell.xib in Resources */,
 				3004A6CE1FA2D17F00E7D52F /* NDHotCellHeaderView.xib in Resources */,
 				3004A6D21FA2D17F00E7D52F /* NDLivingBottomView.xib in Resources */,
-				30711D511FA31D4E00AD4CD4 /* LaunchScreen.png in Resources */,
 				350C87591EEA427F00FED4AB /* ico_camera@2x.png in Resources */,
 				35D181B61ED4206C00C9DC24 /* Main.storyboard in Resources */,
 				350C87571EEA427F00FED4AB /* audio_nav@2x.png in Resources */,
@@ -2268,6 +2252,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/XLsn0wQuora",
 					"$(PROJECT_DIR)/XLsn0wQuora/Resource",
+					"$(PROJECT_DIR)/XLsn0wQuora/IJKMediaFramework",
 				);
 				INFOPLIST_FILE = XLsn0wQuora/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2292,6 +2277,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/XLsn0wQuora",
 					"$(PROJECT_DIR)/XLsn0wQuora/Resource",
+					"$(PROJECT_DIR)/XLsn0wQuora/IJKMediaFramework",
 				);
 				INFOPLIST_FILE = XLsn0wQuora/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

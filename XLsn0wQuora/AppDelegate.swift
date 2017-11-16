@@ -75,22 +75,7 @@ func objc_UncaughtExceptionHandler() -> @convention(c) (NSException) -> Void {
 ///Swift 的扩展 extension 可以用来继承协议,实现代码隔离，便于维护
 extension AppDelegate: XLsn0wNetworkingDelegate {
     
-    fileprivate func setupRootViewController() {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-        window?.rootViewController = GiftMainViewController()
-    }
-    
-    //: 设置主题样式
-    fileprivate func setupGlobalStyle() {
-        UITabBar.appearance().tintColor = SystemTabBarTintColor
-        UINavigationBar.appearance().tintColor = UIColor.white
-        
-        ProgressHUD.setupProgressHUD()
-        
-    }
-    
-    func set_statusBarStyle() -> () {
+    func setStatusBarStyle() -> () {
         //默认的黑色（UIStatusBarStyleDefault） .default
         //白色（UIStatusBarStyleLightContent） .lightContent
         UIApplication.shared.statusBarStyle = .lightContent
