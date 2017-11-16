@@ -1,17 +1,8 @@
-//
-//  WRCycleCell.swift
-//  WRCycleScrollViewDemo
-//
-//  Created by wangrui on 2017/5/12.
-//  Copyright © 2017年 wangrui. All rights reserved.
-//
-//  Github地址：https://github.com/wangrui460/WRCycleScrollView
 
 import UIKit
 import Kingfisher
  
-class WRCycleCell: UICollectionViewCell
-{
+class XLsn0wLooperCell: UICollectionViewCell {
 //=======================================================
 // MARK: 对外提供的属性
 //=======================================================
@@ -116,8 +107,7 @@ class WRCycleCell: UICollectionViewCell
 //=======================================================
 // MARK: - 基本控件（图片、描述文字、底部view）
 //=======================================================
-extension WRCycleCell
-{
+extension XLsn0wLooperCell {
     fileprivate func setupImgView()
     {
         imgView = UIImageView()

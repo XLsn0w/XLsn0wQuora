@@ -29,9 +29,9 @@ class MainController: BaseViewController
         table.dataSource = self
         return table
     }()
-    lazy var cycleScrollView:WRCycleScrollView = {
+    lazy var cycleScrollView:XLsn0wLooper = {
         let frame = CGRect(x: 0, y: -IMAGE_HEIGHT, width: CGFloat(kScreenWidth), height: IMAGE_HEIGHT)
-        let cycleView = WRCycleScrollView(frame: frame, type: .LOCAL, imgs: nil, descs: nil)
+        let cycleView = XLsn0wLooper(frame: frame, type: .LOCAL, imgs: nil, descs: nil)
         return cycleView
     }()
     

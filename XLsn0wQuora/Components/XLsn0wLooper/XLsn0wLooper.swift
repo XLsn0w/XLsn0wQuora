@@ -1,30 +1,20 @@
-//
-//  WRCycleScrollView.swift
-//  WRCycleScrollViewDemo
-//
-//  Created by wangrui on 2017/5/12.
-//  Copyright © 2017年 wangrui. All rights reserved.
-//
-//  Github地址：https://github.com/wangrui460/WRCycleScrollView
 
 import UIKit
 
 private let KEndlessScrollTimes = 128
 
-@objc protocol WRCycleScrollViewDelegate
-{
+@objc protocol XLsn0wLooperDelegate {
     /// 点击图片回调
-    @objc optional func cycleScrollViewDidSelect(at index:Int, cycleScrollView:WRCycleScrollView)
+    @objc optional func cycleScrollViewDidSelect(at index:Int, cycleScrollView:XLsn0wLooper)
     /// 图片滚动回调
-    @objc optional func cycleScrollViewDidScroll(to index:Int, cycleScrollView:WRCycleScrollView)
+    @objc optional func cycleScrollViewDidScroll(to index:Int, cycleScrollView:XLsn0wLooper)
 }
 
-class WRCycleScrollView: UIView
-{
+class XLsn0wLooper: UIView {
 //=======================================================
 // MARK: 对外提供的属性
 //=======================================================
-    weak var delegate:WRCycleScrollViewDelegate?
+    weak var delegate:XLsn0wLooperDelegate?
     
 /// 数据相关
     var imgsType:ImgType = .SERVER
@@ -220,7 +210,7 @@ class WRCycleScrollView: UIView
 //=======================================================
 // MARK: - 无限轮播相关（定时器、切换图片、scrollView代理方法）
 //=======================================================
-extension WRCycleScrollView
+extension XLsn0wLooper
 {
     func setupTimer()
     {
@@ -294,7 +284,7 @@ extension WRCycleScrollView
 //=======================================================
 // MARK: - pageControl页面
 //=======================================================
-extension WRCycleScrollView
+extension XLsn0wLooper
 {
     fileprivate func setupPageControl()
     {
@@ -324,7 +314,7 @@ extension WRCycleScrollView
 //=======================================================
 // MARK: - WRCycleCell 相关
 //=======================================================
-extension WRCycleScrollView: UICollectionViewDelegate,UICollectionViewDataSource
+extension XLsn0wLooper: UICollectionViewDelegate,UICollectionViewDataSource
 {
     fileprivate func setupCollectionView()
     {
@@ -334,7 +324,7 @@ extension WRCycleScrollView: UICollectionViewDelegate,UICollectionViewDataSource
         flowLayout?.scrollDirection = .horizontal
         
         collectionView = UICollectionView(frame: bounds, collectionViewLayout: flowLayout!)
-        collectionView?.register(WRCycleCell.self, forCellWithReuseIdentifier: CellID)
+        collectionView?.register(XLsn0wLooperCell.self, forCellWithReuseIdentifier: CellID)
         collectionView?.isPagingEnabled = true
         collectionView?.bounces = false
         collectionView?.showsVerticalScrollIndicator = false
@@ -352,7 +342,7 @@ extension WRCycleScrollView: UICollectionViewDelegate,UICollectionViewDataSource
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
         let curIndex = indexPath.item % imgsCount
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellID, for: indexPath) as! WRCycleCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellID, for: indexPath) as! XLsn0wLooperCell
         cell.imgSource = proxy[curIndex]
         cell.descText = descTextArray?[curIndex]
         
