@@ -68,6 +68,7 @@
 		30743EC31FA1AC42009CE4D8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743EC21FA1AC39009CE4D8 /* CoreMedia.framework */; };
 		30743ECC1FA1ACD2009CE4D8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743ECB1FA1ACD1009CE4D8 /* libz.tbd */; };
 		30743ECE1FA1ACE2009CE4D8 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 30743ECD1FA1ACE2009CE4D8 /* libbz2.tbd */; };
+		308BFE571FBECF19003F200B /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308BFE561FBECF19003F200B /* IJKMediaFramework.framework */; };
 		30A3321F1F9989510037625A /* AlgorithmObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A3321E1F9989510037625A /* AlgorithmObject.m */; };
 		30A332231F99C75A0037625A /* DataStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A332221F99C75A0037625A /* DataStructure.m */; };
 		30FAC00F1FBAD05300563BA8 /* NDLiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FABFFF1FBAD05300563BA8 /* NDLiveData.swift */; };
@@ -385,6 +386,7 @@
 		30743ECA1FA1ACB2009CE4D8 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		30743ECB1FA1ACD1009CE4D8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		30743ECD1FA1ACE2009CE4D8 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		308BFE561FBECF19003F200B /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		30A3321D1F9989510037625A /* AlgorithmObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgorithmObject.h; sourceTree = "<group>"; };
 		30A3321E1F9989510037625A /* AlgorithmObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmObject.m; sourceTree = "<group>"; };
 		30A332211F99C75A0037625A /* DataStructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructure.h; sourceTree = "<group>"; };
@@ -618,6 +620,7 @@
 				30743EC31FA1AC42009CE4D8 /* CoreMedia.framework in Frameworks */,
 				30743EC11FA1ABD2009CE4D8 /* CoreGraphics.framework in Frameworks */,
 				30743ECC1FA1ACD2009CE4D8 /* libz.tbd in Frameworks */,
+				308BFE571FBECF19003F200B /* IJKMediaFramework.framework in Frameworks */,
 				30743EBF1FA1ABBB009CE4D8 /* AVFoundation.framework in Frameworks */,
 				30743EBD1FA1AB9F009CE4D8 /* AudioToolbox.framework in Frameworks */,
 				56FA8756A380BD2A5AFE5E1E /* Pods_XLsn0wQuora.framework in Frameworks */,
@@ -887,6 +890,7 @@
 		308BFE551FBECDC2003F200B /* IJKMedia */ = {
 			isa = PBXGroup;
 			children = (
+				308BFE561FBECF19003F200B /* IJKMediaFramework.framework */,
 			);
 			path = IJKMedia;
 			sourceTree = "<group>";
@@ -2253,6 +2257,7 @@
 					"$(PROJECT_DIR)/XLsn0wQuora",
 					"$(PROJECT_DIR)/XLsn0wQuora/Resource",
 					"$(PROJECT_DIR)/XLsn0wQuora/IJKMediaFramework",
+					"$(PROJECT_DIR)/XLsn0wQuora/IJKMedia",
 				);
 				INFOPLIST_FILE = XLsn0wQuora/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2278,6 +2283,7 @@
 					"$(PROJECT_DIR)/XLsn0wQuora",
 					"$(PROJECT_DIR)/XLsn0wQuora/Resource",
 					"$(PROJECT_DIR)/XLsn0wQuora/IJKMediaFramework",
+					"$(PROJECT_DIR)/XLsn0wQuora/IJKMedia",
 				);
 				INFOPLIST_FILE = XLsn0wQuora/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

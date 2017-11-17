@@ -55,3 +55,17 @@ XLsn0wQuora/IJKMediaFramework/IJKMediaFramework.framework/Headers/IJKMediaPlayer
 XLsn0wQuora/IJKMediaFramework/IJKMediaFramework.framework/Headers/IJKMPMoviePlayerController.h
 XLsn0wQuora/IJKMediaFramework/IJKMediaFramework.framework/Headers/IJKNotificationManager.h
 XLsn0wQuora/IJKMediaFramework/IJKMediaFramework.framework/Modules/module.modulemap
+XLsn0wQuora/IJKMedia/IJKMediaFramework.framework/Headers/IJKAVMoviePlayerController.h
+XLsn0wQuora/IJKMedia/IJKMediaFramework.framework/Headers/IJKFFMonitor.h
+XLsn0wQuora/IJKMedia/IJKMediaFramework.framework/Headers/IJKFFMoviePlayerController.h
+XLsn0wQuora/IJKMedia/IJKMediaFramework.framework/Headers/IJKFFOptions.h
+XLsn0wQuora/IJKMedia/IJKMediaFramework.framework/Headers/IJKKVOController.h
+XLsn0wQuora/IJKMedia/IJKMediaFramework.framework/Headers/IJKMPMoviePlayerController.h
+XLsn0wQuora/IJKMedia/IJKMediaFramework.framework/Headers/IJKMediaFramework.h
+XLsn0wQuora/IJKMedia/IJKMediaFramework.framework/Headers/IJKMediaModule.h
+XLsn0wQuora/IJKMedia/IJKMediaFramework.framework/Headers/IJKMediaPlayback.h
+XLsn0wQuora/IJKMedia/IJKMediaFramework.framework/Headers/IJKMediaPlayer.h
+XLsn0wQuora/IJKMedia/IJKMediaFramework.framework/Headers/IJKNotificationManager.h
+XLsn0wQuora/IJKMedia/IJKMediaFramework.framework/IJKMediaFramework
+XLsn0wQuora/IJKMedia/IJKMediaFramework.framework/Info.plist
+XLsn0wQuora/IJKMedia/IJKMediaFramework.framework/Modules/module.modulemap
